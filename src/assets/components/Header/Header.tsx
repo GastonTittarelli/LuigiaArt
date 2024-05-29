@@ -18,7 +18,8 @@ return (
                 <span className={styles.firstLetter}>A</span>rt
             </h1>
         </Link>    
-            <Nav/>
+
+        <Nav/>
     </header>
 )
 }
