@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+    min-height: 90vh;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(214, 214, 214);
+}
+.containerCarrousel{
+    width: 40vw;
+    height: 70vh;
+    position: relative;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.condicion1 {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.condicion2{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+

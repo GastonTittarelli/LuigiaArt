@@ -1,0 +1,17 @@
+.container {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.container h4 {
+  color: white;
+}
+.container img {
+  height: 100%;
+  width: auto;
+  border-radius: 70%;
+}/*# sourceMappingURL=footer.module.css.map */

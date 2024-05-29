@@ -1,0 +1,146 @@
+@import "../../../scss/styles/utilities/variables.scss";
+
+
+.contenedor {
+    min-height: auto;
+    margin-top: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 20px;
+
+    .filterButtons {
+        position: sticky;
+        max-height: 100svh;
+        background-color: #4e5d63;
+
+        .navList{
+            gap: 4rem;
+            display: grid;
+            padding-block: 2rem ;
+            font-size: 1.3rem;
+
+            li{
+                padding: 1rem 2rem;
+                margin-left: 1.2rem;
+                border-radius: 100vw 0 0 100vw;
+                
+                &.active{
+                    view-transition-name: activeNavTab;
+                    background-color: white;
+                    position: relative;
+                    
+                }
+                
+
+                &.active::before, 
+                &.active::after {
+                    --border-radius: 1rem;
+
+                    content: "";
+                    position: absolute;
+                    width: var(--border-radius);
+                    height: var(--border-radius);
+                    right: 0;
+                }
+
+                &.active::before{
+                    top: calc(var(--border-radius) * -1);
+                    box-shadow: 10px 10px 0 10px white;
+                    border-radius: 0 0 100vw 0;
+                } 
+                &.active::after {
+                    bottom: calc(var(--border-radius) * -1);
+                    box-shadow: 10px -10px 0 10px white;
+                    border-radius: 0 100vw 0 0;
+                }
+
+                p {
+                    text-decoration: none;
+                    color: black;
+                    // display: block;
+                    // position: relative;
+                    // z-index: 10;
+                }
+
+                
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .contenedorImgs {
+        width: 100%;
+        min-height: 90vh;
+        columns: 4;
+        padding: 15px 30px;
+        column-gap: 30px;
+        background-color: #eaeaea;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        .itemContainer {
+            margin-bottom: 32px;
+            position: relative; 
+
+            .imagenes {
+                display: block;
+                border-radius: 10px;
+                width: 100%;
+                height: auto;
+                z-index: 1;
+                animation: aparecer linear both;
+                animation-timeline: view();
+                
+                
+                
+                @keyframes aparecer {
+                    0% {
+                        opacity: 0;
+                        scale: (.9);
+                    }
+                    20% {
+                        opacity: 1;
+                        scale: (1);
+                    }
+                }
+                
+            }
+
+            h3 {
+                position: absolute; 
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                color: white;
+                font-weight: 300;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px;
+                font-family: $letraSub;
+                border-radius: 5px;
+                transition: opacity 0.3s;
+                text-align: center;
+            }
+
+            &:hover {
+                .imagenes {
+                    opacity: 0;
+                }
+                h3 {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

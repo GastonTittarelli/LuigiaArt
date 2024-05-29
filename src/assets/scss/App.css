@@ -1,0 +1,19 @@
+@import "https://fonts.googleapis.com/css2?family=Kalam&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+}/*# sourceMappingURL=App.css.map */

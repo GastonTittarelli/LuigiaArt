@@ -1,0 +1,94 @@
+@import "../../../scss/styles/utilities/variables.scss";
+
+@media (prefers-reduced-motion: no-preference) {
+    .container{
+        min-height: 140vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+
+        h2{
+            width: 90%;
+            text-align: center;
+            font-size: 2rem;
+            font-family: $letraSub;
+        }
+
+        .pinturas, .creacion, .restauracion{
+        
+            height: 320px;
+            width: 100%;
+            background-color: rgb(0, 0, 0, .1);
+            overflow: hidden;
+            padding: 60px 0;
+            white-space: nowrap;
+            position: relative;
+            display: flex;
+            align-items: center;
+    
+            &::before, &::after{
+                position: absolute;
+                top: 0;
+                width: 300px;
+                height: 100%;
+                content: "";
+                z-index: 2;
+            }
+    
+            &::before{
+                left: 0;
+                background: linear-gradient(to left, rgb(255, 255, 255, 0), white );
+            }
+    
+            &::after{
+                right: 0;
+                background: linear-gradient(to right, rgb(255, 255, 255, 0), white );
+            }
+    
+            &:hover .imagenesSide{
+                animation-play-state: paused;
+            }
+    
+            .imagenesSide{
+                display: inline-block;
+                animation: 450s slide infinite linear;
+    
+                @keyframes slide {
+                    from{
+                        transform: translateX(0);
+                    }
+                    to{
+                        transform: translateX(-100%);
+                    }
+                }
+    
+                .imagenes {
+                    border-radius: 5px;
+                    width: auto;
+                    height: 250px;
+                    margin: 0 40px;
+                }
+            }
+        
+        }
+        
+        .creacion{
+            .imagenesSide{
+                animation: 105s slide2 infinite linear;
+
+                @keyframes slide2 {
+                    from{
+                        transform: translateX(-70%);
+                    }
+                    to{
+                        transform: translateX(30%);
+                    }
+                }
+        }
+        }
+    
+}
+}

@@ -1,0 +1,20 @@
+@import "https://fonts.googleapis.com/css2?family=Kalam&display=swap";
+.text {
+  background-color: lavender;
+  width: 40%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.text .titulo {
+  font-family: "Kalam", cursive;
+  font-size: 2rem;
+  padding-left: 8px;
+}
+.text .descripcion {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2rem;
+  padding: 0 8px 0px 8px;
+}/*# sourceMappingURL=carrouselText.module.css.map */

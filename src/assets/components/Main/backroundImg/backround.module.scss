@@ -1,0 +1,93 @@
+.container{
+    width: 100%;
+    height: 100%;
+    .backroundImg{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../../../../../img/f4.jpg);
+        background-size: 100%;
+        background-position: center;
+        transform-origin: bottom;
+        object-fit: cover;
+        // scale: 1;
+        clip-path: inset(0 0 0 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+        animation: background-imagen2 linear forwards;
+        animation-timeline: view();
+        animation-range: exit;
+
+            @keyframes background-imagen2{
+            
+            
+
+            90%, 100% {background-size: 160%; ;}
+        }
+
+        &::before {
+            content: "";
+            position: absolute; 
+            width: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+
+            animation: background-imagen linear forwards;
+            animation-timeline: view();
+
+            @keyframes background-imagen{
+                65% {background-color: rgba(0, 0, 0, 0.4)}
+
+                // 80% {background-color: rgba(0, 0, 0, 0.4)}
+                100% {background-color: rgba(0, 0, 0, 1)}
+            }
+
+        }
+        .textHeader{
+            width: 80%;
+            height: 50%;
+            border-radius: 6px;
+            background-color: rgb(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            z-index: 222;
+            animation: reverseSize linear forwards;
+            animation-timeline: view();
+            // animation-range: exit;
+
+            @keyframes reverseSize{
+            
+            0% {scale: 1}
+
+            100% {scale: .6; }
+        }
+            
+            h1 {
+                font-size: 4.5em; /* Tamaño del texto del título */
+                margin-bottom: 10px;
+                font-family: Arial, sans-serif;
+            }
+    
+            h2 {
+                font-size: 2.5em; /* Tamaño del texto del subtítulo */
+                margin-bottom: 20px;
+                font-family: Arial, sans-serif;
+            }
+    
+            p {
+                font-size: 1.5em; /* Tamaño del texto del párrafo */
+                font-family: Arial, sans-serif;
+            }
+        }
+    }
+}
