@@ -1,0 +1,39 @@
+@charset "UTF-8";
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 6rem 0;
+  background-color: rgb(243, 242, 242);
+  position: relative;
+}
+.container .text {
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.container .text h2 {
+  font-size: 3rem;
+}
+.container .fotoContainer {
+  position: relative;
+  width: 500px;
+}
+.container .fotoContainer .foto {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.container .fotoContainer::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 500px;
+  height: 670px;
+  border: solid 6px rgb(151, 151, 151);
+  z-index: 2; /* Asegura que el cuadrado esté delante de la imagen */
+}/*# sourceMappingURL=presentacion1.module.css.map */

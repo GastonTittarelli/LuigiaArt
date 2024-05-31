@@ -1,13 +1,13 @@
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-// import styles from "./imagenList.module.scss"
+import styles from "./imagenList.module.scss"
 
 export default function WovenImageList() {
     return (
         <ImageList  sx={{ width: 1000, height: 850 }} variant="woven" cols={3} gap={8}>
         {itemData.map((item) => (
             <ImageListItem key={item.img}>
-            <img
+            <img className={styles.foto}
                 srcSet={`${item.img}?w=161&fit=crop&auto=format&dpr=2 2x`}
                 src={`${item.img}?w=161&fit=crop&auto=format`}
                 alt={item.title}
@@ -18,7 +18,7 @@ export default function WovenImageList() {
         </ImageList>
     );
 }
-
+//pruebas
 const itemData = [
     {
         img: 'https://firebasestorage.googleapis.com/v0/b/products-86c52.appspot.com/o/pinturas%2F20240330_151424p.jpg?alt=media&token=a8289a5f-54c5-474d-9256-b8fd24431d0b',

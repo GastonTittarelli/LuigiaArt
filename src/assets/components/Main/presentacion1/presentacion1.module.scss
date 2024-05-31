@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 6rem 0;
+    background-color: rgb(243, 242, 242);
+    position: relative;
+    
+
+    .text {
+        width: 900px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    .fotoContainer {
+        position: relative;
+        width: 500px;
+
+        .foto {
+            width: 100%;
+            display: block;
+            position: relative;
+            z-index: 1;
+
+            
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 500px;
+            height: 670px;
+            border: solid 6px rgb(151, 151, 151);
+            z-index: 2; /* Asegura que el cuadrado esté delante de la imagen */
+        }
+    }
+}
+    
