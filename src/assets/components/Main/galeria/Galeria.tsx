@@ -75,7 +75,7 @@ const Galeria = () => {
             <div className={styles.contenedorImgs}>
                 {items.map((item) => (
                     <div key={item.id} className={styles.itemContainer}>
-                        <img className={styles.imagenes} src={item.img1} alt={item.titulo} />
+                        <img className={styles.imagenes} src={item.optimizada} alt={item.titulo} />
                         <Link to={`/${item.id}`}>
                             <h3>{item.titulo}</h3>
                         </Link>

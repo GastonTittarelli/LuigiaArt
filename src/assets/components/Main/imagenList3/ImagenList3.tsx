@@ -45,7 +45,7 @@ export const ItemsByCategory = () => {
                 <section className= {styles.imagenesSide}>
                 {itemsPintura.map((item) => (
                     <Link to = {`${item.id}`} key={item.id}>
-                        <img className={styles.imagenes}  src={item.img1} alt={item.titulo} />
+                        <img className={styles.imagenes} loading="lazy" src={item.optimizada} alt={item.titulo} />
                     </Link>
                     
                 ))}
@@ -56,7 +56,7 @@ export const ItemsByCategory = () => {
                 {itemsPintura.map((item) => (
                     
                     <Link to = {`${item.id}`} key={item.id}>
-                        <img className={styles.imagenes}  src={item.img1} alt={item.titulo} />
+                        <img className={styles.imagenes} loading="lazy" src={item.optimizada} alt={item.titulo} />
                     </Link>
                     
                 ))}
@@ -70,7 +70,7 @@ export const ItemsByCategory = () => {
                 {itemsCreacion.map((item) => (
 
                     <Link to = {`${item.id}`} key={item.id}>
-                        <img className={styles.imagenes}  src={item.img1} alt={item.titulo} />
+                        <img className={styles.imagenes} loading="lazy" src={item.optimizada} alt={item.titulo} />
                     </Link>
                 ))}
                 </section>
@@ -79,7 +79,7 @@ export const ItemsByCategory = () => {
                 {itemsCreacion.map((item) => (
                     
                     <Link to = {`${item.id}`} key={item.id}>
-                        <img className={styles.imagenes}  src={item.img1} alt={item.titulo} />
+                        <img className={styles.imagenes} loading="lazy" src={item.optimizada} alt={item.titulo} />
                     </Link>
                     
                 ))}
@@ -91,7 +91,7 @@ export const ItemsByCategory = () => {
                 {itemsRestauracion.map((item) => (
                     
                     <Link to = {`${item.id}`}  key={item.id}>
-                        <img className={styles.imagenes} src={item.img1} alt={item.titulo} />
+                        <img className={styles.imagenes} loading="lazy" src={item.optimizada} alt={item.titulo} />
                     </Link>
                 ))}
                 </section>
@@ -100,7 +100,7 @@ export const ItemsByCategory = () => {
                 {itemsRestauracion.map((item) => (
                     
                     <Link to = {`${item.id}`} key={item.id}>
-                        <img className={styles.imagenes}  src={item.img1} alt={item.titulo} />
+                        <img className={styles.imagenes} loading="lazy"  src={item.optimizada} alt={item.titulo} />
                     </Link>
                     
                 ))}

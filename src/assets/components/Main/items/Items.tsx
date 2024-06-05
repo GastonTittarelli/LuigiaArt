@@ -11,7 +11,8 @@ export interface Item {
     img2: string;
     img3: string;
     img4: string;
-    precio: number
+    optimizada: string;
+    precio: number;
     subCategoria:string;
     subCategoria2:string;
 }

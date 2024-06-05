@@ -27,7 +27,7 @@ const Imagen5List = () => {
 
                 {items.map((item) => (
                     <Link to = {`${item.id}`} key={item.id}>
-                        <img className={styles.imagenes} src={item.subCategoria} alt={item.titulo} />
+                        <img className={styles.imagenes} loading="lazy" src={item.subCategoria} alt={item.titulo} />
                     </Link>
                 ))}
             </div>
