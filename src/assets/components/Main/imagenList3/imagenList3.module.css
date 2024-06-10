@@ -46,8 +46,13 @@
     animation-play-state: paused;
   }
   .container .pinturas .imagenesSide, .container .creacion .imagenesSide, .container .restauracion .imagenesSide {
-    display: inline-block;
-    animation: 450s slide infinite linear;
+    display: flex;
+    animation: 140s slide infinite linear;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .container .pinturas .imagenesSide.loaded, .container .creacion .imagenesSide.loaded, .container .restauracion .imagenesSide.loaded {
+    opacity: 1;
   }
   @keyframes slide {
     from {
@@ -57,21 +62,32 @@
       transform: translateX(-100%);
     }
   }
-  .container .pinturas .imagenesSide .imagenes, .container .creacion .imagenesSide .imagenes, .container .restauracion .imagenesSide .imagenes {
+  .container .pinturas .imagenesSide .contenedorImg, .container .creacion .imagenesSide .contenedorImg, .container .restauracion .imagenesSide .contenedorImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    overflow: hidden;
+    height: 250px;
+    margin: 0 40px;
+    border-radius: 5px;
+  }
+  .container .pinturas .imagenesSide .contenedorImg .imagenes, .container .creacion .imagenesSide .contenedorImg .imagenes, .container .restauracion .imagenesSide .contenedorImg .imagenes {
     border-radius: 5px;
     width: auto;
     height: 250px;
-    margin: 0 40px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .container .creacion .imagenesSide {
-    animation: 105s slide2 infinite linear;
+    animation: 140s slide2 infinite linear;
   }
   @keyframes slide2 {
     from {
-      transform: translateX(-70%);
+      transform: translateX(-100%);
     }
     to {
-      transform: translateX(30%);
+      transform: translateX(0%);
     }
   }
 }/*# sourceMappingURL=imagenList3.module.css.map */
