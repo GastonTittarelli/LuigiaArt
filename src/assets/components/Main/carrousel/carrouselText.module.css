@@ -1,6 +1,6 @@
 @import "https://fonts.googleapis.com/css2?family=Kalam&display=swap";
 .text {
-  background-color: lavender;
+  background-color: rgb(175, 175, 175);
   width: 40%;
   height: 70vh;
   display: flex;

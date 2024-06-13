@@ -3,8 +3,10 @@
     min-height: 90vh;
     margin-top: 3rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: rgb(214, 214, 214);
+    
 }
 .containerCarrousel{
     width: 40vw;

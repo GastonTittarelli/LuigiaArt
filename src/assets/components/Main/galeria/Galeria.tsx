@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { getItems, Item } from '../items/Items';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 
+
 const Galeria = () => {
     const [items, setItems] = useState<Item[]>([]);
     const { category } = useParams<{ category?: string }>();
@@ -45,8 +46,17 @@ const Galeria = () => {
         });
     };
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Esto asegura que el desplazamiento sea suave
+        });
+    };
+
+
     return (
         <div className={styles.contenedor}>
+
             <div className={styles.filterButtons}>
                 <ul className={styles.navList}>
                     <li data-category="all" className={!category ? styles.active : ''}>
@@ -70,6 +80,11 @@ const Galeria = () => {
                         </Link>
                     </li>
                 </ul>
+                
+                
+                <img src="../../../img/flechasw.png" alt="Scroll to top" onClick={scrollToTop} 
+                    className={styles.flecha} />
+                
             </div>
 
             <div className={styles.contenedorImgs}>

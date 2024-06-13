@@ -51,12 +51,15 @@ export default function Appli() {
     const handleMouseMove = (index, e) => {
         const zoomRef = zoomRefs.current[index];
         if (zoomRef) {
-            const { left, top, width, height } = zoomRef.getBoundingClientRect();
-            const x = ((e.pageX - left) / width) * 100;
-            const y = ((e.pageY - top) / height) * 100;
+            const rect = zoomRef.getBoundingClientRect();
+            const containerRect = zoomRef.closest('.mySwiper2').getBoundingClientRect(); // Obtener el contenedor del carrusel
+    
+            const x = ((e.clientX - rect.left) / rect.width) * 100; // Calcular coordenada X relativa al contenedor del carrusel
+            const y = ((e.clientY - rect.top) / rect.height) * 100; // Calcular coordenada Y relativa al contenedor del carrusel
+    
             setZoomStyle({
                 transformOrigin: `${x}% ${y}%`,
-                transform: 'scale(2.5)' // Ajusta el nivel de zoom según tus necesidades
+                transform: 'scale(2.5)' // Ajustar el nivel de zoom según sea necesario
             });
         }
     };

@@ -3,15 +3,16 @@
 
 .contenedor {
     min-height: auto;
-    margin-top: 2rem;
+    // margin-top: 2rem;
     width: 100%;
     display: grid;
     grid-template-columns: 250px 1fr;
     gap: 20px;
+    // background-color: white;
 
     .filterButtons {
         position: sticky;
-        max-height: 100svh;
+        min-height: 100vh;
         background-color: #4e5d63;
 
         .navList{
@@ -66,18 +67,27 @@
                 
             }
         }
+        .flecha{
+            cursor: pointer;
+            position: absolute;
+            width: 30px;
+            bottom: 10px;
+            left: 110px;
+            animation: moveUpDown 2s ease-in-out infinite;
+
+            @keyframes moveUpDown {
+                0% {
+                    transform: translateY(0); 
+                }
+                50% {
+                    transform: translateY(2px); 
+                }
+                100% {
+                    transform: translateY(0); 
+                }
+            }
+        }
     }
-
-
-
-
-
-
-
-
-
-
-
 
     .contenedorImgs {
         width: 100%;
@@ -85,9 +95,9 @@
         columns: 4;
         padding: 15px 30px;
         column-gap: 30px;
-        background-color: #eaeaea;
+        // background-color: #eaeaea;
         border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
         .itemContainer {
             margin-bottom: 32px;

@@ -11,9 +11,7 @@ const Imagen5List = () => {
         const itemsData: Item[] = await getItems();
         const filteredItems = itemsData.filter(item => item.subCategoria);
 
-        const shuffledItems = filteredItems.sort(() => Math.random() - 0.5);
-
-            setItems(shuffledItems);
+        setItems(filteredItems);
         };
 
         fetchItems();
