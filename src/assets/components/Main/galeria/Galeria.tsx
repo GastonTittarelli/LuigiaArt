@@ -17,10 +17,11 @@ const Galeria = () => {
         };
 
         fetchItems();
+        window.scrollTo(0, 0);
     }, [category]);
 
     const updateTheDOMSomehow = (newCategory: string | null) => {
-        // Actualiza el DOM como sea necesario para reflejar la nueva categoría
+        // Actualiza el DOM para la nueva categoría
         const activeElement = document.querySelector(`.${styles.active}`);
         if (activeElement) {
             activeElement.classList.remove(styles.active);
@@ -46,6 +47,7 @@ const Galeria = () => {
         });
     };
 
+    
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
