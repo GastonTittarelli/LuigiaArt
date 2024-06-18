@@ -8,6 +8,7 @@ import Galeria from './assets/components/Main/galeria/Galeria'
 import HomePage from './assets/components/views/HomePage'
 import Footer from './assets/components/Footer/Footer'
 import AcercaDe from './assets/components/Main/acercaDe/AcercaDe'
+import ExpoVirtual from './assets/components/Main/expoVirtual/ExpoVirtual'
 
 
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/:id" element={<CarrouselContainer/>} />
         <Route path="/about" element={<AcercaDe/>} />
         <Route path="/manual" element={<Imagen5List/>} />
+        <Route path="/virtual" element={<ExpoVirtual/>} />
         <Route path="*" element={<h2>¡Oops! Page not found!</h2>} />
       </Routes>
       

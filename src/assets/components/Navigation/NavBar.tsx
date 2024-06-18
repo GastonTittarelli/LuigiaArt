@@ -17,7 +17,7 @@ const Nav = () => {
                     <li>Galería</li>
                 </Link>
 
-                <Link  to="/Virtual">
+                <Link  to="/virtual">
                     <li>Exposición virtual</li>
                 </Link>
             </ul>

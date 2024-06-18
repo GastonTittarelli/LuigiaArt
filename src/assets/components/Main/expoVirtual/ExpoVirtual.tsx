@@ -1,22 +1,30 @@
+import styles from "./expoVirtual.module.scss"
+import { useState } from 'react';
+
 const ExpoVirtual = () => {
+    const [iframeLoaded, setIframeLoaded] = useState(false);
+
     return (
-        <div>
-            <h3>¡Bienvenidos a mi Mundo Creativo! Aquí les Muestro mi Interpretación a través de mis obras.
-            </h3>
+        <div className={styles.container}>
+            {!iframeLoaded && (
+                <div className={styles.animacion}>
+                    <img className={styles.foto} src="../../../img/concepto.png" alt="Descripción de la imagen" />
+                
+                    <div className={styles.sombra}></div>
+                </div>
+            )}
+            <iframe width="1280"
+                    height="720" 
+                    src="https://www.artsteps.com/embed/6650ce0c32b58f6c734420ed/1280/720" 
+                    frameBorder="0" 
+                    allowFullScreen 
+                    onLoad={() => setIframeLoaded(true)}
+                    style={{ display: iframeLoaded ? 'block' : 'none' }}>
+            </iframe>
 
-            <h3>
-            Descubre la Belleza en cada Pincelada.
-            </h3>
-
-            <h3>
-            Donde cada Obra cuenta una Historia
-            </h3>
-
-            <h3> ¡Bienvenidos a mi Espacio Artístico! Aquí podrás explorar las Emociones Capturadas en mis Creaciones.
-            
-            </h3>
         </div>
     )
 }
 
 export default ExpoVirtual
+
