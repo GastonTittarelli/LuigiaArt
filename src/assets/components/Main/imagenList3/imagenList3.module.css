@@ -25,6 +25,24 @@
     position: relative;
     display: flex;
     align-items: center;
+    animation: pulse 3.2s ease-in;
+  }
+  @keyframes pulse {
+    0% {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    25% {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    50% {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    75% {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    100% {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
   }
   .container .pinturas::before, .container .pinturas::after, .container .creacion::before, .container .creacion::after, .container .restauracion::before, .container .restauracion::after {
     position: absolute;

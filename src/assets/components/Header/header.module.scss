@@ -5,7 +5,7 @@ header{
         height: 100px;
         top: 0;
         left: 0;
-        // background-color: rgb(83, 83, 83 );
+        background-color: rgb(83, 83, 83 );
         display: grid;
         grid-template-columns: 1fr 5fr;
         z-index: 114;
@@ -15,7 +15,7 @@ header{
 
         @keyframes nav-scroll{
             to{
-                // background-color: black;
+                background-color: black;
                 // backdrop-filter: blur(5px);
                 height: 60px;
             }
@@ -39,6 +39,7 @@ header{
                 to{
                     background-color: black;
                     height: 60px;
+                    font-size: 2.5rem;
                 }
             }
 
@@ -46,7 +47,7 @@ header{
                 width: auto;
                 height: 100px;
                 font-family: $letraSub;
-                // background-color: rgba(34, 34, 34, .95);
+                background-color: rgba(34, 34, 34, .95);
                 color: rgb(245, 196, 239);
                 font-size: 4rem;
                 display: flex;
@@ -73,14 +74,7 @@ header{
                     color: rgb(245, 196, 239); 
                 }
             }
-            @keyframes size-font{
-                
-                to{
-                    background-color: black;
-                    height: 60px;
-                    font-size: 2.5rem;
-                }
-            }
+            
         }
 }
 

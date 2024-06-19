@@ -1,8 +1,12 @@
 import styles from "./expoVirtual.module.scss"
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const ExpoVirtual = () => {
     const [iframeLoaded, setIframeLoaded] = useState(false);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className={styles.container}>

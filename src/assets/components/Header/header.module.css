@@ -4,6 +4,7 @@ header {
   height: 100px;
   top: 0;
   left: 0;
+  background-color: rgb(83, 83, 83);
   display: grid;
   grid-template-columns: 1fr 5fr;
   z-index: 114;
@@ -13,6 +14,7 @@ header {
 }
 @keyframes nav-scroll {
   to {
+    background-color: black;
     height: 60px;
   }
 }
@@ -32,12 +34,14 @@ header .logoContainer {
   to {
     background-color: black;
     height: 60px;
+    font-size: 2.5rem;
   }
 }
 header .logoContainer h1 {
   width: auto;
   height: 100px;
   font-family: "Kalam", cursive;
+  background-color: rgba(34, 34, 34, 0.95);
   color: rgb(245, 196, 239);
   font-size: 4rem;
   display: flex;
@@ -56,13 +60,6 @@ header .logoContainer h1:hover {
 }
 header .logoContainer h1:hover .firstLetter {
   color: rgb(245, 196, 239);
-}
-@keyframes size-font {
-  to {
-    background-color: black;
-    height: 60px;
-    font-size: 2.5rem;
-  }
 }
 
 .fixed {
