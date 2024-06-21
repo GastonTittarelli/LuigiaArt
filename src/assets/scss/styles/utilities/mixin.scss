@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+//Estilos fuente texto
+$fontText: "Roboto", sans-serif;
+$fontWeightText: 400;
+$fontStyleText: normal;
+
+@mixin textFont {
+    font-family: $fontText;
+    font-weight: $fontWeightText;
+    font-style: $fontStyleText;
+}
+
+//Estilos fuente Nav, Header y Footer
+$fontTitle: "Oswald", sans-serif;
+$fontOpticalS: auto;
+$fontWeight: 500;
+$fontStyle: normal;
+
+@mixin titleFont {
+    font-family: $fontTitle;
+    font-optical-sizing: $fontOpticalS;
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+}
+

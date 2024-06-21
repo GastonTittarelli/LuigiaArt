@@ -1,4 +1,6 @@
 @import "https://fonts.googleapis.com/css2?family=Kalam&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @media (prefers-reduced-motion: no-preference) {
   .contenedor {
     width: 100%;
@@ -9,10 +11,12 @@
     min-height: 80vh;
   }
   .contenedor h2 {
+    font-size: 2rem;
     width: 100vw;
     font-family: "Kalam", cursive;
     text-align: center;
     padding-top: 1rem;
+    color: rgb(117, 117, 117);
   }
   .contenedor .contenedorImgs {
     width: 60vw;

@@ -56,7 +56,7 @@ export const ItemsByCategory = () => {
     return (
         <div className={styles.container}>
 
-            <h2>Lo destacado</h2>
+            <h2>Principales Destacados</h2>
 
             <div className={styles.pinturas}>
                 <section className= {`${styles.imagenesSide} ${imagesLoaded ? styles.loaded : ''}`}>

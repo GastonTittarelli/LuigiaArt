@@ -1,4 +1,5 @@
 @import "../../../scss/styles/utilities/variables.scss";
+@import "../../../scss/styles/utilities/mixin.scss";
 
 @media (prefers-reduced-motion: no-preference) {
     .container {
@@ -11,9 +12,12 @@
         margin-top: 3rem;
     
         h2 {
+            // @include titleFont;
             width: 90%;
             text-align: center;
-            font-size: 2rem;
+            font-size: 2.3rem;
+            // font-weight: 600;
+            color: rgb(117, 117, 117);
             font-family: $letraSub;
         }
     

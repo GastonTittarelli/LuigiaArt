@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Kalam&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 nav {
   width: 100%;
   height: 100px;
@@ -15,7 +16,6 @@ nav {
   }
 }
 nav ul {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
   height: 100px;
   display: flex;
@@ -26,8 +26,11 @@ nav ul {
   animation-range: 0 400px;
 }
 nav ul li {
-  font-family: "Kalam", cursive;
-  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-weight: 600;
   font-size: 1.4rem;
   height: 100%;
   color: rgb(255, 255, 255);

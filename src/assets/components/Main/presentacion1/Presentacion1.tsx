@@ -6,8 +6,9 @@ const Presentacion1 = () => {
             <div className={styles.text}>
                 <h2>Soy Marilú Borda</h2>
 
-                <h3>Description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, fugiat natus officiis recusandae aliquid quia animi consequuntur at repellat inventore voluptate, blanditiis vel! Eos eum molestias beatae dolore nostrum rerum.
-                Reiciendis porro rem error dicta nostrum illo corrupti, ratione ipsam doloremque assumenda, possimus vero in beatae? Esse, id sequi consequatur accusantium dicta iusto quis est modi quo dolores eaque cumque.</h3>
+                <h3>Description: Mi espacio de arte, que tanta felicidad me da, donde puedo ser libre, donde me dejo volar y se abre un mundo de posibilidades, donde de a poco pude  atreverme, a explorar, experimentar y plasmar... un mundo desconocido para mí pero muy admirado, desde siempre... otra de mis grandes pasiones junto a la MÚSICA que es mi vida. 
+                    
+                Este espacio lleva mi nombre y el de mis ancestros italianos, hermosas mujeres, que fueron luz, abrieron mi camino y permitieron q hoy sea yo.</h3>
                     
             </div>
 

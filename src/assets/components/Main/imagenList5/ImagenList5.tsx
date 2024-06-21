@@ -20,6 +20,7 @@ const Imagen5List = () => {
     return (
         <div className={styles.contenedor}>
             <h2>Estilo y Creatividad: Hogares Vestidos de Arte</h2>
+            
 
             <div className={styles.contenedorImgs}>
 

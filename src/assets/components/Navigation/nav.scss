@@ -1,4 +1,5 @@
 @import "../../scss/styles/utilities/variables.scss";
+@import "../../scss/styles/utilities/mixin.scss";
 
 
 nav{
@@ -21,7 +22,7 @@ nav{
         }
 
     ul{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
         width: 100%;
         height: 100px;
         display: flex;
@@ -33,8 +34,10 @@ nav{
 
             
         li{
-            font-family: $letraSub;
-            font-weight: bold;
+            @include titleFont;
+            // font-family: $letraSub;
+            // font-weight: bold;
+            font-weight: 600;
             font-size: 1.4rem;
             height: 100%;
             color: rgb(255, 255, 255);

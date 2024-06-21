@@ -1,3 +1,6 @@
+@import "../../../scss/styles/utilities/mixin.scss";
+@import "../../../scss/styles/utilities/variables.scss";
+
 .container {
     width: 100%;
     display: flex;
@@ -15,7 +18,14 @@
         flex-direction: column;
 
         h2 {
+            @include titleFont;
+            // font-family: $letraSub;
             font-size: 3rem;
+        }
+
+        h3{
+            @include textFont;
+            font-size: 1.3rem;
         }
     }
 

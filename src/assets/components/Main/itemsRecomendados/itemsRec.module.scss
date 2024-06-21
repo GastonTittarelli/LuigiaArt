@@ -1,3 +1,6 @@
+@import "../../../scss/styles/utilities/mixin.scss";
+@import "../../../scss/styles/utilities/variables.scss";
+
 .sItems {
     margin-top: 20px;
     width: 80%;
@@ -7,7 +10,8 @@
     padding: 5px;
     
     h2 {
-        font-size: 1.5em;
+        font-family: $letraSub;
+        font-size: 1.8em;
         margin-bottom: 10px;
         width: 100%;
         text-align: center;
@@ -57,9 +61,10 @@
     }
 
     .itemTitle {
+        @include textFont;
         font-size: 1.2em;
         padding-left: 5px;
-        font-weight: bold;
+        font-weight: 500;
         width: 100%;
         text-align: center;
         box-sizing: border-box;

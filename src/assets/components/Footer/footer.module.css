@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 .container {
   height: 300px;
   width: 100%;
@@ -51,10 +52,14 @@
   gap: 1rem;
 }
 .container .contenido .redes h4 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   color: white;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   padding-right: 0.5rem;
-  font-weight: 100;
+  font-weight: 400;
 }
 .container .contenido .redes a {
   height: 35px;
@@ -76,6 +81,11 @@
   justify-content: center;
 }
 .container .copyright p {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-weight: 300;
   color: white;
   padding-right: 0.5rem;
   font-size: 1.2rem;
