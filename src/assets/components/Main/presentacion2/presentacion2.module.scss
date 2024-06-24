@@ -6,35 +6,94 @@
     display: grid;
     gap: 4rem;
     margin: 6rem 0 6rem 0;
-    
+    opacity: 0;
+    animation: aparecer 1.5s forwards; 
+
+    @keyframes aparecer {
+        to {
+            opacity: 1; 
+        }
+    }
 
     .card{
         width: 100%;
-        display: flex;
+        display: grid;
         align-items: center;
-        justify-content: space-around;
         background-color: rgb(243, 242, 242);
         // gap: 2rem;
+
+        
         .foto{
-            width: 500px;
+            width: 400px;
         }
 
         h4{
             @include textFont;
-            width: 1000px;
+            width: 100%;
             font-size: 1.5rem;
-            // font-family: cursive;
             font-style: italic;
-            padding-left: 10px;
+            padding: 15px;
             font-weight: 500;
+            // direction: ltr;
+            line-height: 1.6;
+            animation: appear linear forwards;
+            animation-timeline: view();
+
+            @keyframes appear{
+            
+                0% {
+                    opacity: 0;
+                }
+        
+                22% {
+                    opacity: 1; 
+                }
+        }
         }
     }
-    // .left{
-    //     background-color: lightcoral;
-    // }
+    .left{
+        grid-template-columns: 400px 1fr;
+        border-radius:   15px 0 0 15px ;
+        transform-origin: left;
+        animation: Size linear forwards;
+        animation-timeline: view();
+        
+
+            @keyframes Size{
+            
+                0% {
+                    transform: scaleX(0.9);
+                }
+        
+                20% {
+                    transform: scaleX(1); 
+                }
+        }
+        .foto{
+            border-radius:   15px 0 0 15px ;
+        }
+    }
 
     .right{
-        flex-direction: row-reverse;
-        // background-color: lightgreen;
+        grid-template-columns: 1fr  400px;
+        border-radius:  0 15px 15px 0;
+        transform-origin: right;
+        animation: SizeR linear forwards;
+        animation-timeline: view();
+        position: relative;
+
+        @keyframes SizeR {
+            0% {
+                transform: scaleX(0.9);
+            }
+    
+            20% {
+                transform: scaleX(1); 
+            }
+        }
+
+        .foto{
+            border-radius:  0 15px 15px 0;
+        }
     }
 }

@@ -3,16 +3,24 @@
 
 .container {
     width: 100%;
-    display: flex;
+    display: grid;
     justify-content: center;
-    gap: 3rem;
-    margin: 6rem 0;
+    // gap: 3rem;
+    margin: 1.5rem 0;
+    grid-template-columns: 1fr 550px;
     background-color: rgb(243, 242, 242);
-    position: relative;
-    
+    min-height: 667px;
+    opacity: 0;
+    animation: aparecer 1.5s forwards; 
+
+    @keyframes aparecer {
+        to {
+            opacity: 1; 
+        }
+    }
 
     .text {
-        width: 900px;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -20,26 +28,54 @@
         h2 {
             @include titleFont;
             // font-family: $letraSub;
-            font-size: 3rem;
+            font-size: 4.5rem;
+            font-weight: 350;
+            text-align: center;
         }
+        .pContainer{
+            min-height: 40%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: center;
+            
 
-        h3{
-            @include textFont;
-            font-size: 1.3rem;
+            p{
+                @include textFont;
+                font-size: 1.4rem;
+                font-style: italic;
+                padding: 0 10px 0 15px;
+                line-height: 1.6;
+            }
         }
     }
 
     .fotoContainer {
         position: relative;
         width: 500px;
+        display: inline-block;
+        // cursor: pointer;
 
+        &:hover .foto{
+            opacity: 0.9;
+            transition-delay: 0s;
+        }
+
+        &:hover .tooltiptext{
+            visibility: visible;
+            opacity: 1;
+            transition-delay: 0s;
+            // transition: opacity 1s ease;
+        }
+        
         .foto {
             width: 100%;
             display: block;
             position: relative;
             z-index: 1;
-
-            
+            opacity: 1;
+            transition: opacity 0.4s ease, visibility 0s linear 0.6s;
         }
         &::before {
             content: "";
@@ -49,8 +85,31 @@
             width: 500px;
             height: 670px;
             border: solid 6px rgb(151, 151, 151);
-            z-index: 2; /* Asegura que el cuadrado esté delante de la imagen */
+            z-index: 2; 
         }
+
+        .tooltiptext{
+            @include titleFont;
+            visibility: hidden;
+            width: 160px;
+            background-color: rgba(151, 151, 151, 0.8);
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 50%; /* Posiciona el tooltip arriba del texto */
+            left: 63%;
+            margin-left: -60px; /* Usa la mitad del ancho para centrar */
+            opacity: 0;
+            transition: opacity 0.4s ease-out, visibility 0s linear 0.6s;
+            font-size: 1.4rem;
+            font-weight: 240;
+            padding: 5px;
+            font-style: italic;
+        }
+
     }
 }
     

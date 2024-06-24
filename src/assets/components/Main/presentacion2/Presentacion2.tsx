@@ -9,8 +9,8 @@ const AcercaDe = () => {
             </div>
 
             <div className={`${styles.card} ${styles.right}`}>
-                <img className={styles.foto} src="../../../img/2.jpg" alt="" />
                 <h4>Inspiración y creatividad en su máxima expresión: Un vistazo íntimo al proceso creativo detrás de cada pintura, donde la imaginación cobra vida y cada detalle cuenta una historia única y personal.</h4>
+                <img className={styles.foto} src="../../../img/2.jpg" alt="" />
             </div>
 
             <div className={`${styles.card} ${styles.left}`}>
@@ -19,8 +19,8 @@ const AcercaDe = () => {
             </div>
 
             <div className={`${styles.card} ${styles.right}`}>
-                <img className={styles.foto} src="../../../img/3.jpg" alt="" />
                 <h4>De la visión a la realidad: Transformando ideas en obras tangibles, con dedicación y talento. En esta imagen, me ves dando los toques finales, convirtiendo sueños en realidades que resuenan con quienes las contemplan.</h4>
+                <img className={styles.foto} src="../../../img/3.jpg" alt="" />
             </div>
 
             <div className={`${styles.card} ${styles.left}`}>

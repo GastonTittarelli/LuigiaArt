@@ -6,27 +6,78 @@
   display: grid;
   gap: 4rem;
   margin: 6rem 0 6rem 0;
+  opacity: 0;
+  animation: aparecer 1.5s forwards;
+}
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
 }
 .container .card {
   width: 100%;
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-around;
   background-color: rgb(243, 242, 242);
 }
 .container .card .foto {
-  width: 500px;
+  width: 400px;
 }
 .container .card h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  width: 1000px;
+  width: 100%;
   font-size: 1.5rem;
   font-style: italic;
-  padding-left: 10px;
+  padding: 15px;
   font-weight: 500;
+  line-height: 1.6;
+  animation: appear linear forwards;
+  animation-timeline: view();
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  22% {
+    opacity: 1;
+  }
+}
+.container .left {
+  grid-template-columns: 400px 1fr;
+  border-radius: 15px 0 0 15px;
+  transform-origin: left;
+  animation: Size linear forwards;
+  animation-timeline: view();
+}
+@keyframes Size {
+  0% {
+    transform: scaleX(0.9);
+  }
+  20% {
+    transform: scaleX(1);
+  }
+}
+.container .left .foto {
+  border-radius: 15px 0 0 15px;
 }
 .container .right {
-  flex-direction: row-reverse;
+  grid-template-columns: 1fr 400px;
+  border-radius: 0 15px 15px 0;
+  transform-origin: right;
+  animation: SizeR linear forwards;
+  animation-timeline: view();
+  position: relative;
+}
+@keyframes SizeR {
+  0% {
+    transform: scaleX(0.9);
+  }
+  20% {
+    transform: scaleX(1);
+  }
+}
+.container .right .foto {
+  border-radius: 0 15px 15px 0;
 }/*# sourceMappingURL=presentacion2.module.css.map */
