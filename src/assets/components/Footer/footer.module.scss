@@ -3,10 +3,11 @@
 .container{
     height: 300px;
     width: 100%;
-    background-color: rgb(104, 104, 104);
+    background-color: #667981;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    
     
     .contenido{
         display: flex;
@@ -77,9 +78,7 @@
                     width: auto;
                 }
     
-                .face{
-                    border-radius: 20%;
-                }
+                
             }
     
         }
@@ -87,7 +86,7 @@
 
 
     .copyright{
-        background-color: rgb(65, 65, 65);
+        background-color: #465358;
         height: 100%;
         
         display: flex;

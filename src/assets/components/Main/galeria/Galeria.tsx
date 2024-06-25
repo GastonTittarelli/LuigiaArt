@@ -1,19 +1,22 @@
 import styles from "./galeria.module.scss";
-import { useState, useEffect } from 'react';
+import { useState, useEffect} from 'react';
 import { getItems, Item } from '../items/Items';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 
-
 const Galeria = () => {
     const [items, setItems] = useState<Item[]>([]);
+    const [imagesLoaded, setImagesLoaded] = useState<boolean>(false);
     const { category } = useParams<{ category?: string }>();
     const navigate = useNavigate();
 
     useEffect(() => {
         const fetchItems = async () => {
+            setImagesLoaded(false); // Indicate that we are loading new images
             const itemsData: Item[] = await getItems();
             const filteredItems = itemsData.filter(item => !category || item.categoria === category);
+            await preloadImages(filteredItems.map(item => item.optimizada));
             setItems(filteredItems);
+            setImagesLoaded(true); // Indicate that images have been loaded
         };
 
         fetchItems();
@@ -21,7 +24,6 @@ const Galeria = () => {
     }, [category]);
 
     const updateTheDOMSomehow = (newCategory: string | null) => {
-        // Actualiza el DOM para la nueva categoría
         const activeElement = document.querySelector(`.${styles.active}`);
         if (activeElement) {
             activeElement.classList.remove(styles.active);
@@ -47,18 +49,28 @@ const Galeria = () => {
         });
     };
 
-    
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth' // Esto asegura que el desplazamiento sea suave
+            behavior: 'smooth'
         });
     };
 
+    const preloadImages = (srcArray: string[]) => {
+        const promises = srcArray.map((src) => {
+            return new Promise((resolve, reject) => {
+                const img = new Image();
+                img.src = src;
+                img.onload = resolve;
+                img.onerror = reject;
+            });
+        });
+
+        return Promise.all(promises);
+    };
 
     return (
         <div className={styles.contenedor}>
-
             <div className={styles.filterButtons}>
                 <ul className={styles.navList}>
                     <li data-category="all" className={!category ? styles.active : ''}>
@@ -82,25 +94,25 @@ const Galeria = () => {
                         </Link>
                     </li>
                 </ul>
-                
-                
                 <img src="../../../img/flechasw.png" alt="Scroll to top" onClick={scrollToTop} 
                     className={styles.flecha} />
-                
             </div>
 
-            <div className={styles.contenedorImgs}>
+            <div className={styles.contenedorImgs} style={{ opacity: imagesLoaded ? 1 : 0, transition: 'opacity 1s' }}>
                 {items.map((item) => (
                     <div key={item.id} className={styles.itemContainer}>
-                        <img className={styles.imagenes} src={item.optimizada} alt={item.titulo} />
+                        <img className={styles.imagenes} loading="lazy" src={item.optimizada} alt={item.titulo} />
                         <Link to={`/${item.id}`}>
                             <h3>{item.titulo}</h3>
                         </Link>
                     </div>
                 ))}
             </div>
+
+            {!imagesLoaded && <div className={styles.loading}>Cargando...</div>}
         </div>
     );
 };
 
 export default Galeria;
+

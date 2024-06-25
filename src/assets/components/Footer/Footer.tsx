@@ -5,11 +5,12 @@ const Footer = () => {
     return (
         <div className={styles.container}>
 
+            <div className={styles.gallColor}></div>
             <div className={styles.contenido}>
 
                 <div className={styles.foto}>
                         <Link to="/about">
-                            <img className={styles.defaultImg} src="../../../img/my2.png" alt="" />
+                            <img className={styles.defaultImg} src="../../../img/my3.png" alt="" />
                             <img className={styles.hoverImg} src="../../../img/my2hover.png" alt="" />
                         </Link>
                 </div>        
@@ -18,7 +19,7 @@ const Footer = () => {
                     <h4>¡Conecta conmigo en mis redes para más inspiración!</h4>
 
                     <a href="https://www.instagram.com/luigiaart/">
-                        <img src="../../../img/InstagramLogo1.png" alt="Instagram Logo" />
+                        <img src="../../../img/InstagramLogo2.png" alt="Instagram Logo" />
                     </a>
 
                     <a href="https://www.facebook.com/luigia.arts">

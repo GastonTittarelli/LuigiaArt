@@ -30,9 +30,9 @@
   width: 100%;
   font-size: 1.5rem;
   font-style: italic;
-  padding: 15px;
-  font-weight: 500;
-  line-height: 1.6;
+  padding: 15px 100px 15px 100px;
+  line-height: 2;
+  font-weight: 400;
   animation: appear linear forwards;
   animation-timeline: view();
 }
@@ -46,14 +46,14 @@
 }
 .container .left {
   grid-template-columns: 400px 1fr;
-  border-radius: 15px 0 0 15px;
+  border-radius: 15px 15px 15px 15px;
   transform-origin: left;
   animation: Size linear forwards;
   animation-timeline: view();
 }
 @keyframes Size {
   0% {
-    transform: scaleX(0.9);
+    transform: scaleX(0.95);
   }
   20% {
     transform: scaleX(1);
@@ -64,7 +64,7 @@
 }
 .container .right {
   grid-template-columns: 1fr 400px;
-  border-radius: 0 15px 15px 0;
+  border-radius: 15px 15px 15px 15px;
   transform-origin: right;
   animation: SizeR linear forwards;
   animation-timeline: view();
@@ -72,7 +72,7 @@
 }
 @keyframes SizeR {
   0% {
-    transform: scaleX(0.9);
+    transform: scaleX(0.95);
   }
   20% {
     transform: scaleX(1);
