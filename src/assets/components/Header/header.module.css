@@ -4,7 +4,6 @@ header {
   height: 100px;
   top: 0;
   left: 0;
-  background-color: rgb(83, 83, 83);
   display: grid;
   grid-template-columns: 1fr 5fr;
   z-index: 114;
@@ -14,14 +13,13 @@ header {
 }
 @keyframes nav-scroll {
   to {
-    background-color: black;
     height: 60px;
   }
 }
 header .logoContainer {
   width: 100%;
   height: 100px;
-  background-color: rgba(34, 34, 34, 0.95);
+  background-color: rgba(34, 34, 34, 0.6);
   z-index: 3123123123123;
   display: flex;
   padding-left: 1rem;
@@ -32,7 +30,7 @@ header .logoContainer {
 }
 @keyframes size-font {
   to {
-    background-color: black;
+    background-color: rgb(50, 60, 65);
     height: 60px;
     font-size: 2.5rem;
   }
@@ -41,15 +39,20 @@ header .logoContainer h1 {
   width: auto;
   height: 100px;
   font-family: "Kalam", cursive;
-  background-color: rgba(34, 34, 34, 0.95);
   color: rgb(245, 196, 239);
   font-size: 4rem;
   display: flex;
   margin: 0;
   transition: color 0.5s;
-  animation: size-font linear both;
+  animation: size-font2 linear both;
   animation-timeline: scroll(root);
   animation-range: 0 400px;
+}
+@keyframes size-font2 {
+  to {
+    height: 60px;
+    font-size: 2.5rem;
+  }
 }
 header .logoContainer h1 .firstLetter {
   color: rgb(255, 255, 255);
@@ -69,4 +72,5 @@ header .logoContainer h1:hover .firstLetter {
 
 .sticky {
   position: sticky;
+  background-color: rgb(83, 83, 83);
 }/*# sourceMappingURL=header.module.css.map */

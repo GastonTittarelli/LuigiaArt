@@ -1,11 +1,10 @@
 .container {
   width: 100%;
   min-height: 90vh;
-  margin-top: 3rem;
+  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: rgb(214, 214, 214);
 }
 
 .containerCarrousel {
@@ -13,6 +12,7 @@
   height: 70vh;
   position: relative;
   background: #eee;
+  border-radius: 0 6px 6px 0;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -21,13 +21,13 @@
 }
 
 .condicion1 {
-  min-height: 80vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
 }
 
 .condicion2 {
-  min-height: 80vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
 }/*# sourceMappingURL=carrouselContainer.module.css.map */

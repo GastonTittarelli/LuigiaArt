@@ -2,17 +2,17 @@
 @import "../../../scss/styles/utilities/variables.scss";
 
 .sItems {
-    margin-top: 20px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 5px;
-    
     h2 {
         font-family: $letraSub;
-        font-size: 1.8em;
-        margin-bottom: 10px;
+        font-size: 2em;
+        
         width: 100%;
         text-align: center;
     }
@@ -30,10 +30,10 @@
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-        margin: 5px;
+        margin: 10px;
         border-radius: 5px;
         // text-align: center;
-        background-color:rgb(175, 175, 175);
+        background-color: rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease-in-out; /* Transición para el efecto de hover */
 
     &:hover {

@@ -27,7 +27,7 @@ const ItemRec: React.FC<SimilarItemsProps> = ({ category, currentItemId }) => {
 
     return (
         <div className={styles.sItems}>
-            <h2>Items Similares</h2>
+            <h2>Obras Similares</h2>
             
 
                 {similarItems.map(item => (

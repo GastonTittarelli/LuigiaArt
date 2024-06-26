@@ -9,10 +9,10 @@
     margin: 1.5rem 0;
     border-radius: 6px;
     grid-template-columns: 1fr 550px;
-    background-color: rgb(209, 209, 209);
+    background-color: #465358;
     min-height: 667px;
     opacity: 0;
-    animation: aparecer 1.5s forwards; 
+    animation: aparecer .1s forwards; 
 
     @keyframes aparecer {
         to {
@@ -23,15 +23,16 @@
     .text {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-direction: column;
 
         h2 {
-            @include titleFont;
-            // font-family: $letraSub;
-            font-size: 4.5rem;
-            font-weight: 350;
+            // @include titleFont;
+            font-family: $letraSub;
+            font-size: 5.5rem;
+            font-weight: 500;
             text-align: center;
+            color: #dcf3ff;
         }
         .pContainer{
             min-height: 40%;
@@ -48,6 +49,7 @@
                 font-style: italic;
                 padding: 0 10px 0 15px;
                 line-height: 1.6;
+                color: #c6dce7;
             }
         }
     }
