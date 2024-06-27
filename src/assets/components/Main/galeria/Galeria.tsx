@@ -109,7 +109,7 @@ const Galeria = () => {
                 ))}
             </div>
 
-            {!imagesLoaded && <div className={styles.loading}>Cargando...</div>}
+            {!imagesLoaded && <div className={styles.loading}></div>}
         </div>
     );
 };

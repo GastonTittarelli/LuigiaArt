@@ -28,7 +28,7 @@ function App() {
     <div className='appContainer'>
       <Header/>
       
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div></div>}>
         <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/gallery" element={<Galeria />} />

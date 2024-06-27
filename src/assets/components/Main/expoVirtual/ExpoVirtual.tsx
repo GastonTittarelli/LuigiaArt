@@ -1,3 +1,5 @@
+
+import Loader from "../loader/Loader";
 import styles from "./expoVirtual.module.scss"
 import { useEffect, useState } from 'react';
 
@@ -11,11 +13,7 @@ const ExpoVirtual = () => {
     return (
         <div className={styles.container}>
             {!iframeLoaded && (
-                <div className={styles.animacion}>
-                    <img className={styles.foto} src="../../../img/concepto.png" alt="Descripción de la imagen" />
-                
-                    <div className={styles.sombra}></div>
-                </div>
+                <Loader/>
             )}
             <iframe width="1280"
                     height="720" 

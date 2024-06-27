@@ -7,6 +7,7 @@ import Carrousel from "./Carrousel";
 import CarrouselText from "./CarrouselText";
 import styles from "./carrouselContainer.module.scss";
 import ItemRec from "../itemsRecomendados/ItemsRec.tsx";
+import Loader from "../loader/Loader.tsx";
 
 const CarrouselContainer = () => {
     const { id } = useParams();
@@ -33,7 +34,9 @@ const CarrouselContainer = () => {
     }, [id]);
 
     if (loading) {
-        return <div className={styles.condicion1}>Cargando...</div>;
+        return <div className={styles.condicion1}>
+            <Loader/>
+        </div>;
     }
 
     if (!item) {

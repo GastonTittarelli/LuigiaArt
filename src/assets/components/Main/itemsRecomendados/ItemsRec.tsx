@@ -16,7 +16,7 @@ const ItemRec: React.FC<SimilarItemsProps> = ({ category, currentItemId }) => {
             const itemsData = await getItems();
             // Filtra los items para que tengan la misma categoría y no sean el item actual
             const filteredItems = itemsData.filter(item => item.categoria === category && item.id !== currentItemId);
-            // Baraja los items y selecciona los primeros 4
+            // Selecciona los de forma random a 4
             const shuffledItems = filteredItems.sort(() => 0.5 - Math.random());
             const selectedItems = shuffledItems.slice(0, 4);
             setSimilarItems(selectedItems);
