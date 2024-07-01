@@ -75,9 +75,12 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 .container .containerFoto {
+  height: auto;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 .container .containerFoto img {
   width: 500px;
+  z-index: 100000;
 }/*# sourceMappingURL=pageNotFound.module.css.map */
