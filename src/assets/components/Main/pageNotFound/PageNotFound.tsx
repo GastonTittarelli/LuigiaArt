@@ -18,7 +18,7 @@ const PageNotFound = () => {
             </div>
 
             <div className={styles.containerFoto}>
-                <img src="../../../../public/img/notFound/error4-1.png" alt="Foto de error 404" />
+                <img src="../../../img/notFound/error41.png" alt="Foto de error 404" />
             </div>
 
         </div>
