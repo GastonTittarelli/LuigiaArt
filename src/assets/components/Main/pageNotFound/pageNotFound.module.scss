@@ -1,0 +1,91 @@
+@import "../../../scss/styles/utilities/mixin.scss";
+
+.container{
+    min-height: 90vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    display: grid;
+    grid-template-columns:300px 1fr 1fr 400px;
+    justify-content: center;
+    align-items: center;
+
+    .text{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        grid-column: 2 / 3;
+
+        h2{
+            @include titleFont;
+            font-size: 8rem;
+        }
+        .containerLetters{
+            // height: 30vh;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3rem;
+            grid-column: 3 / 4;
+            position: relative;
+
+            p{
+                @include titleFont;
+                font-size: 1.7rem;
+                font-weight: 400;
+                padding: 0 10px 0 10px;
+            }
+            
+            .redireccion{
+                color: rgb(105, 105, 105);
+                font-size: 1.3rem;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+                height: 35px;
+                padding: 0 8px 0 8px;
+                border-radius: 30px;
+                transition: color 0.6s ease;
+                
+                &:hover{
+                    color: rgb(0, 0, 0)
+                }
+
+                &:hover::before {
+                    width: 100%;
+                    
+                }
+                
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    border-radius: 30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 130px;
+                    height: 100%;
+                    background-color: initial;
+                    transition: width 0.5s ease-in-out;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    // background-color 0.3s ease-out;
+                    
+                    
+                }
+            }
+        }
+    }
+
+    .containerFoto{
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 500px;
+            // border-radius: 30%;
+        }
+    }
+}

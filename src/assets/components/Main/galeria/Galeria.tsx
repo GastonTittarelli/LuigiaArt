@@ -8,15 +8,23 @@ const Galeria = () => {
     const [imagesLoaded, setImagesLoaded] = useState<boolean>(false);
     const { category } = useParams<{ category?: string }>();
     const navigate = useNavigate();
+    const validCategories = ["pintura", "creacion", "restauracion"];
 
     useEffect(() => {
+        if (category && !validCategories.includes(category)) {
+            navigate('/not-found'); // Redirige a la página de error
+            return;
+        }
+
+    // useEffect(() => {
         const fetchItems = async () => {
-            setImagesLoaded(false); // Indicate that we are loading new images
+            setImagesLoaded(false); 
+
             const itemsData: Item[] = await getItems();
             const filteredItems = itemsData.filter(item => !category || item.categoria === category);
             await preloadImages(filteredItems.map(item => item.optimizada));
             setItems(filteredItems);
-            setImagesLoaded(true); // Indicate that images have been loaded
+            setImagesLoaded(true); 
         };
 
         fetchItems();

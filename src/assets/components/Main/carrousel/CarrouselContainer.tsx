@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { doc, getDoc } from "firebase/firestore";
 import db from '../../../../../db/firebase-config.ts';
 import { Item } from '../items/Items';
@@ -11,6 +11,7 @@ import Loader from "../loader/Loader.tsx";
 
 const CarrouselContainer = () => {
     const { id } = useParams();
+    const navigate = useNavigate();
     const [item, setItem] = useState<Item | null>(null);
     const [loading, setLoading] = useState(true);
 
@@ -25,22 +26,19 @@ const CarrouselContainer = () => {
                 setItem({ id: docSnap.id, ...docSnap.data() } as Item);
             } else {
                 setItem(null);
+                navigate('/not-found'); // Redirige a la página de error
             }
             setLoading(false);
         };
 
         fetchItem();
         window.scrollTo(0, 0);
-    }, [id]);
+    }, [id, navigate]);
 
     if (loading) {
         return <div className={styles.condicion1}>
             <Loader/>
         </div>;
-    }
-
-    if (!item) {
-        return <div className={styles.condicion2}><h2>¡Oops! Item no encontrado!</h2></div>;
     }
 
     return (
@@ -51,9 +49,10 @@ const CarrouselContainer = () => {
                 <Carrousel />
             </div>
 
-            <ItemRec category={item.categoria} currentItemId={item.id}/>
+            {item && <ItemRec category={item.categoria} currentItemId={item.id}/>}
         </div>
     );
 };
 
 export default CarrouselContainer;
+
