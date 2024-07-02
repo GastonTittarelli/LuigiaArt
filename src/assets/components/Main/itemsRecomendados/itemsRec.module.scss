@@ -9,10 +9,10 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 5px;
+
     h2 {
         font-family: $letraSub;
         font-size: 2em;
-        
         width: 100%;
         text-align: center;
     }
@@ -21,72 +21,67 @@
         text-decoration: none;
         color: inherit;
 
-    .item {
-        height: 320px;
-        width: 250px;
-        position: relative;
-        overflow: visible;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        margin: 10px;
-        border-radius: 5px;
-        // text-align: center;
-        background-color: rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease-in-out; /* Transición para el efecto de hover */
+        .item {
+            height: 320px;
+            width: 250px;
+            position: relative;
+            overflow: visible;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out; 
 
-    &:hover {
-        .hoverLine {
-            width: 60%; /* Ancho al hacer hover */
+            &:hover {
+                .hoverLine {
+                    width: 60%;
+                }
+            }
+        }
+        .imgContainer{
+            width: 100%;
+            height: 250px; 
+            overflow: hidden; 
+            border-radius: 8px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .itemImage {
+                width: auto;
+                height: 80%;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+
+        .itemTitle {
+            @include textFont;
+            font-size: 1.2em;
+            padding-left: 5px;
+            font-weight: 500;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+            white-space: nowrap; 
+            overflow: hidden; 
+            text-overflow: ellipsis;
+        }
+
+        .hoverLine{
+            position: absolute;
+            bottom: 0;
+            left: 50%; 
+            transform: translateX(-50%);
+            width: 20px; 
+            height: 3px; 
+            background-color: black; 
+            border-radius: 10px; 
+            transition: width 0.3s ease-in-out; 
         }
     }
-    }
-    .imgContainer{
-        width: 100%;
-        height: 250px; 
-        overflow: hidden; 
-        border-radius: 8px;
-        margin-bottom: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .itemImage {
-            width: auto;
-            height: 80%;
-            object-fit: contain;
-            object-position: center;
-        }
-    }
-
-    .itemTitle {
-        @include textFont;
-        font-size: 1.2em;
-        padding-left: 5px;
-        font-weight: 500;
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
-        white-space: nowrap; 
-        overflow: hidden; 
-        text-overflow: ellipsis;
-        // margin-bottom: 10px;
-    }
-    .hoverLine{
-        position: absolute;
-        bottom: 0;
-        left: 50%; /* Coloca el punto/línea en el centro horizontal */
-        transform: translateX(-50%);
-        width: 20px; /* Ancho inicial del punto/línea */
-        height: 3px; /* Altura del punto/línea */
-        background-color: black; /* Color del punto/línea */
-        border-radius: 10px; /* Bordes redondeados */
-        transition: width 0.3s ease-in-out; /* Transición suave de la anchura */
-
-        
-    
-    }
-    }
-
 }

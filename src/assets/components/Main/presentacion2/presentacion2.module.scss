@@ -20,9 +20,7 @@
         display: grid;
         align-items: center;
         background-color: rgba(0, 0, 0, 0.1);
-        // gap: 2rem;
 
-        
         .foto{
             width: 400px;
         }
@@ -35,7 +33,6 @@
             padding: 15px 100px 15px 100px;
             line-height: 2;
             font-weight: 400;
-            // direction: ltr;
             animation: appear linear forwards;
             animation-timeline: view();
 
@@ -48,20 +45,18 @@
                 22% {
                     opacity: 1; 
                 }
-        }
+            }
         }
     }
+
     .left{
         grid-template-columns: 400px 1fr;
         border-radius:   15px 15px 15px 15px ;
-        // clip-path: polygon(0 0, 100% 0, calc(100% - 100px) 100%, 0 100%);
         transform-origin: left;
         animation: Size linear forwards;
         animation-timeline: view();
-        
 
             @keyframes Size{
-            
                 0% {
                     transform: scaleX(0.95);
                 }
@@ -69,7 +64,8 @@
                 20% {
                     transform: scaleX(1); 
                 }
-        }
+            }
+
         .foto{
             border-radius:   15px 0 0 15px ;
         }

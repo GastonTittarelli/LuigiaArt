@@ -9,15 +9,13 @@ const PageNotFound = () => {
         '../../../img/notFound/error3.png',
     ];
 
-
-
 const getRandomPhoto = (): string => {
 
     const randomIndex = Math.floor(Math.random() * photoPaths.length);
 
     return photoPaths[randomIndex];
 };
-    
+
 const randomPhoto = getRandomPhoto();
 
     return (

@@ -1,4 +1,3 @@
-
 import Loader from "../loader/Loader";
 import styles from "./expoVirtual.module.scss"
 import { useEffect, useState } from 'react';

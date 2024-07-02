@@ -5,26 +5,16 @@ import "./app.scss"
 import Header from './assets/components/Header/Header'
 import Footer from './assets/components/Footer/Footer'
 
-// import PageNotFound from './assets/components/Main/pageNotFound/PageNotFound'
-// import CarrouselContainer from './assets/components/Main/carrousel/CarrouselContainer'
-// import Imagen5List from './assets/components/Main/imagenList5/ImagenList5'
-// import Galeria from './assets/components/Main/galeria/Galeria'
-// import HomePage from './assets/components/views/HomePage'
-// import AcercaDe from './assets/components/Main/acercaDe/AcercaDe'
-// import ExpoVirtual from './assets/components/Main/expoVirtual/ExpoVirtual'
 const PageNotFound = lazy(() => import('./assets/components/Main/pageNotFound/PageNotFound'));
-const CarrouselContainer = lazy(() => import('./assets/components/Main/carrousel/CarrouselContainer'));
-const Imagen5List = lazy(() => import('./assets/components/Main/imagenList5/ImagenList5'));
+const CarrouselContainer = lazy(() => import('./assets/components/Main/carrouselContainer/CarrouselContainer'));
+const Imagen5List = lazy(() => import('./assets/components/Main/imagenHogar/ImagenList5'));
 const Galeria = lazy(() => import('./assets/components/Main/galeria/Galeria'));
 const HomePage = lazy(() => import('./assets/components/views/HomePage'));
 const AcercaDe = lazy(() => import('./assets/components/Main/acercaDe/AcercaDe'));
 const ExpoVirtual = lazy(() => import('./assets/components/Main/expoVirtual/ExpoVirtual'));
 
-
-
-
 function App() {
-  
+
   return (
     <div className='appContainer'>
       <Header/>

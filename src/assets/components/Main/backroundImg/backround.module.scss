@@ -11,21 +11,15 @@
         background-position: center;
         transform-origin: bottom;
         object-fit: cover;
-        // scale: 1;
         clip-path: inset(0 0 0 0);
         display: flex;
         justify-content: center;
         align-items: center;
-
-        
         animation: background-imagen2 linear forwards;
         animation-timeline: view();
         animation-range: exit;
 
-            @keyframes background-imagen2{
-            
-            
-
+        @keyframes background-imagen2{
             90%, 100% {background-size: 160%; ;}
         }
 
@@ -39,18 +33,16 @@
             left: 0;
             background-color: rgba(0, 0, 0, 0.4);
             z-index: 1;
-
             animation: background-imagen linear forwards;
             animation-timeline: view();
 
             @keyframes background-imagen{
                 65% {background-color: rgba(0, 0, 0, 0.4)}
 
-                // 80% {background-color: rgba(0, 0, 0, 0.4)}
                 100% {background-color: rgba(0, 0, 0, 1)}
             }
-
         }
+
         .textHeader{
             @include titleFont;
             width: 80%;
@@ -66,33 +58,28 @@
             z-index: 222;
             animation: reverseSize linear forwards;
             animation-timeline: view();
-            // animation-range: exit;
 
             @keyframes reverseSize{
-            
-            0% {scale: 1}
+                0% {scale: 1}
 
-            100% {scale: .6; }
-        }
+                100% {scale: .6; }
+            }
             
             h1 {
-                font-size: 5.4em; /* Tamaño del texto del título */
-                margin-bottom: 10px;
-                // font-family: Arial, sans-serif;
+                font-size: 5.4em; 
+                margin-bottom: 10px;                
                 letter-spacing: 0.03em;
             }
     
             h2 {
-                font-size: 2.7em; /* Tamaño del texto del subtítulo */
-                margin-bottom: 10px;
-                // font-family: Arial, sans-serif;
+                font-size: 2.7em; 
+                margin-bottom: 10px;                
                 font-weight: 500;
                 letter-spacing: 0.03em;
             }
     
             p {
-                font-size: 2em; /* Tamaño del texto del párrafo */
-                // font-family: Arial, sans-serif;
+                font-size: 2em; 
                 font-weight: 340;
                 letter-spacing: 0.03em;
             }

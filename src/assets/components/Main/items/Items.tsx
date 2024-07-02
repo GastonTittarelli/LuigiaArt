@@ -20,7 +20,6 @@ export interface Item {
     subCategoria2:string;
 }
 
-
 export const getItems = async () => {
     const itemsRef = collection(db, "items");
     const itemsCollection = await getDocs(itemsRef);

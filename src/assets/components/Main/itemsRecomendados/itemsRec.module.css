@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import "https://fonts.googleapis.com/css2?family=Kalam&display=swap";
@@ -33,10 +32,10 @@
   margin: 10px;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out; /* Transición para el efecto de hover */
+  transition: transform 0.3s ease-in-out;
 }
 .sItems .itemLink .item:hover .hoverLine {
-  width: 60%; /* Ancho al hacer hover */
+  width: 60%;
 }
 .sItems .itemLink .imgContainer {
   width: 100%;
@@ -73,11 +72,11 @@
 .sItems .itemLink .hoverLine {
   position: absolute;
   bottom: 0;
-  left: 50%; /* Coloca el punto/línea en el centro horizontal */
+  left: 50%;
   transform: translateX(-50%);
-  width: 20px; /* Ancho inicial del punto/línea */
-  height: 3px; /* Altura del punto/línea */
-  background-color: black; /* Color del punto/línea */
-  border-radius: 10px; /* Bordes redondeados */
-  transition: width 0.3s ease-in-out; /* Transición suave de la anchura */
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
 }/*# sourceMappingURL=itemsRec.module.css.map */

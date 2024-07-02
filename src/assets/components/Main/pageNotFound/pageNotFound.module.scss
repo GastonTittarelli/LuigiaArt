@@ -23,8 +23,8 @@
             @include titleFont;
             font-size: 8rem;
         }
+
         .containerLetters{
-            // height: 30vh;
             display: flex;
             align-items: center;
             flex-wrap: wrap;
@@ -72,9 +72,6 @@
                     background-color: initial;
                     transition: width 0.5s ease-in-out;
                     background-color: rgba(0, 0, 0, 0.1);
-                    // background-color 0.3s ease-out;
-                    
-                    
                 }
             }
         }

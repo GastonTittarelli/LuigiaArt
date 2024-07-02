@@ -14,7 +14,7 @@ const ItemRec: React.FC<SimilarItemsProps> = ({ category, currentItemId }) => {
     useEffect(() => {
         const fetchSimilarItems = async () => {
             const itemsData = await getItems();
-            // Filtra los items para que tengan la misma categoría y no sean el item actual
+
             const filteredItems = itemsData.filter(item => item.categoria === category && item.id !== currentItemId);
             // Selecciona los de forma random a 4
             const shuffledItems = filteredItems.sort(() => 0.5 - Math.random());
@@ -29,10 +29,8 @@ const ItemRec: React.FC<SimilarItemsProps> = ({ category, currentItemId }) => {
         <div className={styles.sItems}>
             <h2>Obras Similares</h2>
             
-
                 {similarItems.map(item => (
                     <Link to={`/${item.id}`} key={item.id} className={styles.itemLink}>
-
                         <div className={styles.item}>
 
                             <div className={styles.imgContainer}>
@@ -46,10 +44,8 @@ const ItemRec: React.FC<SimilarItemsProps> = ({ category, currentItemId }) => {
                             <div className={styles.hoverLine}></div>
 
                         </div>
-                        
                     </Link>
                 ))}
-            
         </div>
     );
 };

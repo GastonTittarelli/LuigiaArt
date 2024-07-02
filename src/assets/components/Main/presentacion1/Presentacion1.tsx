@@ -11,15 +11,12 @@ const Presentacion1 = () => {
 
                     <p>Este espacio lleva mi nombre y el de mis ancestros italianos, hermosas mujeres que fueron luz, abrieron mi camino y permitieron que hoy sea yo.</p>
                 </div>
-                
-                    
             </div>
 
             <div className={styles.fotoContainer}>
                 <img className={styles.foto} src="../../../img/principal.jpg" alt="Mi imagen de presentación" />
                 <span className={styles.tooltiptext}>En cada trazo hay una parte de mi alma, ¡Descúbrela!</span>
             </div>
-
         </div>
     )
 }

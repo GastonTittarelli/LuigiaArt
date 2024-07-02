@@ -16,7 +16,6 @@ const Galeria = () => {
             return;
         }
 
-    // useEffect(() => {
         const fetchItems = async () => {
             setImagesLoaded(false); 
 
@@ -81,27 +80,33 @@ const Galeria = () => {
         <div className={styles.contenedor}>
             <div className={styles.filterButtons}>
                 <ul className={styles.navList}>
+
                     <li data-category="all" className={!category ? styles.active : ''}>
                         <Link to="/gallery" onClick={(e) => spaNavigate(e, "/gallery", null)}>
                             <p>Todos</p>
                         </Link>
                     </li>
+
                     <li data-category="pintura" className={category === 'pintura' ? styles.active : ''}>
                         <Link to="/gallery/pintura" onClick={(e) => spaNavigate(e, "/gallery/pintura", 'pintura')}>
                             <p>Pinturas</p>
                         </Link>
                     </li>
+
                     <li data-category="creacion" className={category === 'creacion' ? styles.active : ''}>
                         <Link to="/gallery/creacion" onClick={(e) => spaNavigate(e, "/gallery/creacion", 'creacion')}>
                             <p>Creaciones</p>
                         </Link>
                     </li>
+
                     <li data-category="restauracion" className={category === 'restauracion' ? styles.active : ''}>
                         <Link to="/gallery/restauracion" onClick={(e) => spaNavigate(e, "/gallery/restauracion", 'restauracion')}>
                             <p>Restauraciones</p>
                         </Link>
                     </li>
+
                 </ul>
+
                 <img src="../../../img/flechasw.png" alt="Scroll to top" onClick={scrollToTop} 
                     className={styles.flecha} />
             </div>
@@ -110,6 +115,7 @@ const Galeria = () => {
                 {items.map((item) => (
                     <div key={item.id} className={styles.itemContainer}>
                         <img className={styles.imagenes} loading="lazy" src={item.optimizada} alt={item.titulo} />
+                        
                         <Link to={`/${item.id}`}>
                             <h3>{item.titulo}</h3>
                         </Link>

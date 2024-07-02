@@ -5,19 +5,15 @@ header{
         height: 100px;
         top: 0;
         left: 0;
-        // background-color: rgb(83, 83, 83 );
         display: grid;
         grid-template-columns: 1fr 5fr;
         z-index: 114;
-        
         animation: nav-scroll linear both ;
         animation-timeline: scroll(root);
         animation-range: 0 400px;
 
         @keyframes nav-scroll{
             to{
-                // background-color: black;
-                // backdrop-filter: blur(5px);
                 height: 60px;
             }
         }
@@ -30,13 +26,11 @@ header{
             display: flex;
             padding-left: 1rem;
             align-items: center;
-            
             animation: size-font linear both ;
             animation-timeline: scroll(root);
             animation-range: 0 400px;
 
             @keyframes size-font{
-                
                 to{
                     background-color: rgb(50, 60, 65);
                     height: 60px;
@@ -48,19 +42,16 @@ header{
                 width: auto;
                 height: 100px;
                 font-family: $letraSub;
-                // background-color: rgba(34, 34, 34, .95);
                 color: rgb(245, 196, 239);
                 font-size: 4rem;
                 display: flex;
                 margin: 0;
                 transition: color .5s;
-                
                 animation: size-font2 linear both ;
                 animation-timeline: scroll(root);
                 animation-range: 0 400px;
                 
                 @keyframes size-font2{
-                
                     to{
                         height: 60px;
                         font-size: 2.5rem;
@@ -70,7 +61,6 @@ header{
                 .firstLetter {
                     color: rgb(255, 255, 255);
                     transition: color .5s;
-                    
                 }
             
                 &:hover {
@@ -81,15 +71,12 @@ header{
                     color: rgb(245, 196, 239); 
                 }
             }
-            
         }
-}
-
+    }
 
     .fixed {
         position: -webkit-sticky;
         position: fixed;
-        
     }
     
     .sticky {

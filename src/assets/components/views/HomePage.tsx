@@ -1,9 +1,7 @@
-
 import { useEffect } from 'react';
 import BackgroundIm from '../Main/backroundImg/BackgroundIm'
-import ItemsByCategory from '../Main/imagenList3/ImagenList3'
-import Imagen5List from '../Main/imagenList5/ImagenList5'
-
+import ItemsByCategory from '../Main/destacado/ImagenList3'
+import Imagen5List from '../Main/imagenHogar/ImagenList5'
 
 const HomePage = () => {
 

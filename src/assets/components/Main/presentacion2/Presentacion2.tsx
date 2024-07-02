@@ -27,7 +27,6 @@ const AcercaDe = () => {
                 <img className={styles.foto} src="../../../img/5.1.jpg" alt="" />
                 <h4>Dedicación en cada trazo: Capturando la esencia del arte en cada pincelada, aquí me ves sumergida en el proceso de creación, transformando un lienzo en blanco en una obra maestra llena de vida y emoción.</h4>
             </div>
-
         </div>
     )
 }
