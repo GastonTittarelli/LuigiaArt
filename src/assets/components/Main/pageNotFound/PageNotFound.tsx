@@ -2,6 +2,24 @@ import { Link } from "react-router-dom"
 import styles from "./pageNotFound.module.scss"
 
 const PageNotFound = () => {
+
+    const photoPaths = [
+        '../../../img/notFound/error1.png',
+        '../../../img/notFound/error2.png',
+        '../../../img/notFound/error3.png',
+    ];
+
+
+
+const getRandomPhoto = (): string => {
+
+    const randomIndex = Math.floor(Math.random() * photoPaths.length);
+
+    return photoPaths[randomIndex];
+};
+    
+const randomPhoto = getRandomPhoto();
+
     return (
         <div className={styles.container}>
 
@@ -18,7 +36,7 @@ const PageNotFound = () => {
             </div>
 
             <div className={styles.containerFoto}>
-                <img src="../../../img/notFound/error41.png" alt="Foto de error 404" />
+                <img src={randomPhoto} alt="Foto de error 404" />
             </div>
 
         </div>

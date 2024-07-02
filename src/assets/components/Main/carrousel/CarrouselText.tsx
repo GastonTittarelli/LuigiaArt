@@ -35,7 +35,13 @@ useEffect(() =>{
             <div className={styles.text}>
                 
                 <h2 className={styles.titulo}>{item?.titulo}</h2>
+                
                 <p className={styles.descripcion}>{item?.descripcion}</p>
+
+                {item?.descripcion2 && <p className={`${styles.descripcion} ${styles.subDescripcion}`}>{item.descripcion2}</p>}
+                {item?.descripcion3 && <p className={`${styles.descripcion} ${styles.subDescripcion}`}>{item.descripcion3}</p>}
+                {item?.descripcion4 && <p className={`${styles.descripcion} ${styles.subDescripcion}`}>{item.descripcion4}</p>}
+
             </div>
 
     )

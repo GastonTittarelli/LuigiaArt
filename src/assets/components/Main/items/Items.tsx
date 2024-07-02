@@ -6,6 +6,9 @@ export interface Item {
     id: string;
     titulo:string;
     descripcion: string;
+    descripcion2: string;
+    descripcion3: string;
+    descripcion4: string;
     categoria: string;
     img1: string;
     img2: string;
