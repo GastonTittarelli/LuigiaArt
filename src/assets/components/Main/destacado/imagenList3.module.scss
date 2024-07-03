@@ -3,13 +3,13 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .container {
-        min-height: 140vh;
+        min-height: 130vh;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin-top: 3rem;
+        margin-top: 4rem;
     
         h2 {
             width: 90%;
@@ -121,6 +121,32 @@
                 }
                 to {
                     transform: translateX(0%);
+                }
+            }
+        }
+    }
+}
+
+
+//Responsive -medium size-
+
+@media screen and (max-width: 1366px) {
+    
+    .container {
+        gap: 3rem;
+
+        .pinturas, .creacion, .restauracion {
+            height: 240px;
+            padding:  0;
+
+            .imagenesSide {
+
+                .contenedorImg {
+                    height: 200px;
+                    .imagenes{
+                        border-radius: 5.5px;
+                        height: 200px;
+                    }
                 }
             }
         }

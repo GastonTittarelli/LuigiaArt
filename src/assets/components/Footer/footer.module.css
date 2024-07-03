@@ -19,6 +19,7 @@
   position: relative;
   height: 250px;
   width: 211px;
+  margin-right: 1rem;
 }
 .container .contenido .foto a {
   height: 250px;
@@ -87,4 +88,21 @@
   color: white;
   padding-right: 0.5rem;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1366px) {
+  .container {
+    height: 280px;
+  }
+  .container .contenido {
+    height: 235px;
+  }
+  .container .contenido .foto {
+    height: 225px;
+    width: 191px;
+  }
+  .container .contenido .foto a {
+    height: 225px;
+    width: auto;
+  }
 }/*# sourceMappingURL=footer.module.css.map */

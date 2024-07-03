@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className={styles.container}>
 
-            <div className={styles.gallColor}></div>
+            
             <div className={styles.contenido}>
 
                 <div className={styles.foto}>

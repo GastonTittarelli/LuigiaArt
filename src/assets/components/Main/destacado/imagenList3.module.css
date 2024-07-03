@@ -3,13 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @media (prefers-reduced-motion: no-preference) {
   .container {
-    min-height: 140vh;
+    min-height: 130vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
   .container h2 {
     width: 90%;
@@ -110,5 +110,21 @@
     to {
       transform: translateX(0%);
     }
+  }
+}
+@media screen and (max-width: 1366px) {
+  .container {
+    gap: 3rem;
+  }
+  .container .pinturas, .container .creacion, .container .restauracion {
+    height: 240px;
+    padding: 0;
+  }
+  .container .pinturas .imagenesSide .contenedorImg, .container .creacion .imagenesSide .contenedorImg, .container .restauracion .imagenesSide .contenedorImg {
+    height: 200px;
+  }
+  .container .pinturas .imagenesSide .contenedorImg .imagenes, .container .creacion .imagenesSide .contenedorImg .imagenes, .container .restauracion .imagenesSide .contenedorImg .imagenes {
+    border-radius: 5.5px;
+    height: 200px;
   }
 }/*# sourceMappingURL=imagenList3.module.css.map */

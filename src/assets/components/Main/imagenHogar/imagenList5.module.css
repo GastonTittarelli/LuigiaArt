@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    margin-top: 2rem;
     min-height: 80vh;
   }
   .contenedor h2 {
@@ -46,5 +46,16 @@
       opacity: 1;
       scale: 1;
     }
+  }
+}
+@media screen and (max-width: 1366px) {
+  .contenedor {
+    margin-top: 2.5rem;
+  }
+  .contenedor .contenedorImgs {
+    width: 70vw;
+  }
+  .contenedor .contenedorImgs .imagenes {
+    animation-range: entry 10% cover 23%;
   }
 }/*# sourceMappingURL=imagenList5.module.css.map */

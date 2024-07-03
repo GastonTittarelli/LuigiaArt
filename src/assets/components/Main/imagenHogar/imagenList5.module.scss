@@ -7,7 +7,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 1rem;
+        margin-top: 2rem;
         min-height: 80vh;
 
         h2{
@@ -46,6 +46,25 @@
                         scale: 1;
                     }
                 }
+            }
+        }
+    }
+}
+
+
+//Responsive -medium size-
+
+@media screen and (max-width: 1366px) {
+
+    .contenedor{
+        margin-top: 2.5rem;
+
+        .contenedorImgs{
+            width: 70vw;
+
+            .imagenes{
+                
+                animation-range: entry 10% cover 23%;
             }
         }
     }

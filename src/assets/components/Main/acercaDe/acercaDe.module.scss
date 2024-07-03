@@ -6,3 +6,13 @@
     justify-content: center;
     gap: 1rem;
 }
+
+
+//Responsive -medium size-
+
+@media screen and (max-width: 1366px) {
+    
+    .contenedor{
+        width: 90%;
+    }
+}

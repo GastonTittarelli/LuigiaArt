@@ -73,4 +73,19 @@ header .logoContainer h1:hover .firstLetter {
 .sticky {
   position: sticky;
   background-color: rgb(83, 83, 83);
+}
+
+@media screen and (max-width: 1366px) {
+  header .logoContainer h1 {
+    font-size: 3.5rem;
+    padding: 10px 0 10px 10px;
+    text-align: center;
+  }
+  @keyframes size-font2 {
+    to {
+      height: 60px;
+      font-size: 2.5rem;
+      padding: 0 0 0 10px;
+    }
+  }
 }/*# sourceMappingURL=header.module.css.map */

@@ -5,4 +5,10 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+}
+
+@media screen and (max-width: 1366px) {
+  .contenedor {
+    width: 90%;
+  }
 }/*# sourceMappingURL=acercaDe.module.css.map */

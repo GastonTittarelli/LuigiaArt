@@ -3,3 +3,14 @@ min-height: 90vh;
 display: flex;
 align-items: center;
 }
+
+//Responsive -medium size-
+
+@media screen and (max-width: 1366px) {
+    .container{
+        iframe{
+            width: 853px;
+            height: 480px;
+        }
+    }
+}
