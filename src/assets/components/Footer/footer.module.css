@@ -105,4 +105,42 @@
     height: 225px;
     width: auto;
   }
+}
+@media screen and (min-width: 700px) and (max-width: 960px) {
+  .container {
+    height: 210px;
+  }
+  .container .contenido {
+    align-items: end;
+    height: 165px;
+  }
+  .container .contenido .foto {
+    padding-left: 10px;
+    height: 150px;
+    width: 131px;
+  }
+  .container .contenido .foto a {
+    height: 150px;
+  }
+  .container .contenido .redes {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.1rem;
+    gap: 1rem;
+  }
+  .container .contenido .redes h4 {
+    font-size: 1.4rem;
+    padding-right: 0;
+  }
+  .container .contenido .redes a {
+    height: 30px;
+  }
+  .container .contenido .redes a img {
+    height: 30px;
+  }
+  .container .copyright p {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=footer.module.css.map */

@@ -94,3 +94,48 @@
         }
     }
 }
+
+//Responsive -tablet devices-
+
+@media screen and (min-width: 700px) and (max-width: 960px) {
+
+    .container{
+        min-height: 80vh;
+        width: 90%;
+        display: grid;
+        gap: 4rem;
+        margin: 6rem 0 6rem 0;
+        opacity: 0;
+        animation: aparecer .2s forwards; 
+    
+        @keyframes aparecer {
+            to {
+                opacity: 1; 
+            }
+        }
+    
+        .card{
+            width: 100%;
+            display: grid;
+            align-items: center;
+            
+    
+            .foto{
+                width: 300px;
+            }
+            // h4{
+
+            // }
+        }.left{
+            grid-template-columns: 300px 1fr;
+            
+    
+            // .foto{
+                
+            // }
+        }
+    
+        .right{
+            grid-template-columns: 1fr  300px;}    
+        }
+}

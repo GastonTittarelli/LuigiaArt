@@ -152,3 +152,11 @@
         }
     }
 }
+
+//Responsive -tablet devices-
+
+@media screen and (min-width: 700px) and (max-width: 960px) {
+    .container {
+        min-height: 100vh;
+    }
+}

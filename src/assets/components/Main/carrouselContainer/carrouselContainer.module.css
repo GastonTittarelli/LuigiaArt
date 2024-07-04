@@ -35,5 +35,6 @@
 @media screen and (max-width: 1366px) {
   .containerCarrousel {
     height: 80vh;
+    width: 45vw;
   }
 }/*# sourceMappingURL=carrouselContainer.module.css.map */

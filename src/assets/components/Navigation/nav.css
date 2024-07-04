@@ -48,4 +48,13 @@ nav ul li {
 }
 nav ul li:hover {
   color: rgb(235, 235, 235);
+}
+
+@media screen and (min-width: 700px) and (max-width: 960px) {
+  nav ul {
+    padding-left: 1rem;
+  }
+  nav ul li {
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=nav.css.map */

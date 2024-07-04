@@ -80,4 +80,35 @@
 }
 .container .right .foto {
   border-radius: 0 15px 15px 0;
+}
+
+@media screen and (min-width: 700px) and (max-width: 960px) {
+  .container {
+    min-height: 80vh;
+    width: 90%;
+    display: grid;
+    gap: 4rem;
+    margin: 6rem 0 6rem 0;
+    opacity: 0;
+    animation: aparecer 0.2s forwards;
+  }
+  @keyframes aparecer {
+    to {
+      opacity: 1;
+    }
+  }
+  .container .card {
+    width: 100%;
+    display: grid;
+    align-items: center;
+  }
+  .container .card .foto {
+    width: 300px;
+  }
+  .container .left {
+    grid-template-columns: 300px 1fr;
+  }
+  .container .right {
+    grid-template-columns: 1fr 300px;
+  }
 }/*# sourceMappingURL=presentacion2.module.css.map */

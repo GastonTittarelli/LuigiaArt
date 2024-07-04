@@ -121,3 +121,53 @@
         }
     }
 }
+
+
+//Responsive -tablet devices-
+
+@media screen and (min-width: 700px) and (max-width: 960px) {
+
+    .container{
+        height: 210px;
+
+        .contenido{
+            align-items:end;
+            height: 165px;
+
+            .foto{
+                padding-left: 10px;
+                height: 150px;
+                width: 131px;
+                a{
+                    height: 150px;
+                    // img{
+                    // }
+                }
+            }
+            .redes{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-left: .1rem;
+                gap: 1rem;
+    
+                h4{
+                    font-size: 1.4rem;
+                    padding-right: 0;
+                }
+                a{     
+                    height: 30px;   
+                    img{
+                        height: 30px;
+                    }
+                }
+            }
+        }
+        .copyright{
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+}

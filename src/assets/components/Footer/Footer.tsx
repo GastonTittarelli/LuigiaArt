@@ -5,7 +5,6 @@ const Footer = () => {
     return (
         <div className={styles.container}>
 
-            
             <div className={styles.contenido}>
 
                 <div className={styles.foto}>

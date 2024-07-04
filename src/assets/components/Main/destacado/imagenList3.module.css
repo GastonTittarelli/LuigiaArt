@@ -127,4 +127,9 @@
     border-radius: 5.5px;
     height: 200px;
   }
+}
+@media screen and (min-width: 700px) and (max-width: 960px) {
+  .container {
+    min-height: 100vh;
+  }
 }/*# sourceMappingURL=imagenList3.module.css.map */
