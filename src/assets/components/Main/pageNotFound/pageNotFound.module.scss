@@ -88,3 +88,28 @@
         }
     }
 }
+
+
+//Responsive -medium size-
+
+@media screen and (max-width: 1366px) {
+    .container{
+        min-height: 85vh;
+        grid-template-columns:200px 1fr 1fr 210px;
+
+        .text{
+            gap: 2rem;
+
+            h2{
+                font-size: 6.5rem;
+            }
+        }
+
+        .containerFoto{
+            
+            img{
+                width: 380px;
+            }
+        }
+    }
+}

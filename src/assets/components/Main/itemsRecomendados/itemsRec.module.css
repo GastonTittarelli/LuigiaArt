@@ -60,7 +60,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: 1.2em;
-  padding-left: 5px;
+  padding-left: 10px;
+  padding-right: 8px;
   font-weight: 500;
   width: 100%;
   text-align: center;
@@ -79,4 +80,10 @@
   background-color: black;
   border-radius: 10px;
   transition: width 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1366px) {
+  .sItems {
+    width: 100%;
+  }
 }/*# sourceMappingURL=itemsRec.module.css.map */

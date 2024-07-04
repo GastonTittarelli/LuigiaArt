@@ -147,3 +147,27 @@
         }
     }
 }
+
+@media screen and (max-width: 1366px) {
+
+    .contenedor {
+        grid-template-columns: 220px 1fr;
+
+        .filterButtons {
+
+            .navList{
+
+                li{
+                    padding: .8rem 2rem;
+                }
+            }
+            .flecha{
+                left: 95px;
+            }
+        }
+
+        .contenedorImgs {
+            columns: 3;
+        }
+    }
+}

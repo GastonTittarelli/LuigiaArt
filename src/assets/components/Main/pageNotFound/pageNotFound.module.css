@@ -82,4 +82,20 @@
 }
 .container .containerFoto img {
   width: 500px;
+}
+
+@media screen and (max-width: 1366px) {
+  .container {
+    min-height: 85vh;
+    grid-template-columns: 200px 1fr 1fr 210px;
+  }
+  .container .text {
+    gap: 2rem;
+  }
+  .container .text h2 {
+    font-size: 6.5rem;
+  }
+  .container .containerFoto img {
+    width: 380px;
+  }
 }/*# sourceMappingURL=pageNotFound.module.css.map */

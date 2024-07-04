@@ -93,3 +93,17 @@
     transform: translate(-50%, -50%);
     height: 95%;
 }
+
+@media screen and (max-width: 1366px) {
+    
+    .mySwiper2 {
+        height: 80%;
+    }
+    .mySwiper {
+        height: 20%;
+    }
+    .zoom-container img {
+        height: 365px; 
+        
+    }
+}

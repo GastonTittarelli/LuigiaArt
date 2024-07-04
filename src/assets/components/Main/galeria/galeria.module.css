@@ -131,4 +131,20 @@
 }
 .contenedor .contenedorImgs .itemContainer:hover h3 {
   opacity: 1;
+}
+
+@media screen and (max-width: 1366px) {
+  .contenedor {
+    grid-template-columns: 220px 1fr;
+  }
+  .contenedor .filterButtons .navList li {
+    padding: 0.8rem 2rem;
+  }
+  .contenedor .filterButtons .flecha {
+    left: 95px;
+  }
+  .contenedor .contenedorImgs {
+    -moz-columns: 3;
+         columns: 3;
+  }
 }/*# sourceMappingURL=galeria.module.css.map */

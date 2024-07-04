@@ -10,6 +10,7 @@
     justify-content: center;
     gap: 3rem;
     border-radius: 6px 0 0 6px;
+    overflow: auto;
 
     .titulo{
         font-family: $letraSub;
@@ -28,5 +29,44 @@
 
     .subDescripcion{
         font-size: 1.1rem;
+    }
+}
+
+//Responsive -medium size-
+
+@media screen and (max-width: 1366px) {
+    .text{
+        height: 80vh;
+        gap: 1.2rem;
+        justify-content: flex-start;
+
+        &::-webkit-scrollbar {
+            width: 11px; 
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #5e5e5e; 
+            border-radius: 10px;
+            
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        
+
+            .titulo{
+                margin-top: 2rem;
+                font-size: 2.3rem;
+            }
+            .descripcion{
+                font-weight: 400;
+                font-size: 1.2rem;
+            }
+            .subDescripcion{
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+            }
+        
     }
 }

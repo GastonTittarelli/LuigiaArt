@@ -10,6 +10,7 @@
   justify-content: center;
   gap: 3rem;
   border-radius: 6px 0 0 6px;
+  overflow: auto;
 }
 .text .titulo {
   font-family: "Kalam", cursive;
@@ -28,4 +29,34 @@
 }
 .text .subDescripcion {
   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1366px) {
+  .text {
+    height: 80vh;
+    gap: 1.2rem;
+    justify-content: flex-start;
+  }
+  .text::-webkit-scrollbar {
+    width: 11px;
+  }
+  .text::-webkit-scrollbar-thumb {
+    background: #5e5e5e;
+    border-radius: 10px;
+  }
+  .text::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .text .titulo {
+    margin-top: 2rem;
+    font-size: 2.3rem;
+  }
+  .text .descripcion {
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  .text .subDescripcion {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
 }/*# sourceMappingURL=carrouselText.module.css.map */

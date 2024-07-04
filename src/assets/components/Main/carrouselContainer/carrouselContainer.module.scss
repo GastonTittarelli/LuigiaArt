@@ -32,3 +32,9 @@
     align-items: center;
 }
 
+@media screen and (max-width: 1366px) {
+
+    .containerCarrousel{
+        height: 80vh;
+    }
+}
