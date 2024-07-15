@@ -15,7 +15,7 @@ return (
         <div className={styles.logoContainer}>
             <Link to="/">
                 <h1>
-                    <span className={styles.firstLetter}>L</span>ugia  
+                    <span className={styles.firstLetter}>L</span>uigia  
                     <span className={styles.firstLetter}>A</span>rt
                 </h1>
             </Link>    

@@ -28,11 +28,12 @@
   font-weight: 400;
   font-style: normal;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-style: italic;
   padding: 15px 100px 15px 100px;
   line-height: 2;
   font-weight: 400;
+  text-align: justify;
   animation: appear linear forwards;
   animation-timeline: view();
 }
@@ -99,11 +100,13 @@
   }
   .container .card {
     width: 100%;
-    display: grid;
-    align-items: center;
   }
   .container .card .foto {
     width: 300px;
+  }
+  .container .card h4 {
+    font-size: 1.2rem;
+    padding: 7px 15px 7px 15px;
   }
   .container .left {
     grid-template-columns: 300px 1fr;

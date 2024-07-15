@@ -171,3 +171,30 @@
         }
     }
 }
+
+
+
+/* Estilos generales para evitar los bordes en la galeria*/
+
+// .contenedor {
+//     .filterButtons {
+//         outline: solid 16px white;
+
+//         .navList{
+
+//             li{
+
+//                 &.active::before{
+//                     box-shadow: 10px 10px 0 9px white;
+//                 } 
+//                 &.active::after {
+//                     box-shadow: 10px -10px 0 9px white;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+    
+
+    

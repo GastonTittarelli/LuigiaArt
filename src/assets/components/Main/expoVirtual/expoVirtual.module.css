@@ -9,4 +9,10 @@
     width: 853px;
     height: 480px;
   }
+}
+@media screen and (min-width: 700px) and (max-width: 960px) {
+  .container iframe {
+    width: 761px;
+    height: 628px;
+  }
 }/*# sourceMappingURL=expoVirtual.module.css.map */
