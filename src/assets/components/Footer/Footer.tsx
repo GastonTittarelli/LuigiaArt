@@ -9,8 +9,8 @@ const Footer = () => {
 
                 <div className={styles.foto}>
                         <Link to="/about">
-                            <img className={styles.defaultImg} src="../../../img/my3.png" alt="" />
-                            <img className={styles.hoverImg} src="../../../img/my2hover.png" alt="" />
+                            <img className={styles.defaultImg} src="../../../img/my5.png" alt="" />
+                            <img className={styles.hoverImg} src="../../../img/my8.png" alt="" />
                         </Link>
                 </div>        
 

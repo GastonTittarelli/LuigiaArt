@@ -39,7 +39,7 @@ header .logoContainer h1 {
   width: auto;
   height: 100px;
   font-family: "Kalam", cursive;
-  color: rgb(245, 196, 239);
+  color: rgb(253, 164, 243);
   font-size: 4rem;
   display: flex;
   margin: 0;
@@ -62,7 +62,7 @@ header .logoContainer h1:hover {
   color: rgb(255, 255, 255);
 }
 header .logoContainer h1:hover .firstLetter {
-  color: rgb(245, 196, 239);
+  color: rgb(253, 164, 243);
 }
 
 .fixed {
