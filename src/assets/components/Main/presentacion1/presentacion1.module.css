@@ -148,14 +148,14 @@
   .container .text {
     justify-content: center;
     align-items: center;
-    height: 467px;
+    height: 448px;
     flex-wrap: wrap;
     gap: 0;
     flex-direction: row;
     overflow: auto;
   }
   .container .text::-webkit-scrollbar {
-    width: 9px;
+    width: 5px;
   }
   .container .text::-webkit-scrollbar-thumb {
     background: #222222;
@@ -172,6 +172,7 @@
   }
   .container .text .pContainer p {
     font-size: 1.1rem;
+    padding: 0 20px 0 20px;
   }
   .container .fotoContainer:hover .foto {
     opacity: 1;

@@ -98,4 +98,60 @@
   .container .containerFoto img {
     width: 380px;
   }
+}
+@media screen and (min-width: 700px) and (max-width: 960px) {
+  .container {
+    min-height: 75vh;
+    grid-template-columns: 10px 1fr 1fr 10px;
+  }
+  .container .text h2 {
+    font-size: 5rem;
+  }
+  .container .text .containerLetters {
+    gap: 4rem;
+  }
+  .container .text .containerLetters p {
+    font-size: 1.4rem;
+    padding: 0 30px 0 30px;
+  }
+  .container .text .containerLetters .redireccion {
+    animation: colorChange 3s infinite;
+  }
+  .container .text .containerLetters .redireccion:hover {
+    color: rgb(0, 0, 0);
+  }
+  .container .text .containerLetters .redireccion:hover::before {
+    width: 100%;
+  }
+  .container .text .containerLetters .redireccion::before {
+    animation: expandWidth 3s infinite;
+  }
+  @keyframes colorChange {
+    0% {
+      color: rgb(105, 105, 105);
+    }
+    50% {
+      color: rgb(0, 0, 0);
+    }
+    100% {
+      color: rgb(105, 105, 105);
+    }
+  }
+  @keyframes expandWidth {
+    0% {
+      width: 50%;
+    }
+    50% {
+      width: 55%;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+  .container .containerFoto {
+    justify-content: center;
+  }
+  .container .containerFoto img {
+    width: 350px;
+  }
 }/*# sourceMappingURL=pageNotFound.module.css.map */

@@ -57,7 +57,6 @@
 
                 &:hover::before {
                     width: 100%;
-                    
                 }
                 
                 &::before {
@@ -109,6 +108,78 @@
             
             img{
                 width: 380px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 960px) {
+
+    .container{
+        min-height: 75vh;
+        grid-template-columns: 10px 1fr 1fr 10px;
+
+        .text{
+    
+            h2{
+                font-size: 5rem;
+            }
+
+            .containerLetters{
+                gap: 4rem;
+    
+                p{
+                    font-size: 1.4rem;
+                    padding: 0 30px 0 30px;
+                }
+
+                .redireccion {
+                    animation: colorChange 3s infinite;
+
+                    &:hover{
+                        color: rgb(0, 0, 0)
+                    }
+    
+                    &:hover::before {
+                        width: 100%;
+                    }
+                    
+                    &::before {
+                        animation: expandWidth 3s infinite;
+                    }
+                
+                    @keyframes colorChange {
+                        0% {
+                            color: rgb(105, 105, 105);
+                        }
+                        50% {
+                            color: rgb(0, 0, 0);
+                        }
+                        100% {
+                            color: rgb(105, 105, 105);
+                        }
+                    }
+                
+                    @keyframes expandWidth {
+                        0% {
+                            width: 50%;
+                        }
+                        50% {
+                            width: 55%;
+                        }
+                        100% {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .containerFoto{
+            justify-content: center;
+    
+            img{
+                width: 350px;
             }
         }
     }

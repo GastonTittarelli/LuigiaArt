@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  min-height: 90vh;
+  min-height: 110vh;
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -36,5 +36,16 @@
   .containerCarrousel {
     height: 80vh;
     width: 45vw;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 960px) {
+  .container {
+    gap: 2rem;
+  }
+  .container .containerCarrousel {
+    width: 90vw;
+    border-radius: 6px;
+    gap: 1rem;
+    order: 1;
   }
 }/*# sourceMappingURL=carrouselContainer.module.css.map */

@@ -148,4 +148,23 @@
          columns: 3;
   }
 }
+@media screen and (min-width: 700px) and (max-width: 960px) {
+  .contenedor {
+    grid-template-columns: 170px 1fr;
+  }
+  .contenedor .filterButtons .navList {
+    font-size: 1.2rem;
+    gap: 3rem;
+  }
+  .contenedor .filterButtons .navList li {
+    padding: 0.5rem 1rem;
+    margin-left: 0.9rem;
+  }
+  .contenedor .filterButtons .flecha {
+    left: 70px;
+  }
+  .contenedor .contenedorImgs .itemContainer:hover h3 {
+    opacity: 0;
+  }
+}
 /* Estilos generales para evitar los bordes en la galeria*//*# sourceMappingURL=galeria.module.css.map */

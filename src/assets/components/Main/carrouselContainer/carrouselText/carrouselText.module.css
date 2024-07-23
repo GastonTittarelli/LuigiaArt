@@ -59,4 +59,20 @@
     font-size: 1.1rem;
     margin-bottom: 1rem;
   }
+}
+@media screen and (min-width: 700px) and (max-width: 960px) {
+  .text {
+    width: 90%;
+    height: auto;
+    border-radius: 6px;
+    padding: 0 2rem 2rem 2rem;
+    order: 2;
+  }
+  .text::-webkit-scrollbar {
+    width: 6px;
+  }
+  .text .titulo {
+    text-align: center;
+    font-size: 1.8rem;
+  }
 }/*# sourceMappingURL=carrouselText.module.css.map */

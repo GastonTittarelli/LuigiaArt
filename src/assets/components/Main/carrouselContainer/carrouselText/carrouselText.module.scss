@@ -70,3 +70,24 @@
         
     }
 }
+
+@media screen and (min-width: 700px) and (max-width: 960px) {
+    .text{
+        width: 90%;
+        height: auto;
+        border-radius: 6px;
+        padding: 0 2rem 2rem 2rem;
+        order: 2;
+
+        &::-webkit-scrollbar {
+            width: 6px; 
+        }
+
+        .titulo{
+            text-align: center;
+            font-size: 1.8rem ;
+        }
+
+        
+    }
+}

@@ -165,14 +165,14 @@
         .text {
             justify-content: center;
             align-items: center;
-            height: 467px;
+            height: 448px;
             flex-wrap: wrap;
             gap: 0;
             flex-direction: row;
             overflow: auto;
 
             &::-webkit-scrollbar {
-                width: 9px; 
+                width: 5px; 
             }
     
             &::-webkit-scrollbar-thumb {
@@ -191,6 +191,7 @@
                 padding-bottom: 1rem;
                 p{
                     font-size: 1.1rem;
+                    padding: 0 20px 0 20px;
                 }
             }
         }

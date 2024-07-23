@@ -17,11 +17,11 @@ const Footer = () => {
                 <div className={styles.redes}>
                     <h4>¡Conecta conmigo en mis redes para más inspiración!</h4>
 
-                    <a href="https://www.instagram.com/luigiaart/">
+                    <a href="https://www.instagram.com/luigiaart/" target="_blank" rel="noreferrel">
                         <img src="../../../img/InstagramLogo2.png" alt="Instagram Logo" />
                     </a>
 
-                    <a href="https://www.facebook.com/luigia.arts">
+                    <a href="https://www.facebook.com/luigia.arts" target="_blank" rel="noreferrel">
                         <img className={styles.face} src="../../../img/FacebookLogo1.png" alt="Instagram Logo" />
                     </a>
                 </div>

@@ -130,6 +130,17 @@
 }
 @media screen and (min-width: 700px) and (max-width: 960px) {
   .container {
-    min-height: 100vh;
+    min-height: 80vh;
+    position: relative;
+  }
+  .container h2 {
+    position: absolute;
+    top: 0;
+  }
+  .container .pinturas::before, .container .pinturas::after, .container .creacion::before, .container .creacion::after, .container .restauracion::before, .container .restauracion::after {
+    width: 50px;
+  }
+  .container .pinturas {
+    margin-top: 4rem;
   }
 }/*# sourceMappingURL=imagenList3.module.css.map */

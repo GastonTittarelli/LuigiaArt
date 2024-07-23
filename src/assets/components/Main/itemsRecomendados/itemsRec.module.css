@@ -86,4 +86,18 @@
   .sItems {
     width: 100%;
   }
+}
+@media screen and (min-width: 700px) and (max-width: 960px) {
+  .sItems {
+    width: 90%;
+    order: 3;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-top: gray solid 1px;
+    padding-top: 2rem;
+  }
+  .sItems h2 {
+    font-family: "Kalam", cursive;
+    font-size: 1.9rem;
+  }
 }/*# sourceMappingURL=itemsRec.module.css.map */

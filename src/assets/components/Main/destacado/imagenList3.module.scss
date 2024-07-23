@@ -157,6 +157,24 @@
 
 @media screen and (min-width: 700px) and (max-width: 960px) {
     .container {
-        min-height: 100vh;
+        min-height: 80vh;
+        position: relative;
+
+        h2 {
+            position: absolute;
+            top: 0;
+        }
+        .pinturas, .creacion, .restauracion {
+            
+
+            &::before, &::after {
+                width: 50px;
+            }
+        }
+
+
+        .pinturas{
+            margin-top: 4rem;
+        }
     }
 }

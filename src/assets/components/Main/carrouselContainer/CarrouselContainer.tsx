@@ -17,13 +17,29 @@ const CarrouselContainer = () => {
 
     useEffect(() => {
         const fetchItem = async () => {
+            setLoading(true); // Reiniciar el estado de carga
             if (!id) return;
 
             const docRef = doc(db, "items", id);
             const docSnap = await getDoc(docRef);
 
             if (docSnap.exists()) {
-                setItem({ id: docSnap.id, ...docSnap.data() } as Item);
+                const data = { id: docSnap.id, ...docSnap.data() } as Item;
+
+                // Lista de todas las imágenes en el item
+                const images = [data.img1, data.img2, data.img3, data.img4];
+
+                // Esperar a que todas las imágenes se carguen
+                const imagePromises = images.map(src => new Promise<void>((resolve) => {
+                    const img = new Image();
+                    img.src = src;
+                    img.onload = () => resolve();
+                    img.onerror = () => resolve(); // Ignorar errores de carga de imágenes
+                }));
+
+                await Promise.all(imagePromises);
+
+                setItem(data);
             } else {
                 setItem(null);
                 navigate('/not-found'); // Redirige a la página de error
@@ -44,11 +60,9 @@ const CarrouselContainer = () => {
     return (
         <div className={styles.container}>
             <CarrouselText />
-
             <div className={styles.containerCarrousel}>
                 <Carrousel />
             </div>
-
             {item && <ItemRec category={item.categoria} currentItemId={item.id}/>}
         </div>
     );
