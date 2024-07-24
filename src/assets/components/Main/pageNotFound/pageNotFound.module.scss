@@ -91,7 +91,7 @@
 
 //Responsive -medium size-
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1400px) {
     .container{
         min-height: 85vh;
         grid-template-columns:200px 1fr 1fr 210px;
@@ -113,7 +113,7 @@
     }
 }
 
-@media screen and (min-width: 700px) and (max-width: 960px) {
+@media screen and (max-width: 960px) {
 
     .container{
         min-height: 75vh;

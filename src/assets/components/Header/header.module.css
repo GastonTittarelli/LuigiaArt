@@ -22,7 +22,7 @@ header .logoContainer {
   background-color: rgba(34, 34, 34, 0.6);
   z-index: 3123123123123;
   display: flex;
-  padding-left: 1rem;
+  padding-left: 2rem;
   align-items: center;
   animation: size-font linear both;
   animation-timeline: scroll(root);
@@ -75,7 +75,10 @@ header .logoContainer h1:hover .firstLetter {
   background-color: rgb(83, 83, 83);
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1400px) {
+  header .logoContainer {
+    padding-left: 0.7rem;
+  }
   header .logoContainer h1 {
     font-size: 3.5rem;
     padding: 10px 0 10px 10px;
@@ -89,10 +92,7 @@ header .logoContainer h1:hover .firstLetter {
     }
   }
 }
-@media screen and (min-width: 700px) and (max-width: 960px) {
-  header .logoContainer {
-    padding-left: 0.7rem;
-  }
+@media screen and (max-width: 960px) {
   header .logoContainer h1 {
     font-size: 3rem;
     padding: 15px 0 15px 0;

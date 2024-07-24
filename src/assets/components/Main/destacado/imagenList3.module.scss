@@ -1,7 +1,7 @@
 @import "../../../scss/styles/utilities/variables.scss";
 @import "../../../scss/styles/utilities/mixin.scss";
 
-@media (prefers-reduced-motion: no-preference) {
+
     .container {
         min-height: 130vh;
         width: 100%;
@@ -125,12 +125,12 @@
             }
         }
     }
-}
+
 
 
 //Responsive -medium size-
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1400px) {
     
     .container {
         gap: 3rem;
@@ -138,6 +138,10 @@
         .pinturas, .creacion, .restauracion {
             height: 240px;
             padding:  0;
+
+            &::before, &::after {
+                width: 100px;
+            }
 
             .imagenesSide {
 
@@ -155,7 +159,7 @@
 
 //Responsive -tablet devices-
 
-@media screen and (min-width: 700px) and (max-width: 960px) {
+@media screen and (max-width: 960px) {
     .container {
         min-height: 80vh;
         position: relative;

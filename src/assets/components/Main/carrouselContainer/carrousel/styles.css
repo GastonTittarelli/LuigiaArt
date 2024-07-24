@@ -94,7 +94,7 @@
     height: 95%;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1400px) {
     
     .mySwiper2 {
         height: 80%;
@@ -108,7 +108,7 @@
     }
 }
 
-@media screen and (min-width: 700px) and (max-width: 960px) {
+@media screen and (max-width: 960px) {
 
     
     .swiper-slide{

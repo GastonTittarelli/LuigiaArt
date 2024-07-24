@@ -106,7 +106,7 @@
   font-style: italic;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1500px) {
   .container {
     margin-top: 2.5rem;
     grid-template-columns: 1fr 390px;
@@ -141,8 +141,30 @@
     font-size: 1.3rem;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 960px) {
+@media screen and (max-width: 1380px) {
   .container {
+    margin-top: 1rem;
+    grid-template-columns: 1fr 390px;
+  }
+  .container .text {
+    justify-content: center;
+  }
+  .container .text h2 {
+    font-size: 4.2rem;
+    padding-top: 0px;
+  }
+  .container .fotoContainer {
+    width: 350px;
+  }
+  .container .fotoContainer::before {
+    width: 350px;
+    height: 460px;
+    border: solid 4px rgb(151, 151, 151);
+  }
+}
+@media screen and (max-width: 960px) {
+  .container {
+    margin-top: 2.5rem;
     grid-template-columns: 1fr 350px;
   }
   .container .text {
@@ -166,6 +188,7 @@
   }
   .container .text h2 {
     font-size: 2.5rem;
+    padding-top: 20px;
   }
   .container .text .pContainer {
     padding-bottom: 1rem;

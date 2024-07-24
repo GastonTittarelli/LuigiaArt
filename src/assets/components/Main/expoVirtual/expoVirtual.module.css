@@ -4,18 +4,22 @@
   align-items: center;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1400px) {
   .container iframe {
     width: 853px;
     height: 480px;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 960px) {
+@media screen and (max-width: 960px) {
   .container {
     min-height: 75vh;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
   }
   .container iframe {
-    width: 761px;
+    width: 95%;
     height: 628px;
   }
 }/*# sourceMappingURL=expoVirtual.module.css.map */

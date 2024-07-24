@@ -31,14 +31,14 @@
   font-size: 1.1rem;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1400px) {
   .text {
     height: 80vh;
-    gap: 1.2rem;
-    justify-content: flex-start;
+    gap: 0.6rem;
+    justify-content: center;
   }
   .text::-webkit-scrollbar {
-    width: 11px;
+    width: 8px;
   }
   .text::-webkit-scrollbar-thumb {
     background: #5e5e5e;
@@ -48,7 +48,7 @@
     background: #f1f1f1;
   }
   .text .titulo {
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 2.1rem;
   }
   .text .descripcion {
@@ -60,7 +60,7 @@
     margin-bottom: 1rem;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 960px) {
+@media screen and (max-width: 960px) {
   .text {
     width: 90%;
     height: auto;

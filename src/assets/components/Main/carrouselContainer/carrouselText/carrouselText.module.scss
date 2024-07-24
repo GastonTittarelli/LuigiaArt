@@ -34,14 +34,14 @@
 
 //Responsive -medium size-
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1400px) {
     .text{
         height: 80vh;
-        gap: 1.2rem;
-        justify-content: flex-start;
+        gap: .6rem;
+        justify-content: center;
 
         &::-webkit-scrollbar {
-            width: 11px; 
+            width: 8px; 
         }
 
         &::-webkit-scrollbar-thumb {
@@ -56,7 +56,7 @@
         
 
             .titulo{
-                margin-top: 2rem;
+                margin-top: 1rem;
                 font-size: 2.1rem;
             }
             .descripcion{
@@ -71,7 +71,7 @@
     }
 }
 
-@media screen and (min-width: 700px) and (max-width: 960px) {
+@media screen and (max-width: 960px) {
     .text{
         width: 90%;
         height: auto;

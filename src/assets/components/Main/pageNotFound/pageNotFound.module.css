@@ -84,7 +84,7 @@
   width: 500px;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1400px) {
   .container {
     min-height: 85vh;
     grid-template-columns: 200px 1fr 1fr 210px;
@@ -99,7 +99,7 @@
     width: 380px;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 960px) {
+@media screen and (max-width: 960px) {
   .container {
     min-height: 75vh;
     grid-template-columns: 10px 1fr 1fr 10px;
