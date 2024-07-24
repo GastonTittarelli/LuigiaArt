@@ -81,7 +81,7 @@
 }
 .contenedor .contenedorImgs {
   width: 100%;
-  min-height: 90vh;
+  height: 100%;
   -moz-columns: 4;
        columns: 4;
   padding: 15px 30px;
@@ -131,6 +131,13 @@
 }
 .contenedor .contenedorImgs .itemContainer:hover h3 {
   opacity: 1;
+}
+.contenedor .loaderWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 1400px) {

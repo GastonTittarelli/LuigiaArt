@@ -2,6 +2,7 @@ import styles from "./galeria.module.scss";
 import { useState, useEffect} from 'react';
 import { getItems, Item } from '../items/Items';
 import { useParams, Link, useNavigate } from 'react-router-dom';
+import Loader from "../loader/Loader";
 
 const Galeria = () => {
     const [items, setItems] = useState<Item[]>([]);
@@ -111,7 +112,9 @@ const Galeria = () => {
                     className={styles.flecha} />
             </div>
 
-            <div className={styles.contenedorImgs} style={{ opacity: imagesLoaded ? 1 : 0, transition: 'opacity 1s' }}>
+            {!imagesLoaded && <div className={styles.loaderWrapper}><Loader /></div>}
+
+            <div className={styles.contenedorImgs} style={{ opacity: imagesLoaded ? 1 : 0, transition: 'opacity 0.5s' }}>
                 {items.map((item) => (
                     <div key={item.id} className={styles.itemContainer}>
                         <img className={styles.imagenes} loading="lazy" src={item.optimizada} alt={item.titulo} />

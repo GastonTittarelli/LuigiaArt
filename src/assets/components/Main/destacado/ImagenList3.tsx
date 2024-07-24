@@ -1,22 +1,22 @@
 import { useEffect, useState } from "react";
-import db from '../../../../../db/firebase-config.ts'
+import db from '../../../../../db/firebase-config.ts';
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { Item } from "../items/Items.tsx";
-import styles from "./imagenList3.module.scss"
+import styles from "./imagenList3.module.scss";
 import { Link } from "react-router-dom";
 
-export const getItemsByCategory = async (categoria: string) => {
+export const getItemsByCategory = async (categoria: string): Promise<Item[]> => {
     const q = query(collection(db, "items"), where("categoria", "==", categoria));
     const querySnapshot = await getDocs(q);
 
     const itemsdata = querySnapshot.docs
-    .map((doc) => ({
-        ...doc.data(),
-        id: doc.id,
-    } as Item))
-    .filter((item: Item) => item.subCategoria2); 
+        .map((doc) => ({
+            ...doc.data(),
+            id: doc.id,
+        } as Item))
+        .filter((item: Item) => item.subCategoria2);
 
-return itemsdata;
+    return itemsdata;
 };
 
 export const ItemsByCategory = () => {
@@ -39,98 +39,102 @@ export const ItemsByCategory = () => {
 
     useEffect(() => {
         if (itemsPintura.length > 0 && itemsRestauracion.length > 0 && itemsCreacion.length > 0) {
-            const images = document.querySelectorAll(`.${styles.imagenes}`);
+            setImagesLoaded(false);
+            const images = document.querySelectorAll<HTMLImageElement>(`.${styles.imagenes}`);
             let loadedCount = 0;
 
+            const handleImageLoad = () => {
+                loadedCount++;
+                if (loadedCount === images.length) {
+                    setImagesLoaded(true);
+                }
+            };
+
             images.forEach((img) => {
-                img.addEventListener('load', () => {
-                    loadedCount++;
-                    if (loadedCount === images.length) {
-                        setImagesLoaded(true);
-                    }
-                });
+                if (img.complete) {
+                    handleImageLoad();
+                } else {
+                    img.addEventListener('load', handleImageLoad);
+                }
             });
+
+            return () => {
+                images.forEach((img) => {
+                    img.removeEventListener('load', handleImageLoad);
+                });
+            };
         }
     }, [itemsPintura, itemsRestauracion, itemsCreacion]);
 
     return (
         <div className={styles.container}>
-
             <h2>Principales Destacados</h2>
 
             <div className={styles.pinturas}>
-                <section className= {`${styles.imagenesSide} ${imagesLoaded ? styles.loaded : ''}`}>
-                        {itemsPintura.map((item) => (
-                            <div className={styles.contenedorImg} key={item.id}>
-                                    <Link to = {`${item.id}`} >
-                                        <img className={styles.imagenes} loading="lazy" src={item.subCategoria2} alt={item.titulo} />
-                                    </Link>
-                                    
-                            </div>
-                        ))}
+                <section className={`${styles.imagenesSide} ${imagesLoaded ? styles.loaded : ''}`}>
+                    {itemsPintura.map((item) => (
+                        <div className={styles.contenedorImg} key={item.id}>
+                            <Link to={`${item.id}`}>
+                                <img className={styles.imagenes} loading="lazy" src={item.subCategoria2} alt={item.titulo} />
+                            </Link>
+                        </div>
+                    ))}
                 </section>
-                
-
-                <section className= {`${styles.imagenesSide} ${imagesLoaded ? styles.loaded : ''}`}>
-                        {itemsPintura.map((item) => (
-                            <div className={styles.contenedorImg} key={item.id}>
-                                <Link to = {`${item.id}`} >
-                                    <img className={styles.imagenes} loading="lazy" src={item.subCategoria2} alt={item.titulo} />
-                                </Link>
-                                
-                            </div>
-                        ))}
+                <section className={`${styles.imagenesSide} ${imagesLoaded ? styles.loaded : ''}`}>
+                    {itemsPintura.map((item) => (
+                        <div className={styles.contenedorImg} key={item.id}>
+                            <Link to={`${item.id}`}>
+                                <img className={styles.imagenes} loading="lazy" src={item.subCategoria2} alt={item.titulo} />
+                            </Link>
+                        </div>
+                    ))}
                 </section>
-
-                
             </div>
 
             <div className={styles.creacion}>
-                <section className= {`${styles.imagenesSide} ${imagesLoaded ? styles.loaded : ''}`}>
-                {itemsCreacion.map((item) => (
-                    <div className={styles.contenedorImg} key={item.id}>
-                        <Link to = {`${item.id}`} >
-                            <img className={styles.imagenes} loading="lazy" src={item.subCategoria2} alt={item.titulo} />
-                        </Link>
-                    </div>
-                ))}
+                <section className={`${styles.imagenesSide} ${imagesLoaded ? styles.loaded : ''}`}>
+                    {itemsCreacion.map((item) => (
+                        <div className={styles.contenedorImg} key={item.id}>
+                            <Link to={`${item.id}`}>
+                                <img className={styles.imagenes} loading="lazy" src={item.subCategoria2} alt={item.titulo} />
+                            </Link>
+                        </div>
+                    ))}
                 </section>
-
-                <section className= {`${styles.imagenesSide} ${imagesLoaded ? styles.loaded : ''}`}>
-                {itemsCreacion.map((item) => (
-                    <div className={styles.contenedorImg} key={item.id}>
-                    <Link to = {`${item.id}`} >
-                        <img className={styles.imagenes} loading="lazy" src={item.subCategoria2} alt={item.titulo} />
-                    </Link>
-                    </div>
-                ))}
+                <section className={`${styles.imagenesSide} ${imagesLoaded ? styles.loaded : ''}`}>
+                    {itemsCreacion.map((item) => (
+                        <div className={styles.contenedorImg} key={item.id}>
+                            <Link to={`${item.id}`}>
+                                <img className={styles.imagenes} loading="lazy" src={item.subCategoria2} alt={item.titulo} />
+                            </Link>
+                        </div>
+                    ))}
                 </section>
             </div>
 
             <div className={styles.restauracion}>
-                <section className= {`${styles.imagenesSide} ${imagesLoaded ? styles.loaded : ''}`}>
-                {itemsRestauracion.map((item) => (
-                    <div className={styles.contenedorImg} key={item.id}>
-                        <Link to = {`${item.id}`} >
-                            <img className={styles.imagenes} loading="lazy" src={item.subCategoria2} alt={item.titulo} />
-                        </Link>
-                    </div>
-                ))}
+                <section className={`${styles.imagenesSide} ${imagesLoaded ? styles.loaded : ''}`}>
+                    {itemsRestauracion.map((item) => (
+                        <div className={styles.contenedorImg} key={item.id}>
+                            <Link to={`${item.id}`}>
+                                <img className={styles.imagenes} loading="lazy" src={item.subCategoria2} alt={item.titulo} />
+                            </Link>
+                        </div>
+                    ))}
                 </section>
-
-                <section className= {`${styles.imagenesSide} ${imagesLoaded ? styles.loaded : ''}`}>
-                {itemsRestauracion.map((item) => (
-                    <div className={styles.contenedorImg} key={item.id}>
-                        <Link to = {`${item.id}`}>
-                            <img className={styles.imagenes} loading="lazy"  src={item.subCategoria2} alt={item.titulo} />
-                        </Link>
-                    </div>
-                ))}
+                <section className={`${styles.imagenesSide} ${imagesLoaded ? styles.loaded : ''}`}>
+                    {itemsRestauracion.map((item) => (
+                        <div className={styles.contenedorImg} key={item.id}>
+                            <Link to={`${item.id}`}>
+                                <img className={styles.imagenes} loading="lazy" src={item.subCategoria2} alt={item.titulo} />
+                            </Link>
+                        </div>
+                    ))}
                 </section>
             </div>
-
         </div>
     );
 };
 
-export default ItemsByCategory
+export default ItemsByCategory;
+
