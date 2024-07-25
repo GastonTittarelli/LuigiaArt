@@ -94,6 +94,11 @@
     height: 95%;
 }
 
+@media screen and (max-width: 1650px) {
+    .zoom-container img {
+        height: 420px; 
+    }
+}
 @media screen and (max-width: 1400px) {
     
     .mySwiper2 {
