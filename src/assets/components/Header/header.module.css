@@ -97,4 +97,16 @@ header .logoContainer h1:hover .firstLetter {
     font-size: 3rem;
     padding: 15px 0 15px 0;
   }
+}
+@media screen and (max-width: 700px) {
+  header {
+    grid-template-rows: 1fr 300px;
+  }
+  header .logoContainer {
+    padding-left: 1rem;
+  }
+  .fixed {
+    position: sticky;
+    background-color: rgb(83, 83, 83);
+  }
 }/*# sourceMappingURL=header.module.css.map */

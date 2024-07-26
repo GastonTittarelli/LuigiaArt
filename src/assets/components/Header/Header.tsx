@@ -9,6 +9,7 @@ const location = useLocation();
 
 const headerClass = location.pathname === '/' ? styles.fixed : styles.sticky;
 
+
 return (
     <header className={headerClass}>
         
