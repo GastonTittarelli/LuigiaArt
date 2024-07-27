@@ -101,9 +101,20 @@ header .logoContainer h1:hover .firstLetter {
 @media screen and (max-width: 700px) {
   header {
     grid-template-rows: 1fr 300px;
+    animation-range: 0 200px;
   }
   header .logoContainer {
-    padding-left: 1rem;
+    animation-range: 0 200px;
+  }
+  header .logoContainer h1 {
+    animation-range: 0 200px;
+  }
+  @keyframes size-font2 {
+    to {
+      height: 60px;
+      font-size: 2.5rem;
+      padding: 0 0 0 1px;
+    }
   }
   .fixed {
     position: sticky;

@@ -106,4 +106,28 @@
   .container .backroundImg .textHeader p {
     font-size: 1.4em;
   }
+}
+@media screen and (max-width: 700px) {
+  .container .backroundImg {
+    height: 500px;
+  }
+  .container .backroundImg .textHeader {
+    width: 90%;
+    height: 60%;
+  }
+  .container .backroundImg .textHeader h1 {
+    font-size: 4.1rem;
+  }
+  .container .backroundImg .textHeader h2 {
+    font-size: 2.1em;
+    font-weight: 500;
+  }
+  .container .backroundImg .textHeader p {
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container .backroundImg {
+    height: 400px;
+  }
 }/*# sourceMappingURL=backround.module.css.map */

@@ -76,7 +76,7 @@ nav ul li:hover {
     background-color: rgba(34, 34, 34, 0.6);
     animation: nav-scroll linear both;
     animation-timeline: scroll(root);
-    animation-range: 0 400px;
+    animation-range: 0 200px;
   }
   @keyframes nav-scroll {
     to {
@@ -88,7 +88,7 @@ nav ul li:hover {
     width: 70px;
     animation: nav-scroll3 linear both;
     animation-timeline: scroll(root);
-    animation-range: 0 400px;
+    animation-range: 0 200px;
   }
   @keyframes nav-scroll3 {
     to {
@@ -101,6 +101,7 @@ nav ul li:hover {
     pointer-events: none;
     height: 0;
     background-color: rgba(34, 34, 34, 0.96);
+    animation-range: 0 200px;
     animation: nav-scroll2 linear both;
     animation-timeline: scroll(root);
     animation-range: 0 400px;
@@ -112,13 +113,17 @@ nav ul li:hover {
   }
   .nav ul {
     flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     justify-content: space-around;
     height: 300px;
     animation: none;
+    border-bottom: solid 1px rgb(39, 39, 39);
   }
   .activo {
     height: 100%;
     pointer-events: auto;
+    box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.3);
   }
   .transition {
     transition: all 0.7s ease;

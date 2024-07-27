@@ -143,4 +143,51 @@
   .container .copyright p {
     font-size: 1rem;
   }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    height: 210px;
+  }
+  .container .contenido {
+    padding-top: 5px;
+    height: 100%;
+  }
+  .container .contenido .foto {
+    position: relative;
+    height: 150px;
+    width: 165px;
+    margin-left: 0.5rem;
+    margin-right: 0.2rem;
+  }
+  .container .contenido .foto a {
+    height: 150px;
+    width: auto;
+  }
+  .container .contenido .foto a img {
+    width: 100%;
+    height: 100%;
+  }
+  .container .contenido .redes {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 1.5rem 0 1.5rem 0;
+  }
+  .container .contenido .redes h4 {
+    text-align: center;
+    font-size: 1.4rem;
+    padding-right: 0;
+    width: 100%;
+  }
+  .container .contenido .redes a {
+    height: 30px;
+    margin: 0.7rem 0.7rem 0 0.7rem;
+  }
+  .container .contenido .redes a img {
+    height: 30px;
+  }
+  .container .copyright p {
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=footer.module.css.map */

@@ -210,4 +210,46 @@
   .container .fotoContainer .foto {
     border-radius: 0 5px 5px 0;
   }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .container .text {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    overflow: visible;
+  }
+  .container .text h2 {
+    min-height: auto;
+    padding-top: 1rem;
+    margin: 0;
+  }
+  .container .text .pContainer {
+    margin-top: 1rem;
+  }
+  .container .text .pContainer p {
+    height: 100%;
+    text-align: justify;
+    padding: 0 35px 0 35px;
+  }
+  .container .fotoContainer {
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  .container .fotoContainer .foto {
+    width: 350px;
+    height: 467px;
+    border-radius: 20px 20px 0 0;
+  }
 }/*# sourceMappingURL=presentacion1.module.css.map */

@@ -182,3 +182,25 @@
         }
     }
 }
+
+@media screen and (max-width: 700px) {
+    .container {
+        .pinturas, .creacion, .restauracion {
+            height: 200px;
+
+            .imagenesSide{
+                .contenedorImg {
+                    height: 150px;
+
+                    .imagenes {
+                        height: 150px;
+                    }
+                }
+            }
+        }
+        h2 {
+            
+            font-size: 1.9rem;
+        }
+    }
+}

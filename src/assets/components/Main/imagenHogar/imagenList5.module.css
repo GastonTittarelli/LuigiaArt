@@ -63,4 +63,9 @@
   .contenedor .contenedorImgs {
     width: 95vw;
   }
+}
+@media screen and (max-width: 700px) {
+  .contenedor h2 {
+    font-size: 1.8rem;
+  }
 }/*# sourceMappingURL=imagenList5.module.css.map */
