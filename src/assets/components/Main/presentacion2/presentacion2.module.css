@@ -157,4 +157,19 @@
       transform: scale(1);
     }
   }
+}
+@media screen and (max-width: 960px) {
+  .container .card {
+    display: flex;
+    position: relative;
+  }
+  .container .card .foto {
+    width: 320px;
+  }
+  .container .card h4 {
+    align-content: center;
+    overflow: auto;
+    padding: 35px;
+    height: 427px;
+  }
 }/*# sourceMappingURL=presentacion2.module.css.map */

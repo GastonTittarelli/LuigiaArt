@@ -47,6 +47,11 @@ const Nav = () => {
         }, []);
 
 
+        const isActiveLink = (path: string) => {
+            return location.pathname === path ? 'active' : '';
+        };
+        
+
     return (
 
         <>
@@ -57,20 +62,20 @@ const Nav = () => {
             <nav ref={navRef} className={`nav ${isActive ? 'activo' : ''} ${useTransition ? 'transition' : ''}`}>
             <ul>
                 <Link to="/">
-                    <li>Inicio</li>
+                    <li className={isActiveLink('/')}>Inicio</li>
                 </Link>
 
                 <Link  to="/about">
-                    <li>Acarca de mi</li>
+                    <li className={isActiveLink('/about')}>Acarca de mi</li>
                 </Link>
 
-                <Link  to="/gallery">
-                    <li>Galería</li>
-                </Link>
+                <Link to="/gallery">
+                        <li className={isActiveLink('/gallery')}>Galería</li>
+                    </Link>
 
-                <Link  to="/virtual">
-                    <li>Exposición virtual</li>
-                </Link>
+                    <Link to="/virtual">
+                        <li className={isActiveLink('/virtual')}>Exposición virtual</li>
+                    </Link>
             </ul>
         </nav>
         </>

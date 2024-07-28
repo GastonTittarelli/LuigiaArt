@@ -197,3 +197,24 @@
         }    
     }
 }
+
+@media screen and (max-width: 960px) {
+    .container{
+        
+        .card{
+            display: flex;
+            position: relative;
+            .foto{
+                width: 320px;
+                
+            }
+            h4{
+                // background-color: rgb(228, 228, 228);
+                align-content: center;
+                overflow: auto;
+                padding: 35px;
+                height: 427px;
+            }
+        }
+    }
+}

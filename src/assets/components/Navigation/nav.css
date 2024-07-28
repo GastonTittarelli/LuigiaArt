@@ -120,6 +120,9 @@ nav ul li:hover {
     animation: none;
     border-bottom: solid 1px rgb(39, 39, 39);
   }
+  .nav ul li {
+    padding: 7px 19px 7px 19px;
+  }
   .activo {
     height: 100%;
     pointer-events: auto;
@@ -127,5 +130,8 @@ nav ul li:hover {
   }
   .transition {
     transition: all 0.7s ease;
+  }
+  .active {
+    color: rgb(253, 164, 243);
   }
 }/*# sourceMappingURL=nav.css.map */

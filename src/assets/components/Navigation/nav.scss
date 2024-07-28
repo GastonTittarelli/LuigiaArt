@@ -56,6 +56,7 @@ nav{
                 color: rgb(235, 235, 235);
             }
         }
+        
     }
 }
 
@@ -140,6 +141,10 @@ nav{
             animation: none;
             border-bottom: solid 1px rgb(39, 39, 39);
             
+            li{
+                padding: 7px 19px 7px 19px;
+            }
+            
         }
     }
 
@@ -155,4 +160,8 @@ nav{
     .transition {
         transition: all 0.7s ease;
     }
+    .active{
+        color: rgb(253, 164, 243);
+    }
+    
 }
