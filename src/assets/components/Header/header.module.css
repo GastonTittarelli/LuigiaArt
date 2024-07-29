@@ -6,7 +6,7 @@ header {
   left: 0;
   display: grid;
   grid-template-columns: 1fr 5fr;
-  z-index: 114;
+  z-index: 10000;
   animation: nav-scroll linear both;
   animation-timeline: scroll(root);
   animation-range: 0 400px;

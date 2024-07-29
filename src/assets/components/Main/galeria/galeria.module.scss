@@ -214,27 +214,41 @@
     }
 }
 
-/* Estilos generales para evitar los bordes en la galeria*/
+@media screen and (max-width: 700px) {
+    .contenedor{
+        
 
-// .contenedor {
-//     .filterButtons {
-//         outline: solid 16px white;
+        .contenedorImgs {
+            columns: 2;
+        }
+    }
+}
 
-//         .navList{
+@media screen and (max-width: 500px) {
+    .contenedor {
+    grid-template-columns: 100px 1fr;
+        gap: 17px;
+        .filterButtons {
 
-//             li{
+            .navList{
+                font-size: clamp(.7rem, 2vw, .9rem);
+                gap: 2.5rem;
 
-//                 &.active::before{
-//                     box-shadow: 10px 10px 0 9px white;
-//                 } 
-//                 &.active::after {
-//                     box-shadow: 10px -10px 0 9px white;
-//                 }
-//             }
-//         }
-//     }
-// }
+                li{
+                    padding: .4rem .1rem .4rem .4rem ;
+                    margin-left: .3rem;
 
-    
+                }
+            }
+            .flecha{
+                left: 70px;
+            }
+        }
+        .contenedorImgs {
+            width: 100%;
+            padding: 15px 5px 15px 5px;
+        }
+    }
+}
 
     
