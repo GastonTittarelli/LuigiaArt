@@ -111,3 +111,20 @@
         }
     }
 }
+
+@media screen and (max-width: 700px) {
+    .sItems {
+        .itemLink {
+    
+            .item {
+                height: 256px;
+                width: 200px;
+            }
+
+            .imgContainer{
+                height: 200px; 
+            }
+
+        }
+    }
+}

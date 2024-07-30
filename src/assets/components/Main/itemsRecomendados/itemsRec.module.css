@@ -100,4 +100,13 @@
     font-family: "Kalam", cursive;
     font-size: 1.9rem;
   }
+}
+@media screen and (max-width: 700px) {
+  .sItems .itemLink .item {
+    height: 256px;
+    width: 200px;
+  }
+  .sItems .itemLink .imgContainer {
+    height: 200px;
+  }
 }/*# sourceMappingURL=itemsRec.module.css.map */

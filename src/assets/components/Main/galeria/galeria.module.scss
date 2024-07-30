@@ -231,22 +231,28 @@
         .filterButtons {
 
             .navList{
-                font-size: clamp(.7rem, 2vw, .9rem);
+                font-size: .7rem;
                 gap: 2.5rem;
+                user-select: none;
+                -webkit-user-select: none; 
+                -moz-user-select: none;
+                -ms-user-select: none;
 
                 li{
-                    padding: .4rem .1rem .4rem .4rem ;
-                    margin-left: .3rem;
-
+                    padding: .4rem ;
+                    margin-left: .4rem;
+                    
                 }
             }
             .flecha{
-                left: 70px;
+                left: 38px;
+                width: 25px;
             }
         }
         .contenedorImgs {
             width: 100%;
             padding: 15px 5px 15px 5px;
+            column-gap: 20px;
         }
     }
 }

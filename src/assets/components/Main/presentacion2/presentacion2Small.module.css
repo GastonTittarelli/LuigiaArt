@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+.container {
+  min-height: 80vh;
+  width: 90%;
+  display: grid;
+  gap: 4rem;
+  margin: 6rem 0 6rem 0;
+  opacity: 0;
+  animation: aparecer 0.2s forwards;
+}
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
+.container .card {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.container .card .foto {
+  width: 400px;
+}
+.container .card button {
+  display: none;
+}
+.container .card h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  font-size: 1.1rem;
+  font-style: italic;
+  padding: 15px 100px 15px 100px;
+  line-height: 2;
+  font-weight: 400;
+  text-align: justify;
+  animation: appear linear forwards;
+  animation-timeline: view();
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  22% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container .card {
+    display: flex;
+    position: relative;
+    border-radius: 15px;
+  }
+  .container .card .foto {
+    width: 80%;
+    height: auto;
+    border-radius: 15px 0 0 15px;
+  }
+  .container .card button {
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    right: 20%;
+    background-color: rgb(228, 228, 228);
+    border-radius: 30px 0 0 30px;
+    transition: right 0.3s ease-in-out, background-color 0.3s ease-in;
+  }
+  .container .card button .info {
+    padding: 15px;
+    width: 50px;
+    animation: grow 2s linear infinite;
+  }
+  @keyframes grow {
+    0% {
+      scale: 1;
+    }
+    50% {
+      scale: 1.1;
+    }
+    100% {
+      scale: 1;
+    }
+  }
+  .container .card h4 {
+    background-color: rgba(228, 228, 228, 0.9);
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    color: transparent;
+    transition: width 0.3s ease-in-out, color 0.2s ease;
+    border-radius: 0 15px 15px 0;
+    top: 0;
+    right: 0;
+    font-size: 1rem;
+    align-content: center;
+    padding: 35px;
+    overflow: hidden;
+    animation: none;
+  }
+  .container .card .visible {
+    width: 80%;
+    color: black;
+    transition: width 0.3s ease-in-out, color 2.2s ease-in;
+  }
+  .container .active {
+    border-radius: 15px;
+  }
+  .container .active button {
+    right: 80%;
+    background-color: rgba(228, 228, 228, 0.9);
+  }
+  .container .active h4 {
+    border-radius: 0 15px 15px 0;
+  }
+}/*# sourceMappingURL=presentacion2Small.module.css.map */

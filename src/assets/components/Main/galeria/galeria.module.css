@@ -186,18 +186,25 @@
     gap: 17px;
   }
   .contenedor .filterButtons .navList {
-    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    font-size: 0.7rem;
     gap: 2.5rem;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
   }
   .contenedor .filterButtons .navList li {
-    padding: 0.4rem 0.1rem 0.4rem 0.4rem;
-    margin-left: 0.3rem;
+    padding: 0.4rem;
+    margin-left: 0.4rem;
   }
   .contenedor .filterButtons .flecha {
-    left: 70px;
+    left: 38px;
+    width: 25px;
   }
   .contenedor .contenedorImgs {
     width: 100%;
     padding: 15px 5px 15px 5px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
   }
 }/*# sourceMappingURL=galeria.module.css.map */

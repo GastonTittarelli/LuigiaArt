@@ -35,4 +35,18 @@
     transform: scaleX(0.9);
     background-color: rgb(90, 90, 90);
   }
+}
+
+@media screen and (max-width: 550px) {
+  .animacion {
+    height: 290px;
+    width: auto;
+  }
+  .animacion .foto {
+    width: 200px;
+  }
+  .animacion .sombra {
+    width: 100px;
+    height: 15px;
+  }
 }/*# sourceMappingURL=loader.module.css.map */

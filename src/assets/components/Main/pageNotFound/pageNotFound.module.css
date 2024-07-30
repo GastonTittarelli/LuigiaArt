@@ -162,4 +162,30 @@
   .container .containerFoto img {
     width: 350px;
   }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    min-height: 75vh;
+    grid-template-columns: 1px 1fr 260px 1px;
+  }
+  .container .text h2 {
+    font-size: 3rem;
+  }
+  .container .text .containerLetters {
+    gap: 4rem;
+  }
+  .container .text .containerLetters p {
+    font-size: 1.2rem;
+    padding: 0 5px 0 20px;
+  }
+  .container .text .containerLetters .redireccion {
+    font-size: 1.1rem;
+    height: 30px;
+  }
+  .container .containerFoto {
+    justify-content: center;
+  }
+  .container .containerFoto img {
+    width: 250px;
+  }
 }/*# sourceMappingURL=pageNotFound.module.css.map */

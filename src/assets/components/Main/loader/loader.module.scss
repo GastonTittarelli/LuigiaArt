@@ -41,12 +41,17 @@
     }
 }
 
-// @media screen and (max-width: 1366px) {
-//     .animacion {
-        
-        
-//         .foto {
-//             width: 250px;
-//         }
-//     }
-// }
+@media screen and (max-width: 550px) {
+    .animacion {
+        height: 290px;
+        width: auto;
+        .foto {
+            width: 200px;
+        }
+
+        .sombra {
+            width: 100px;
+            height: 15px;
+        }
+    }
+}
