@@ -54,6 +54,17 @@
     display: flex;
     position: relative;
     border-radius: 15px;
+    transform-origin: left;
+    animation: Size linear forwards;
+    animation-timeline: view();
+  }
+  @keyframes Size {
+    0% {
+      transform: scaleX(0.94);
+    }
+    20% {
+      transform: scaleX(1);
+    }
   }
   .container .card .foto {
     width: 80%;
@@ -91,7 +102,7 @@
     width: 20%;
     height: 100%;
     color: transparent;
-    transition: width 0.3s ease-in-out, color 0.2s ease;
+    transition: width 0.3s ease-in-out, color 0.1s ease;
     border-radius: 0 15px 15px 0;
     top: 0;
     right: 0;
@@ -99,7 +110,16 @@
     align-content: center;
     padding: 35px;
     overflow: hidden;
-    animation: none;
+    animation: appear linear forwards;
+    animation-timeline: view();
+  }
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
   }
   .container .card .visible {
     width: 80%;
