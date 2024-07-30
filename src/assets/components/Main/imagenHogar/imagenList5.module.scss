@@ -89,3 +89,19 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+
+    .contenedor{
+        
+        h2{
+            padding: 0 .7rem 0 .7rem;
+        }
+
+        .contenedorImgs{
+            columns: 2;
+            column-gap: 30px;
+        }
+        
+    }
+}

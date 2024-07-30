@@ -6,7 +6,7 @@ header {
   left: 0;
   display: grid;
   grid-template-columns: 1fr 5fr;
-  z-index: 10000;
+  z-index: 111;
   animation: nav-scroll linear both;
   animation-timeline: scroll(root);
   animation-range: 0 400px;
@@ -119,5 +119,18 @@ header .logoContainer h1:hover .firstLetter {
   .fixed {
     position: sticky;
     background-color: rgb(83, 83, 83);
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    height: 80px;
+  }
+  header .logoContainer {
+    height: 80px;
+  }
+  header .logoContainer h1 {
+    height: 80px;
+    padding: 7px 0 0 0;
+    align-items: center;
   }
 }/*# sourceMappingURL=header.module.css.map */

@@ -159,4 +159,25 @@
   .container h2 {
     font-size: 1.9rem;
   }
+}
+@media screen and (max-width: 500px) {
+  .container .pinturas, .container .creacion, .container .restauracion {
+    height: 160px;
+  }
+  .container .pinturas::before, .container .pinturas::after, .container .creacion::before, .container .creacion::after, .container .restauracion::before, .container .restauracion::after {
+    width: 30px;
+  }
+  .container .pinturas .imagenesSide, .container .creacion .imagenesSide, .container .restauracion .imagenesSide {
+    animation: 100s slide infinite linear;
+  }
+  .container .pinturas .imagenesSide .contenedorImg, .container .creacion .imagenesSide .contenedorImg, .container .restauracion .imagenesSide .contenedorImg {
+    height: 120px;
+    margin: 0 20px;
+  }
+  .container .pinturas .imagenesSide .contenedorImg .imagenes, .container .creacion .imagenesSide .contenedorImg .imagenes, .container .restauracion .imagenesSide .contenedorImg .imagenes {
+    height: 120px;
+  }
+  .container .creacion .imagenesSide {
+    animation: 100s slide2 infinite linear;
+  }
 }/*# sourceMappingURL=imagenList3.module.css.map */

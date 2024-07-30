@@ -68,4 +68,15 @@
   .contenedor h2 {
     font-size: 1.8rem;
   }
+}
+@media screen and (max-width: 500px) {
+  .contenedor h2 {
+    padding: 0 0.7rem 0 0.7rem;
+  }
+  .contenedor .contenedorImgs {
+    -moz-columns: 2;
+         columns: 2;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
 }/*# sourceMappingURL=imagenList5.module.css.map */

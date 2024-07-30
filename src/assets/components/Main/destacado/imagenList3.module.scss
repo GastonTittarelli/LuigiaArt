@@ -204,3 +204,30 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    
+    .container {
+        .pinturas, .creacion, .restauracion {
+            height: 160px;
+
+            &::before, &::after {
+                width: 30px;
+            }
+            .imagenesSide{
+                animation: 100s slide infinite linear;
+                .contenedorImg {
+                    height: 120px;
+                    margin: 0 20px;
+
+                    .imagenes {
+                        height: 120px;
+                    }
+                }
+            }
+        }
+        .creacion .imagenesSide {
+            animation: 100s slide2 infinite linear;
+        }
+    }
+}

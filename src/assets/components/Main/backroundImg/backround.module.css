@@ -126,8 +126,22 @@
     font-size: 1.3em;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 574px) {
   .container .backroundImg {
     height: 400px;
+  }
+  .container .backroundImg .textHeader {
+    width: 100%;
+    height: 60%;
+  }
+  .container .backroundImg .textHeader h1 {
+    font-size: 3.5rem;
+  }
+  .container .backroundImg .textHeader h2 {
+    font-size: 1.8em;
+    font-weight: 500;
+  }
+  .container .backroundImg .textHeader p {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=backround.module.css.map */

@@ -227,3 +227,42 @@
     }
 
 }
+
+@media screen and (max-width: 500px) {
+    .container{
+        .contenido{
+            .foto{
+                height: 150px;
+                width: 160px;
+                margin-left: .5rem;
+                margin-right: .2rem;
+                
+                a{
+                    height: 150px;
+                    width: auto;
+                    
+                    img{
+                        width: auto;
+                        height: 100%;
+                    }
+                }
+            }
+            .redes{
+                
+    
+                h4{
+                    width: 90%;
+                    font-size: 1.2rem;
+                    padding-top: 0 ;
+                }
+                a{  
+                    padding-top: .5rem;   
+                    height: 28px;
+                    img{
+                        height: 28px;
+                    }
+                }
+            }
+        }
+    }
+}

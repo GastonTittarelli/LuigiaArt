@@ -199,7 +199,7 @@
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1063px) {
 
     .container {
         margin-top: 2.5rem;
@@ -233,7 +233,7 @@
             .pContainer{
                 padding-bottom: 1rem;
                 p{
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                     padding: 0 20px 0 20px;
                 }
             }
@@ -260,6 +260,24 @@
     }
 }
 
+@media screen and (max-width: 766px) {
+    .container {
+        .text {
+            h2 {
+                font-size: 2.1rem;
+                padding: 10px 0 10px 0;
+                min-height: 10px;
+            }
+            .pContainer{
+                margin-top: .2rem;
+                p{
+                    padding: 0 20px 0 20px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 700px) {
 
     .container {
@@ -280,12 +298,14 @@
 
             h2 {
                 min-height: auto;
+                font-size: 2.5rem;
                 padding-top: 1rem;
                 margin: 0;
             }
             .pContainer{
                 margin-top: 1rem;
                 p{
+                    font-size: 1rem;
                     height: 100%;
                     text-align: justify;
                     padding: 0 35px 0 35px;
@@ -298,12 +318,13 @@
             width: 100%;
             display: flex;
             justify-content:  center;
-            padding-top: 1rem;
-
+            padding: 1rem 0 1rem 0;
+        
             .foto {
-                width: 350px;
-                height: 467px;
-                border-radius:  20px 20px  0 0;
+                width: 60%;
+                height: auto;
+                box-shadow: 5px 5px 5px black;
+                border-radius: 12px;
             }
         }
     }

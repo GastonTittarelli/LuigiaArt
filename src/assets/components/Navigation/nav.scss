@@ -165,3 +165,15 @@ nav{
     }
     
 }
+
+@media screen and (max-width: 500px) {
+
+
+    .boton{
+        height: 80px;
+
+        .menu{
+            width: 60px;
+        }
+    }
+}

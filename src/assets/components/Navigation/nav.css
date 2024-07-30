@@ -134,4 +134,12 @@ nav ul li:hover {
   .active {
     color: rgb(253, 164, 243);
   }
+}
+@media screen and (max-width: 500px) {
+  .boton {
+    height: 80px;
+  }
+  .boton .menu {
+    width: 60px;
+  }
 }/*# sourceMappingURL=nav.css.map */

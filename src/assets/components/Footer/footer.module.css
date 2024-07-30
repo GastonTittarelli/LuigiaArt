@@ -190,4 +190,32 @@
   .container .copyright p {
     font-size: 0.9rem;
   }
+}
+@media screen and (max-width: 500px) {
+  .container .contenido .foto {
+    height: 150px;
+    width: 160px;
+    margin-left: 0.5rem;
+    margin-right: 0.2rem;
+  }
+  .container .contenido .foto a {
+    height: 150px;
+    width: auto;
+  }
+  .container .contenido .foto a img {
+    width: auto;
+    height: 100%;
+  }
+  .container .contenido .redes h4 {
+    width: 90%;
+    font-size: 1.2rem;
+    padding-top: 0;
+  }
+  .container .contenido .redes a {
+    padding-top: 0.5rem;
+    height: 28px;
+  }
+  .container .contenido .redes a img {
+    height: 28px;
+  }
 }/*# sourceMappingURL=footer.module.css.map */
