@@ -183,7 +183,7 @@
 @media screen and (max-width: 500px) {
   .contenedor {
     grid-template-columns: 100px 1fr;
-    gap: 17px;
+    gap: 20px;
   }
   .contenedor .filterButtons .navList {
     font-size: 0.7rem;
@@ -196,6 +196,7 @@
   .contenedor .filterButtons .navList li {
     padding: 0.4rem;
     margin-left: 0.4rem;
+    padding-left: 0.6rem;
   }
   .contenedor .filterButtons .flecha {
     left: 38px;
@@ -204,7 +205,7 @@
   .contenedor .contenedorImgs {
     width: 100%;
     padding: 15px 5px 15px 5px;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
   }
 }/*# sourceMappingURL=galeria.module.css.map */

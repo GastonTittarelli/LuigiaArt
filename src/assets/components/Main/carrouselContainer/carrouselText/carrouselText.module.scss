@@ -91,3 +91,16 @@
         
     }
 }
+
+@media screen and (max-width: 500px) {
+    .text{
+        .titulo{
+            text-align: center;
+            font-size: 1.6rem;
+        }
+
+        .descripcion{
+            font-size: 1.1rem;
+        }
+    }
+}

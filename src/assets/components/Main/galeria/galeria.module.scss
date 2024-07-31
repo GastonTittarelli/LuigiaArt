@@ -44,6 +44,7 @@
                     width: var(--border-radius);
                     height: var(--border-radius);
                     right: 0;
+                    
                 }
 
                 &.active::before{
@@ -227,7 +228,7 @@
 @media screen and (max-width: 500px) {
     .contenedor {
     grid-template-columns: 100px 1fr;
-        gap: 17px;
+        gap: 20px;
         .filterButtons {
 
             .navList{
@@ -241,7 +242,7 @@
                 li{
                     padding: .4rem ;
                     margin-left: .4rem;
-                    
+                    padding-left: .6rem;
                 }
             }
             .flecha{
@@ -252,7 +253,7 @@
         .contenedorImgs {
             width: 100%;
             padding: 15px 5px 15px 5px;
-            column-gap: 20px;
+            column-gap: 15px;
         }
     }
 }

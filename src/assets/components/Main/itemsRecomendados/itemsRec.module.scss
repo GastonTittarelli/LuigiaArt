@@ -128,3 +128,25 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .sItems {
+        width: 100%;
+
+        h2 {
+            font-size: 1.7rem;
+        }
+
+        .itemLink {
+    
+            .item {
+                height: 276px;
+                width: 220px;
+            }
+
+            .imgContainer{
+                height: 220px; 
+            }
+        }
+    }
+}

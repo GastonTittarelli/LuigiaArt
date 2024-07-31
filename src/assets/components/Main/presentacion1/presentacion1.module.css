@@ -276,7 +276,15 @@
   .container .fotoContainer .foto {
     width: 60%;
     height: auto;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px rgb(53, 53, 53);
     border-radius: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container .text .pContainer p {
+    padding: 0 15px 0 15px;
+  }
+  .container .fotoContainer .foto {
+    width: 80%;
   }
 }/*# sourceMappingURL=presentacion1.module.css.map */

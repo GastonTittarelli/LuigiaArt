@@ -163,4 +163,19 @@
         min-height: 730px;
         max-height: 880px; 
     }
+
+    .style img{
+        width: 490px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .zoom-container img {
+        min-height: 460px;
+        width: 350px;
+    }
+
+    .style img{
+        width: 400px;
+    }
 }

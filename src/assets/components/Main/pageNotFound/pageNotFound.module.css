@@ -188,4 +188,42 @@
   .container .containerFoto img {
     width: 250px;
   }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    min-height: 540px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .container .text {
+    padding-top: 1rem;
+  }
+  .container .text h2 {
+    font-size: 3rem;
+  }
+  .container .text .containerLetters {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0 2.5rem 0;
+  }
+  .container .text .containerLetters p {
+    font-size: 1.2rem;
+    padding: 0 5px 0 20px;
+  }
+  .container .text .containerLetters .redireccion {
+    font-size: 1.1rem;
+    height: 30px;
+  }
+  .container .containerFoto {
+    justify-content: center;
+    top: 210px;
+    position: absolute;
+  }
+  .container .containerFoto img {
+    width: 250px;
+  }
 }/*# sourceMappingURL=pageNotFound.module.css.map */

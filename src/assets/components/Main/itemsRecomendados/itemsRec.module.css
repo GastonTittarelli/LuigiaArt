@@ -109,4 +109,19 @@
   .sItems .itemLink .imgContainer {
     height: 200px;
   }
+}
+@media screen and (max-width: 500px) {
+  .sItems {
+    width: 100%;
+  }
+  .sItems h2 {
+    font-size: 1.7rem;
+  }
+  .sItems .itemLink .item {
+    height: 276px;
+    width: 220px;
+  }
+  .sItems .itemLink .imgContainer {
+    height: 220px;
+  }
 }/*# sourceMappingURL=itemsRec.module.css.map */

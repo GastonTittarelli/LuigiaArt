@@ -196,18 +196,23 @@
     height: 150px;
     width: 160px;
     margin-left: 0.5rem;
-    margin-right: 0.2rem;
+    margin-right: 0;
   }
   .container .contenido .foto a {
-    height: 150px;
-    width: auto;
+    height: 100%;
+    width: 100%;
   }
   .container .contenido .foto a img {
-    width: auto;
-    height: 100%;
+    bottom: 0;
+    top: auto;
+    width: 125px;
+    height: 150px;
+  }
+  .container .contenido .redes {
+    width: 80%;
   }
   .container .contenido .redes h4 {
-    width: 90%;
+    width: 95%;
     font-size: 1.2rem;
     padding-top: 0;
   }
