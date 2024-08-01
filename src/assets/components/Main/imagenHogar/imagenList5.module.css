@@ -79,4 +79,10 @@
     -moz-column-gap: 30px;
          column-gap: 30px;
   }
+}
+@media screen and (max-width: 410px) {
+  .contenedor .contenedorImgs {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
 }/*# sourceMappingURL=imagenList5.module.css.map */

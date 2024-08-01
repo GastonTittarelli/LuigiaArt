@@ -105,3 +105,12 @@
         
     }
 }
+
+@media screen and (max-width: 410px) {
+    .contenedor{
+        .contenedorImgs{
+            column-gap: 20px;
+        }
+        
+    }
+}
