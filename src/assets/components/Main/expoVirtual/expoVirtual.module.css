@@ -36,4 +36,9 @@
     width: 95%;
     height: 520px;
   }
+}
+@media screen and (max-width: 500px) {
+  .container iframe {
+    height: 470px;
+  }
 }/*# sourceMappingURL=expoVirtual.module.css.map */

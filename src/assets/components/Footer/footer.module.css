@@ -223,4 +223,25 @@
   .container .contenido .redes a img {
     height: 28px;
   }
+}
+@media screen and (max-width: 410px) {
+  .container {
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .contenido .redes {
+    align-items: flex-start;
+    height: 100%;
+    padding: 0.8rem 0 1rem 0;
+  }
+  .container .contenido .redes h4 {
+    margin-bottom: 0;
+  }
+  .container .contenido .redes a {
+    padding-top: 0.1rem;
+  }
+  .container .copyright {
+    height: 50px;
+  }
 }/*# sourceMappingURL=footer.module.css.map */

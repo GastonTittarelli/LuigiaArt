@@ -270,3 +270,27 @@
         }
     }
 }
+
+@media screen and (max-width: 410px) {
+    .container{
+        height: 195px;
+        display: flex;
+        flex-direction: column;
+        .contenido{
+            .redes{
+                align-items: flex-start;
+                height: 100%;
+                padding: .8rem 0 1rem 0;
+                h4{
+                    margin-bottom: 0;
+                }
+                a{  
+                    padding-top: .1rem;
+                }
+            }
+        }
+        .copyright{
+            height: 50px;
+        }
+    }
+}

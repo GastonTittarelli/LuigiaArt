@@ -11,4 +11,9 @@
   .contenedor {
     width: 90%;
   }
+}
+@media screen and (max-width: 410px) {
+  .contenedor {
+    width: 97%;
+  }
 }/*# sourceMappingURL=acercaDe.module.css.map */

@@ -180,4 +180,9 @@
   .container .creacion .imagenesSide {
     animation: 100s slide2 infinite linear;
   }
+}
+@media screen and (max-width: 410px) {
+  .container h2 {
+    font-size: 1.7rem;
+  }
 }/*# sourceMappingURL=imagenList3.module.css.map */

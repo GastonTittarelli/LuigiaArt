@@ -102,7 +102,7 @@
     width: 20%;
     height: 100%;
     color: transparent;
-    transition: width 0.3s ease-in-out, color 0.1s ease;
+    transition: width 0.3s ease-in-out, color 0s ease;
     border-radius: 0 15px 15px 0;
     top: 0;
     right: 0;
@@ -157,5 +157,15 @@
   }
   .container .active button {
     right: 80%;
+  }
+}
+@media screen and (max-width: 410px) {
+  .container {
+    width: 87%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .container .card h4 {
+    font-size: 0.85rem;
   }
 }/*# sourceMappingURL=presentacion2Small.module.css.map */

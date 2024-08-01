@@ -108,8 +108,14 @@
 
 @media screen and (max-width: 410px) {
     .contenedor{
+        h2 {
+            
+            font-size: 1.5rem;
+        }
         .contenedorImgs{
-            column-gap: 20px;
+            width: 100%;
+            column-gap: 15px;
+            padding: 15px 20px 15px 20px;
         }
         
     }

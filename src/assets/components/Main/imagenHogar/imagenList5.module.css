@@ -81,8 +81,13 @@
   }
 }
 @media screen and (max-width: 410px) {
+  .contenedor h2 {
+    font-size: 1.5rem;
+  }
   .contenedor .contenedorImgs {
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    width: 100%;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    padding: 15px 20px 15px 20px;
   }
 }/*# sourceMappingURL=imagenList5.module.css.map */
