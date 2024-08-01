@@ -142,4 +142,18 @@ nav ul li:hover {
   .boton .menu {
     width: 60px;
   }
+}
+@media screen and (max-width: 410px) {
+  .boton {
+    height: 70px;
+  }
+  .boton .menu {
+    width: 53px;
+  }
+  @keyframes nav-scroll3 {
+    to {
+      width: 47px;
+      padding-top: 4px;
+    }
+  }
 }/*# sourceMappingURL=nav.css.map */

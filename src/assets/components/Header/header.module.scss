@@ -165,3 +165,33 @@ header{
         }
     }
 }
+
+@media screen and (max-width: 410px) {
+
+    header{
+        height: 70px;
+
+        .logoContainer{
+            height: 70px;
+
+            h1 {
+                font-size: 2.6rem;
+                height: 70px;
+                padding: 7px 0 0 0;
+                align-items: center;
+                text-align: center;
+
+                @keyframes size-font2{
+                    to{
+                        height: 50px;
+                        font-size: 2.3rem;
+                        
+                    }
+                }
+            }
+        }
+    }
+    .fixed {
+        position: fixed;
+    }
+}
