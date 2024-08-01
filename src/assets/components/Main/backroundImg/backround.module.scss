@@ -169,7 +169,7 @@
     .container{
         
         .backroundImg{
-            height: 380px;
+            height: 370px;
 
             @keyframes background-imagen2{
                 
@@ -180,7 +180,7 @@
                 @keyframes background-imagen{
                     55% {background-color: rgba(0, 0, 0, 0.3)}
 
-                    73% {background-color: rgba(0, 0, 0, 1)}
+                    90% {background-color: rgba(0, 0, 0, 1)}
                 }
             }
             .textHeader{
@@ -204,7 +204,7 @@
         
                 p {
                     font-size: .8rem; 
-                    padding: 0 5px 0 5px;
+                    padding: 0 1px 0 1px;
                 }
             }
         }
