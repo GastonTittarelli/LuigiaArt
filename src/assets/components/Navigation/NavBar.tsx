@@ -48,7 +48,8 @@ const Nav = () => {
 
 
         const isActiveLink = (path: string) => {
-            return location.pathname === path ? 'active' : '';
+            // return location.pathname === path ? 'active' : '';
+            return location.pathname === path || (path !== '/' && location.pathname.startsWith(path)) ? 'active' : '';
         };
         
 

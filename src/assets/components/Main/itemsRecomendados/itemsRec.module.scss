@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 5px;
+    
 
     h2 {
         font-family: $letraSub;
@@ -20,6 +21,7 @@
     .itemLink {
         text-decoration: none;
         color: inherit;
+        
 
         .item {
             height: 320px;
@@ -30,7 +32,8 @@
             flex-wrap: wrap;
             flex-direction: column;
             align-items: center;
-            margin: 10px;
+            margin: 15px;
+            box-shadow: 0px 3px 8px gray;
             border-radius: 5px;
             background-color: rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out; 
@@ -109,13 +112,17 @@
             font-family: $letraSub;
             font-size: 1.9rem;
         }
+
+        .item {
+            box-shadow: 0px 0px 8px gray;
+        }
     }
 }
 
 @media screen and (max-width: 700px) {
     .sItems {
         .itemLink {
-    
+            
             .item {
                 height: 256px;
                 width: 200px;
@@ -131,7 +138,10 @@
 
 @media screen and (max-width: 500px) {
     .sItems {
-        width: 100%;
+        overflow: scroll;
+        height: 460px;
+        padding-bottom: 2rem;
+        gap: 2rem;
 
         h2 {
             font-size: 1.7rem;
