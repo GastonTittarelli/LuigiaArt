@@ -179,3 +179,14 @@
         width: 400px;
     }
 }
+
+@media screen and (max-width: 410px) {
+    .zoom-container img {
+        /* min-height: 440px; */
+        width: 320px;
+    }
+
+    .style img{
+        width: 350px;
+    }
+}

@@ -117,7 +117,7 @@ header .logoContainer h1:hover .firstLetter {
     }
   }
   .fixed {
-    position: sticky;
+    position: fixed;
     background-color: rgb(83, 83, 83);
   }
 }
@@ -147,14 +147,5 @@ header .logoContainer h1:hover .firstLetter {
     padding: 7px 0 0 0;
     align-items: center;
     text-align: center;
-  }
-  @keyframes size-font2 {
-    to {
-      height: 50px;
-      font-size: 2.3rem;
-    }
-  }
-  .fixed {
-    position: fixed;
   }
 }/*# sourceMappingURL=header.module.css.map */

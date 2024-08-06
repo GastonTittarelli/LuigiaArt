@@ -77,11 +77,14 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .text {
+    padding: 0 0.7rem 1.5rem 0.7rem;
+  }
   .text .titulo {
     text-align: center;
     font-size: 1.6rem;
   }
   .text .descripcion {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=carrouselText.module.css.map */

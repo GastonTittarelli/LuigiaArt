@@ -2,14 +2,12 @@
 @import "../../../scss/styles/utilities/variables.scss";
 
 .sItems {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     margin-bottom: 3rem;
     width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 5px;
-    
 
     h2 {
         font-family: $letraSub;
@@ -18,74 +16,85 @@
         text-align: center;
     }
 
-    .itemLink {
-        text-decoration: none;
-        color: inherit;
+    .containerItems{
+        width: 90%;
+        height: 380px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        overflow-x: auto;
         
 
-        .item {
-            height: 320px;
-            width: 250px;
-            position: relative;
-            overflow: visible;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            align-items: center;
-            margin: 15px;
-            box-shadow: 0px 3px 8px gray;
-            border-radius: 5px;
-            background-color: rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out; 
-
-            &:hover {
-                .hoverLine {
-                    width: 60%;
+        .itemLink {
+            text-decoration: none;
+            color: inherit;
+            
+    
+            .item {
+                height: 320px;
+                width: 250px;
+                position: relative;
+                overflow: visible;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                margin: 15px;
+                box-shadow: 0px 3px 8px gray;
+                border-radius: 5px;
+                background-color: rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease-in-out; 
+    
+                &:hover {
+                    .hoverLine {
+                        width: 60%;
+                    }
                 }
             }
-        }
-        .imgContainer{
-            width: 100%;
-            height: 250px; 
-            overflow: hidden; 
-            border-radius: 8px;
-            margin-bottom: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .itemImage {
-                width: auto;
-                height: 80%;
-                object-fit: contain;
-                object-position: center;
+            .imgContainer{
+                width: 100%;
+                height: 250px; 
+                overflow: hidden; 
+                border-radius: 8px;
+                margin-bottom: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                .itemImage {
+                    width: auto;
+                    height: 80%;
+                    object-fit: contain;
+                    object-position: center;
+                }
             }
-        }
-
-        .itemTitle {
-            @include textFont;
-            font-size: 1.2em;
-            padding-left: 10px;
-            padding-right: 8px;
-            font-weight: 500;
-            width: 100%;
-            text-align: center;
-            box-sizing: border-box;
-            white-space: nowrap; 
-            overflow: hidden; 
-            text-overflow: ellipsis;
-        }
-
-        .hoverLine{
-            position: absolute;
-            bottom: 0;
-            left: 50%; 
-            transform: translateX(-50%);
-            width: 20px; 
-            height: 3px; 
-            background-color: black; 
-            border-radius: 10px; 
-            transition: width 0.3s ease-in-out; 
+    
+            .itemTitle {
+                @include textFont;
+                font-size: 1.2em;
+                padding-left: 10px;
+                padding-right: 8px;
+                font-weight: 500;
+                width: 100%;
+                text-align: center;
+                box-sizing: border-box;
+                white-space: nowrap; 
+                overflow: hidden; 
+                text-overflow: ellipsis;
+            }
+    
+            .hoverLine{
+                position: absolute;
+                bottom: 0;
+                left: 50%; 
+                transform: translateX(-50%);
+                width: 20px; 
+                height: 3px; 
+                background-color: black; 
+                border-radius: 10px; 
+                transition: width 0.3s ease-in-out; 
+            }
         }
     }
 }
@@ -96,6 +105,18 @@
     .sItems {
         width: 100%;
 
+    }
+}
+
+@media screen and (max-width: 1297px) {
+    .sItems {
+        width: 80%;
+        
+    
+        .containerItems{
+            width: 100%;
+            justify-content: start;
+        }
     }
 }
 
@@ -112,50 +133,51 @@
             font-family: $letraSub;
             font-size: 1.9rem;
         }
-
-        .item {
-            box-shadow: 0px 0px 8px gray;
-        }
     }
 }
 
 @media screen and (max-width: 700px) {
     .sItems {
-        .itemLink {
-            
-            .item {
-                height: 256px;
-                width: 200px;
-            }
+        
+        .containerItems{
+            height: 310px;
 
-            .imgContainer{
-                height: 200px; 
-            }
+            .itemLink {
+                
+                .item {
+                    height: 256px;
+                    width: 200px;
+                }
 
+                .imgContainer{
+                    height: 200px; 
+                }
+
+            }
         }
     }
 }
 
 @media screen and (max-width: 500px) {
     .sItems {
-        overflow: scroll;
-        height: 460px;
-        padding-bottom: 2rem;
-        gap: 2rem;
+        padding-bottom: 1rem;
+        gap: 0.5rem;
 
         h2 {
             font-size: 1.7rem;
         }
 
-        .itemLink {
-    
-            .item {
-                height: 276px;
-                width: 220px;
-            }
+        .containerItems{
+            .itemLink {
+        
+                .item {
+                    height: 276px;
+                    width: 220px;
+                }
 
-            .imgContainer{
-                height: 220px; 
+                .imgContainer{
+                    height: 220px; 
+                }
             }
         }
     }
