@@ -326,7 +326,7 @@
         &::before, &::after {
             position: absolute;
             top: 0;
-            width: 300px;
+            width: 30px;
             height: 100%;
             content: "";
             z-index: 2;
@@ -365,7 +365,7 @@
             display: flex;
             -webkit-animation: 140s slide infinite linear;
             animation: 140s slide infinite linear;
-            opacity: 0;
+            opacity: 0.3;
             -webkit-transition: opacity 0.5s ease-in-out;
             transition: opacity 0.5s ease-in-out;
 
