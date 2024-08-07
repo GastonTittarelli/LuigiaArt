@@ -7,6 +7,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
   align-items: center;
   margin-top: 4rem;
 }
@@ -26,6 +28,8 @@
   white-space: nowrap;
   position: relative;
   display: flex;
+  -moz-align-items: center;
+  -ms-align-items: center;
   align-items: center;
   animation: pulse 3.2s ease-in;
 }
@@ -85,6 +89,8 @@
 .container .pinturas .imagenesSide .contenedorImg, .container .creacion .imagenesSide .contenedorImg, .container .restauracion .imagenesSide .contenedorImg {
   display: flex;
   justify-content: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
   align-items: center;
   max-width: 350px;
   overflow: hidden;
@@ -97,7 +103,7 @@
   width: auto;
   height: 250px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .container .creacion .imagenesSide {
   animation: 140s slide2 infinite linear;
@@ -108,81 +114,5 @@
   }
   to {
     transform: translateX(0%);
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .container {
-    gap: 3rem;
-  }
-  .container .pinturas, .container .creacion, .container .restauracion {
-    height: 240px;
-    padding: 0;
-  }
-  .container .pinturas::before, .container .pinturas::after, .container .creacion::before, .container .creacion::after, .container .restauracion::before, .container .restauracion::after {
-    width: 100px;
-  }
-  .container .pinturas .imagenesSide .contenedorImg, .container .creacion .imagenesSide .contenedorImg, .container .restauracion .imagenesSide .contenedorImg {
-    height: 200px;
-  }
-  .container .pinturas .imagenesSide .contenedorImg .imagenes, .container .creacion .imagenesSide .contenedorImg .imagenes, .container .restauracion .imagenesSide .contenedorImg .imagenes {
-    border-radius: 5.5px;
-    height: 200px;
-  }
-}
-@media screen and (max-width: 960px) {
-  .container {
-    min-height: 80vh;
-    position: relative;
-  }
-  .container h2 {
-    position: absolute;
-    top: 0;
-  }
-  .container .pinturas::before, .container .pinturas::after, .container .creacion::before, .container .creacion::after, .container .restauracion::before, .container .restauracion::after {
-    width: 50px;
-  }
-  .container .pinturas {
-    margin-top: 4rem;
-  }
-}
-@media screen and (max-width: 700px) {
-  .container .pinturas, .container .creacion, .container .restauracion {
-    height: 200px;
-  }
-  .container .pinturas .imagenesSide .contenedorImg, .container .creacion .imagenesSide .contenedorImg, .container .restauracion .imagenesSide .contenedorImg {
-    height: 150px;
-  }
-  .container .pinturas .imagenesSide .contenedorImg .imagenes, .container .creacion .imagenesSide .contenedorImg .imagenes, .container .restauracion .imagenesSide .contenedorImg .imagenes {
-    height: 150px;
-  }
-  .container h2 {
-    font-size: 1.9rem;
-  }
-}
-@media screen and (max-width: 500px) {
-  .container .pinturas, .container .creacion, .container .restauracion {
-    height: 160px;
-  }
-  .container .pinturas::before, .container .pinturas::after, .container .creacion::before, .container .creacion::after, .container .restauracion::before, .container .restauracion::after {
-    width: 30px;
-  }
-  .container .pinturas .imagenesSide, .container .creacion .imagenesSide, .container .restauracion .imagenesSide {
-    animation: 100s slide infinite linear;
-  }
-  .container .pinturas .imagenesSide .contenedorImg, .container .creacion .imagenesSide .contenedorImg, .container .restauracion .imagenesSide .contenedorImg {
-    height: 120px;
-    margin: 0 20px;
-  }
-  .container .pinturas .imagenesSide .contenedorImg .imagenes, .container .creacion .imagenesSide .contenedorImg .imagenes, .container .restauracion .imagenesSide .contenedorImg .imagenes {
-    height: 120px;
-  }
-  .container .creacion .imagenesSide {
-    animation: 100s slide2 infinite linear;
-  }
-}
-@media screen and (max-width: 410px) {
-  .container h2 {
-    font-size: 1.7rem;
   }
 }/*# sourceMappingURL=imagenList3.module.css.map */
