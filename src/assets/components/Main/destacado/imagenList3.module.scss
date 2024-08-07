@@ -129,22 +129,22 @@
 
 /* Vista para iOS usando WebKit */
 
-// @keyframes imagenAppear {
-//     to {
-//         opacity: 1;
-//     }
-// }
+@keyframes imagenAppear {
+    to {
+        opacity: 1;
+    }
+}
 
 @media screen and (min-width:0\0) and (-webkit-min-device-pixel-ratio:0) {
     .imagenesSide {
         opacity: 0;
         animation: imagenAppear 1s ease-in-out;
     
-        @keyframes imagenAppear {
-            to {
-                opacity: 1;
-            }
-        }
+        // @keyframes imagenAppear {
+        //     to {
+        //         opacity: 1;
+        //     }
+        // }
     }
 
 }
