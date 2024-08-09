@@ -68,11 +68,7 @@
 .container .pinturas .imagenesSide, .container .creacion .imagenesSide, .container .restauracion .imagenesSide {
   display: flex;
   animation: 140s slide infinite linear;
-  opacity: 0;
   transition: opacity 0.5s ease-in-out;
-}
-.container .pinturas .imagenesSide.loaded, .container .creacion .imagenesSide.loaded, .container .restauracion .imagenesSide.loaded {
-  opacity: 1;
 }
 @keyframes slide {
   from {
@@ -98,31 +94,50 @@
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+  animation: 2s appear ease-in;
 }
-.container .creacion .imagenesSide {
-  animation: 140s slide2 infinite linear;
-}
-@keyframes slide2 {
-  from {
-    transform: translateX(-100%);
+@keyframes appear {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: translateX(0%);
+  75% {
+    opacity: 0;
   }
-}
-
-/* Vista para iOS usando WebKit */
-@keyframes imagenAppear {
-  to {
+  80% {
+    opacity: 0.2;
+  }
+  85% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  95% {
+    opacity: 0.8;
+  }
+  100% {
     opacity: 1;
   }
 }
-@media screen and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0) {
-  .imagenesSide {
-    opacity: 0;
-    animation: imagenAppear 1s ease-in-out;
+.container .creacion {
+  white-space: nowrap;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.container .creacion .imagenesSide {
+  animation: 160s slide2 infinite linear;
+}
+@keyframes slide2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
   }
 }
+
 @media screen and (max-width: 1400px) {
   .container {
     gap: 3rem;

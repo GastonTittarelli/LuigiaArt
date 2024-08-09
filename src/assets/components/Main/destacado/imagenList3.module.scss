@@ -2,152 +2,158 @@
 @import "../../../scss/styles/utilities/mixin.scss";
 
 
-    .container {
-        min-height: 130vh;
+.container {
+    min-height: 130vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+
+    h2 {
+        width: 90%;
+        text-align: center;
+        font-size: 2.3rem;
+        color: rgb(117, 117, 117);
+        font-family: $letraSub;
+    }
+
+    .pinturas, .creacion, .restauracion {
+        height: 320px;
         width: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        padding: 60px 0;
+        white-space: nowrap;
+        position: relative;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
-        margin-top: 4rem;
-    
-        h2 {
-            width: 90%;
-            text-align: center;
-            font-size: 2.3rem;
-            color: rgb(117, 117, 117);
-            font-family: $letraSub;
+        animation: pulse 3.2s ease-in;
+
+        @keyframes pulse {
+            0% {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+            25%{
+                background-color: rgba(0, 0, 0, 0.2); 
+            }
+            50% {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+            75%{
+                background-color: rgba(0, 0, 0, 0.3); 
+            }
+            100% {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
         }
-    
-        .pinturas, .creacion, .restauracion {
-            height: 320px;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            padding: 60px 0;
-            white-space: nowrap;
-            position: relative;
+
+        &::before, &::after {
+            position: absolute;
+            top: 0;
+            width: 300px;
+            height: 100%;
+            content: "";
+            z-index: 2;
+        }
+
+        &::before {
+            left: 0;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+        }
+
+        &::after {
+            right: 0;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+        }
+
+        &:hover .imagenesSide {
+            animation-play-state: paused;
+        }
+
+        .imagenesSide {
             display: flex;
-            align-items: center;
-            animation: pulse 3.2s ease-in;
-            
-            @keyframes pulse {
-                0% {
-                    background-color: rgba(0, 0, 0, 0.1);
-                }
-                25%{
-                    background-color: rgba(0, 0, 0, 0.2); 
-                }
-                50% {
-                    background-color: rgba(0, 0, 0, 0.1);
-                }
-                75%{
-                    background-color: rgba(0, 0, 0, 0.3); 
-                }
-                100% {
-                    background-color: rgba(0, 0, 0, 0.1);
-                }
-            }
+            animation: 140s slide infinite linear;
+            transition: opacity 0.5s ease-in-out;
 
-            &::before, &::after {
-                position: absolute;
-                top: 0;
-                width: 300px;
-                height: 100%;
-                content: "";
-                z-index: 2;
-            }
-    
-            &::before {
-                left: 0;
-                background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-            }
-    
-            &::after {
-                right: 0;
-                background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-            }
-    
-            &:hover .imagenesSide {
-                animation-play-state: paused;
-            }
-    
-            .imagenesSide {
-                display: flex;
-                animation: 140s slide infinite linear;
-                opacity: 0;
-                transition: opacity 0.5s ease-in-out;
-                
-
-                &.loaded {
-                    opacity: 1;
-                }
-    
-                @keyframes slide {
-                    from {
-                        transform: translateX(0);
-                    }
-                    to {
-                        transform: translateX(-100%);
-                    }
-                }
-    
-                .contenedorImg {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    max-width: 350px;
-                    overflow: hidden;
-                    height: 250px;
-                    margin: 0 40px;
-                    border-radius: 5px;
-    
-                    .imagenes {
-                        border-radius: 5px;
-                        width: auto;
-                        height: 250px;
-                        object-fit: cover;
-                    }
-                }
-            }
-        }
-    
-        .creacion .imagenesSide {
-            animation: 140s slide2 infinite linear;
-    
-            @keyframes slide2 {
+            @keyframes slide {
                 from {
-                    transform: translateX(-100%);
+                    transform: translateX(0);
                 }
                 to {
-                    transform: translateX(0%);
+                    transform: translateX(-100%);
+                }
+            }
+
+            .contenedorImg {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 350px;
+                overflow: hidden;
+                height: 250px;
+                margin: 0 40px;
+                border-radius: 5px;
+
+                .imagenes {
+                    border-radius: 5px;
+                    width: auto;
+                    height: 250px;
+                    object-fit: cover;
+                    animation: 2s appear ease-in;
+
+                    @keyframes appear {
+                        0%{
+                            opacity: 0;
+                        }
+                        
+                        75%{
+                            opacity: 0;
+                        }
+                        80%{
+                            opacity: 0.2;
+                        }
+                        85%{
+                            opacity: 0.4;
+                        }
+                        90%{
+                            opacity: 0.6;
+                        }
+                        95%{
+                            opacity: 0.8;
+                        }
+                        100%{
+                            opacity: 1;
+                        }
+                    }
                 }
             }
         }
     }
 
-
-/* Vista para iOS usando WebKit */
-
-@keyframes imagenAppear {
-    to {
-        opacity: 1;
+    .creacion {
+        white-space: nowrap;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        .imagenesSide {
+            animation: 160s slide2 infinite linear;
+            
+            @keyframes slide2 {
+                from {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(100%);
+                }
+            }
+        }
     }
 }
 
-@media screen and (min-width:0\0) and (-webkit-min-device-pixel-ratio:0) {
-    .imagenesSide {
-        opacity: 0;
-        animation: imagenAppear 1s ease-in-out;
-    
-        // @keyframes imagenAppear {
-        //     to {
-        //         opacity: 1;
-        //     }
-        // }
-    }
 
-}
 
 @media screen and (max-width: 1400px) {
     
