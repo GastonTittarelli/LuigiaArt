@@ -57,7 +57,7 @@ export const ItemsByCategory1 = () => {
                                 src={item.subCategoria2}
                                 alt={item.titulo}
                                 onLoad={() => handleImageLoad(category)}
-                                onError={() => handleImageLoad(category)} // También manejamos errores
+                                onError={() => handleImageLoad(category)}
                             />
                         </Link>
                     </div>

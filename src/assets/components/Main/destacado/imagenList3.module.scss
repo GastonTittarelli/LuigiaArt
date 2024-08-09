@@ -211,9 +211,9 @@
         .pinturas, .creacion, .restauracion {
             height: 200px;
 
-            &:hover .imagenesSide {
-                animation-play-state: running;
-            }
+            // &:hover .imagenesSide {
+            //     animation-play-state: running;
+            // }
 
             .imagenesSide{
                 .contenedorImg {

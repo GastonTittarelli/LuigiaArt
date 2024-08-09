@@ -94,7 +94,7 @@
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
-  animation: 2s appear ease-in;
+  animation: 1s appear ease-in;
 }
 @keyframes appear {
   0% {
