@@ -8,6 +8,7 @@
   grid-template-columns: 250px 1fr;
   gap: 20px;
   margin-bottom: 15px;
+  background-color: rgb(255, 255, 255);
 }
 .contenedor .filterButtons {
   position: sticky;
@@ -28,7 +29,7 @@
 }
 .contenedor .filterButtons .navList li.active {
   view-transition-name: activeNavTab;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   position: relative;
 }
 .contenedor .filterButtons .navList li.active p {
@@ -44,12 +45,12 @@
 }
 .contenedor .filterButtons .navList li.active::before {
   top: calc(var(--border-radius) * -1);
-  box-shadow: 10px 10px 0 10px white;
+  box-shadow: 10px 10px 0 10px rgb(255, 255, 255);
   border-radius: 0 0 100vw 0;
 }
 .contenedor .filterButtons .navList li.active::after {
   bottom: calc(var(--border-radius) * -1);
-  box-shadow: 10px -10px 0 10px white;
+  box-shadow: 10px -10px 0 10px rgb(255, 255, 255);
   border-radius: 0 100vw 0 0;
 }
 .contenedor .filterButtons .navList li p {
@@ -88,7 +89,6 @@
   -moz-column-gap: 30px;
        column-gap: 30px;
   border-radius: 10px;
-  background-color: white;
 }
 .contenedor .contenedorImgs .itemContainer {
   margin-bottom: 32px;
@@ -189,6 +189,8 @@
   .contenedor .filterButtons .navList {
     font-size: 0.7rem;
     gap: 2.5rem;
+    width: 100px;
+    position: fixed;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -211,14 +213,8 @@
   }
 }
 @media screen and (max-width: 410px) {
-  .contenedor {
-    display: grid;
-  }
-  .contenedor .filterButtons .navList {
-    width: 100px;
-    position: fixed;
-  }
-  .contenedor .filterButtons .flecha {
-    display: none;
+  .contenedor .flecha {
+    left: 39px;
+    width: 20px;
   }
 }/*# sourceMappingURL=galeria.module.css.map */
