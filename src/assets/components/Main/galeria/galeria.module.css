@@ -88,6 +88,7 @@
   -moz-column-gap: 30px;
        column-gap: 30px;
   border-radius: 10px;
+  background-color: white;
 }
 .contenedor .contenedorImgs .itemContainer {
   margin-bottom: 32px;
@@ -207,5 +208,17 @@
     padding: 15px 5px 15px 5px;
     -moz-column-gap: 15px;
          column-gap: 15px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .contenedor {
+    display: grid;
+  }
+  .contenedor .filterButtons .navList {
+    width: 100px;
+    position: fixed;
+  }
+  .contenedor .filterButtons .flecha {
+    display: none;
   }
 }/*# sourceMappingURL=galeria.module.css.map */

@@ -101,7 +101,7 @@
                     width: auto;
                     height: 250px;
                     object-fit: cover;
-                    animation: 1s appear ease-in;
+                    animation: 1.5s appear ease-in;
 
                     @keyframes appear {
                         0%{
@@ -210,7 +210,7 @@
     .container {
         .pinturas, .creacion, .restauracion {
             height: 200px;
-
+            pointer-events: none; 
             // &:hover .imagenesSide {
             //     animation-play-state: running;
             // }
@@ -218,7 +218,7 @@
             .imagenesSide{
                 .contenedorImg {
                     height: 150px;
-
+                    pointer-events: auto;
                     .imagenes {
                         height: 150px;
                     }
