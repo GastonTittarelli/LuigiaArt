@@ -67,7 +67,7 @@ const Nav = () => {
                 </Link>
 
                 <Link  to="/about">
-                    <li className={isActiveLink('/about')}>Acarca de mi</li>
+                    <li className={isActiveLink('/about')}>Acerca de mi</li>
                 </Link>
 
                 <Link to="/gallery">

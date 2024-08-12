@@ -18,6 +18,7 @@
         animation: background-imagen2 linear forwards;
         animation-timeline: view();
         animation-range: exit;
+        -moz-animation:none;
 
         @keyframes background-imagen2{
             90%, 100% {background-size: 160%; ;}
@@ -35,6 +36,7 @@
             z-index: 1;
             animation: background-imagen linear forwards;
             animation-timeline: view();
+            -moz-animation:none;
 
             @keyframes background-imagen{
                 65% {background-color: rgba(0, 0, 0, 0.4)}
@@ -87,6 +89,45 @@
     }
 }
 
+/* Estilo que será ignorado en Safari pero aplicado en Chrome */
+// @media not all and (min-resolution: 0.001dpcm) {
+//     @supports (-webkit-overflow-scrolling: touch) {
+//         .container{
+//             .backroundImg{
+//                 animation: none;
+//                 &::before {
+//                     animation: none;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media not all and (min-resolution:.001dpcm) { 
+//     @supports (-webkit-appearance:none) and (stroke-color:transparent) { 
+//         .container{
+//             .backroundImg{
+//                 animation: none;
+//                 &::before {
+//                     animation: none;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media not all and (min-resolution: .001dpcm) {
+//     @supports (-webkit-appearance: none) {
+//         .container{
+//             .backroundImg{
+//                 animation: none;
+//                 &::before {
+//                     animation: none;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 //Responsive -tablet devices-
 
