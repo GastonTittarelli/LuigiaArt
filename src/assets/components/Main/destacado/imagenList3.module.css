@@ -94,7 +94,7 @@
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
-  animation: 1.5s appear ease-in;
+  animation: 1.8s appear ease-in;
 }
 @keyframes appear {
   0% {
@@ -176,11 +176,9 @@
 @media screen and (max-width: 700px) {
   .container .pinturas, .container .creacion, .container .restauracion {
     height: 200px;
-    pointer-events: none;
   }
   .container .pinturas .imagenesSide .contenedorImg, .container .creacion .imagenesSide .contenedorImg, .container .restauracion .imagenesSide .contenedorImg {
     height: 150px;
-    pointer-events: auto;
   }
   .container .pinturas .imagenesSide .contenedorImg .imagenes, .container .creacion .imagenesSide .contenedorImg .imagenes, .container .restauracion .imagenesSide .contenedorImg .imagenes {
     height: 150px;
