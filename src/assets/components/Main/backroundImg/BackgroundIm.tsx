@@ -1,6 +1,20 @@
+import { useEffect } from "react";
 import styles from "./backround.module.scss"
 
 const BackgroundIm = () => {
+
+    useEffect(() => {
+        const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (isChrome) {
+            document.body.classList.add(styles.isChrome);
+        }
+
+        return () => {
+            document.body.classList.remove(styles.isChrome);
+        };
+    }, []);
+
+    
     return (
         <div className={styles.container}>
 

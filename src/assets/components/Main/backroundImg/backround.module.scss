@@ -15,14 +15,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: background-imagen2 linear forwards;
-        animation-timeline: view();
-        animation-range: exit;
-        -moz-animation:none;
+        // animation: background-imagen2 linear forwards;
+        // animation-timeline: view();
+        // animation-range: exit;
+        // -moz-animation:none;
 
-        @keyframes background-imagen2{
-            90%, 100% {background-size: 160%; ;}
-        }
+        // @keyframes background-imagen2{
+        //     90%, 100% {background-size: 160%; ;}
+        // }
 
         &::before {
             content: "";
@@ -34,15 +34,15 @@
             left: 0;
             background-color: rgba(0, 0, 0, 0.4);
             z-index: 1;
-            animation: background-imagen linear forwards;
-            animation-timeline: view();
-            -moz-animation:none;
+            // animation: background-imagen linear forwards;
+            // animation-timeline: view();
+            // -moz-animation:none;
 
-            @keyframes background-imagen{
-                65% {background-color: rgba(0, 0, 0, 0.4)}
+            // @keyframes background-imagen{
+            //     65% {background-color: rgba(0, 0, 0, 0.4)}
 
-                100% {background-color: rgba(0, 0, 0, 1)}
-            }
+            //     100% {background-color: rgba(0, 0, 0, 1)}
+            // }
         }
 
         .textHeader{
@@ -58,14 +58,14 @@
             text-align: center;
             color: white;
             z-index: 222;
-            animation: reverseSize linear forwards;
-            animation-timeline: view();
+            // animation: reverseSize linear forwards;
+            // animation-timeline: view();
 
-            @keyframes reverseSize{
-                0% {scale: 1}
+            // @keyframes reverseSize{
+            //     0% {scale: 1}
 
-                100% {scale: .6; }
-            }
+            //     100% {scale: .6; }
+            // }
             
             h1 {
                 font-size: 5.4em; 
@@ -89,45 +89,39 @@
     }
 }
 
-/* Estilo que será ignorado en Safari pero aplicado en Chrome */
-// @media not all and (min-resolution: 0.001dpcm) {
-//     @supports (-webkit-overflow-scrolling: touch) {
-//         .container{
-//             .backroundImg{
-//                 animation: none;
-//                 &::before {
-//                     animation: none;
-//                 }
-//             }
-//         }
-//     }
-// }
+/* Estilos para navegador chrome (view() no soportado en mozilla ni safari) */
+.isChrome .container {
+    .backroundImg {
+        animation: background-imagen2 linear forwards;
+        animation-timeline: view();
+        animation-range: exit;
 
-// @media not all and (min-resolution:.001dpcm) { 
-//     @supports (-webkit-appearance:none) and (stroke-color:transparent) { 
-//         .container{
-//             .backroundImg{
-//                 animation: none;
-//                 &::before {
-//                     animation: none;
-//                 }
-//             }
-//         }
-//     }
-// }
+        &::before {
+            animation: background-imagen linear forwards;
+            animation-timeline: view();
 
-// @media not all and (min-resolution: .001dpcm) {
-//     @supports (-webkit-appearance: none) {
-//         .container{
-//             .backroundImg{
-//                 animation: none;
-//                 &::before {
-//                     animation: none;
-//                 }
-//             }
-//         }
-//     }
-// }
+            @keyframes background-imagen2{
+                90%, 100% {background-size: 160%; ;}
+            }
+
+            @keyframes background-imagen{
+                65% {background-color: rgba(0, 0, 0, 0.4)}
+
+                100% {background-color: rgba(0, 0, 0, 1)}
+            }
+        }
+    }
+    .textHeader{
+        animation: reverseSize linear forwards;
+            animation-timeline: view();
+
+            @keyframes reverseSize{
+                0% {scale: 1}
+
+                100% {scale: .6; }
+            }
+    }
+}
 
 //Responsive -tablet devices-
 
