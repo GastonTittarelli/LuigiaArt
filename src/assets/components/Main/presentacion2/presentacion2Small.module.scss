@@ -62,14 +62,14 @@
             position: relative;
             border-radius: 15px;
             transform-origin: left;
+            transform: scaleX(0.94);
             animation: Size linear forwards;
             animation-timeline: view();
-            animation-range: start;
 
             @keyframes Size{
-                0% {
-                    transform: scaleX(0.94);
-                }
+                // 0% {
+                //     transform: scaleX(0.94);
+                // }
         
                 20% {
                     transform: scaleX(1); 
@@ -98,21 +98,21 @@
                     padding: 15px;
                     width: 50px;
 
-                    // animation: grow 2s linear infinite;
+                    animation: grow 2s linear infinite;
 
-                    // @keyframes grow{
+                    @keyframes grow{
             
-                    //     0% {
-                    //         scale: 1;
-                    //     }
+                        0% {
+                            scale: 1;
+                        }
                 
-                    //     50% {
-                    //         scale: 1.1; 
-                    //     }
-                    //     100% {
-                    //         scale: 1; 
-                    //     }
-                    // }
+                        50% {
+                            scale: 1.1; 
+                        }
+                        100% {
+                            scale: 1; 
+                        }
+                    }
                 }
             }
             h4{
@@ -128,22 +128,8 @@
                 font-size: 1rem;
                 align-content: center;
                 padding: 35px;
-                // font-size: 0px;
                 overflow: hidden;
-                animation: appear linear forwards;
-                animation-timeline: view();
-
-                @keyframes appear{
-                
-                    0% {
-                        opacity: 0;
-                    }
-            
-                    30% {
-                        opacity: 1; 
-                    }
-                }
-                }
+            }
 
             .visible {
                 width: 80%;
@@ -158,11 +144,12 @@
         .active button {
             right: 80%;
             background-color: rgb(228, 228, 228, .9);
+
+            
         }
         .active h4{ 
             border-radius: 0 15px 15px 0;
         }
-        
     }
 }
 
