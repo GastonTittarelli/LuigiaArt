@@ -64,6 +64,7 @@
             transform-origin: left;
             animation: Size linear forwards;
             animation-timeline: view();
+            animation-range: start;
 
             @keyframes Size{
                 0% {
