@@ -87,18 +87,6 @@
   .container .card button .info {
     padding: 15px;
     width: 50px;
-    animation: grow 2s linear infinite;
-  }
-  @keyframes grow {
-    0% {
-      scale: 1;
-    }
-    50% {
-      scale: 1.1;
-    }
-    100% {
-      scale: 1;
-    }
   }
   .container .card h4 {
     background-color: rgba(228, 228, 228, 0.9);

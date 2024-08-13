@@ -98,21 +98,21 @@
                     padding: 15px;
                     width: 50px;
 
-                    animation: grow 2s linear infinite;
+                    // animation: grow 2s linear infinite;
 
-                    @keyframes grow{
+                    // @keyframes grow{
             
-                        0% {
-                            scale: 1;
-                        }
+                    //     0% {
+                    //         scale: 1;
+                    //     }
                 
-                        50% {
-                            scale: 1.1; 
-                        }
-                        100% {
-                            scale: 1; 
-                        }
-                    }
+                    //     50% {
+                    //         scale: 1.1; 
+                    //     }
+                    //     100% {
+                    //         scale: 1; 
+                    //     }
+                    // }
                 }
             }
             h4{
