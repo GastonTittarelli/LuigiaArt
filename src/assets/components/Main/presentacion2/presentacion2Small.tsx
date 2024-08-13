@@ -42,6 +42,7 @@ const AcercaDeSmall = () => {
         }
     ];
 
+    
     return (
         <div className={styles.container}>
             {cardsContent.map((card, index) => (
