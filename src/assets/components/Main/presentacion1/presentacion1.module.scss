@@ -348,5 +348,14 @@
 @media screen and (max-width: 410px) {
     .container {
         margin-top: 1rem;
+
+        .text {
+            .pContainer{
+                p{
+                    hyphens: auto; 
+                    overflow-wrap: break-word;
+                }
+            }
+        }
     }
 }
