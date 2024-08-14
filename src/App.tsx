@@ -14,7 +14,6 @@ const AcercaDe = lazy(() => import('./assets/components/Main/acercaDe/AcercaDe')
 const ExpoVirtual = lazy(() => import('./assets/components/Main/expoVirtual/ExpoVirtual'));
 
 function App() {
-
   return (
     <div className='appContainer'>
       <Header/>
@@ -30,9 +29,10 @@ function App() {
           <Route path="/virtual" element={<ExpoVirtual/>} />
           <Route path="/not-found" element={<PageNotFound/>} />
         </Routes>
+
       <Footer/>
-      </Suspense>
       
+      </Suspense>
     </div>
   )
 }
