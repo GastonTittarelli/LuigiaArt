@@ -74,7 +74,6 @@
     opacity: 1;
 }
 
-/* Imágenes del carrusel */
 .zoom-container {
     position: relative;
     overflow: hidden;
@@ -103,8 +102,8 @@
         height: 420px; 
     }
 }
+
 @media screen and (max-width: 1400px) {
-    
     .mySwiper2 {
         height: 80%;
     }
@@ -118,39 +117,30 @@
 }
 
 @media screen and (max-width: 960px) {
-
-    
     .swiper-slide{
         margin-right: 0;
         background-color: rgb(238, 238, 238);
-        
     }
-
     .swiper-slide-active{
         border-radius: 6px 6px 0 0;
         border: transparent;
         outline: transparent;
     }
-
     .mySwiper .swiper-slide {
         background-color: gray;
     }
     .swiper-button-next, .swiper-button-prev {
         color: black;
     }
-
     .zoom-container img {
         min-height: 780px;
         max-height: 900px; 
         width: 470px;
         object-fit: contain;
     }
-
-
     .setZoomStyle{
         scale: (1);
     }
-
     .style{
         outline: none;
         height: auto;
@@ -159,7 +149,6 @@
         width: 650px;
         object-fit: contain;
     }
-    
 }
 
 @media screen and (max-width: 700px) {
@@ -186,7 +175,6 @@
 
 @media screen and (max-width: 410px) {
     .zoom-container img {
-        /* min-height: 440px; */
         width: 320px;
     }
 

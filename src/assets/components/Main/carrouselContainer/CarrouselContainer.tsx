@@ -26,7 +26,7 @@ const CarrouselContainer = () => {
             if (docSnap.exists()) {
                 const data = { id: docSnap.id, ...docSnap.data() } as Item;
 
-                // Lista de todas las imágenes en el item
+                
                 const images = [data.img1, data.img2, data.img3, data.img4];
 
                 // Esperar a que todas las imágenes se carguen
@@ -34,7 +34,7 @@ const CarrouselContainer = () => {
                     const img = new Image();
                     img.src = src;
                     img.onload = () => resolve();
-                    img.onerror = () => resolve(); // Ignorar errores de carga de imágenes
+                    img.onerror = () => resolve();
                 }));
 
                 await Promise.all(imagePromises);
@@ -42,7 +42,7 @@ const CarrouselContainer = () => {
                 setItem(data);
             } else {
                 setItem(null);
-                navigate('/not-found'); // Redirige a la página de error
+                navigate('/not-found');
             }
             setLoading(false);
         };

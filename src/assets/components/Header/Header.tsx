@@ -9,23 +9,22 @@ const location = useLocation();
 
 const headerClass = location.pathname === '/' ? styles.fixed : styles.sticky;
 
+    return (
+        <header className={headerClass}>
+            
+            <div className={styles.logoContainer}>
+                <Link to="/">
+                    <h1>
+                        <span className={styles.firstLetter}>L</span>uigia  
+                        <span className={styles.firstLetter}>A</span>rt
+                    </h1>
+                </Link>    
+            </div>
 
-return (
-    <header className={headerClass}>
-        
-        <div className={styles.logoContainer}>
-            <Link to="/">
-                <h1>
-                    <span className={styles.firstLetter}>L</span>uigia  
-                    <span className={styles.firstLetter}>A</span>rt
-                </h1>
-            </Link>    
-        </div>
+            <Nav/>
 
-        <Nav/>
-        
-    </header>
-)
+        </header>
+    )
 }
 
 export default Header

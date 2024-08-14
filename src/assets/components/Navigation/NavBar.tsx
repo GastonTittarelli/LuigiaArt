@@ -20,13 +20,13 @@ const Nav = () => {
         }
     };
 
-    // Efecto para detectar cambios de ruta y cerrar el nav
+    // Efecto para detectar cambios de ruta y cerrar el menú
     useEffect(() => {
         setUseTransition(false);
         setIsActive(false);
     }, [location]);
 
-    // Efecto para manejar clics fuera del nav
+    // Manejar clicks fuera del menú
     useEffect(() => {
         document.addEventListener('mousedown', handleClickOutside);
         return () => {
@@ -34,7 +34,7 @@ const Nav = () => {
         };
     }, []);
 
-    // Efecto para manejar el botón de "atrás"
+    // Manejar el botón de "atrás" en mobile
     useEffect(() => {
         const handlePopState = () => {
             
@@ -48,37 +48,34 @@ const Nav = () => {
 
 
         const isActiveLink = (path: string) => {
-            // return location.pathname === path ? 'active' : '';
             return location.pathname === path || (path !== '/' && location.pathname.startsWith(path)) ? 'active' : '';
         };
-        
 
     return (
-
         <>
             <button className="boton" onClick={toggleNav}>
                 <img className="menu" src="../../../img/menuH/menuH1.png" alt="imagen de menu" />
             </button>
         
             <nav ref={navRef} className={`nav ${isActive ? 'activo' : ''} ${useTransition ? 'transition' : ''}`}>
-            <ul>
-                <Link to="/">
-                    <li className={isActiveLink('/')}>Inicio</li>
-                </Link>
-
-                <Link  to="/about">
-                    <li className={isActiveLink('/about')}>Acerca de mi</li>
-                </Link>
-
-                <Link to="/gallery">
-                        <li className={isActiveLink('/gallery')}>Galería</li>
+                <ul>
+                    <Link to="/">
+                        <li className={isActiveLink('/')}>Inicio</li>
                     </Link>
 
-                    <Link to="/virtual">
-                        <li className={isActiveLink('/virtual')}>Exposición virtual</li>
+                    <Link  to="/about">
+                        <li className={isActiveLink('/about')}>Acerca de mi</li>
                     </Link>
-            </ul>
-        </nav>
+
+                    <Link to="/gallery">
+                            <li className={isActiveLink('/gallery')}>Galería</li>
+                        </Link>
+
+                        <Link to="/virtual">
+                            <li className={isActiveLink('/virtual')}>Exposición virtual</li>
+                        </Link>
+                </ul>
+            </nav>
         </>
     )
 }

@@ -12,7 +12,6 @@ const AcercaDe: React.FC = () => {
 
         window.addEventListener('resize', handleResize);
 
-        
         return () => {
             window.removeEventListener('resize', handleResize);
         };

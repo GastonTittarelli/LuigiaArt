@@ -3,9 +3,9 @@ import styles from "./loader.module.scss";
 const Loader = () => {
     return (
         <div className={styles.animacion}>
-                    <img className={styles.foto} src="../../../img/concepto2.png" alt="Descripción de la imagen" />
-                
-                    <div className={styles.sombra}></div>
+            <img className={styles.foto} src="../../../img/concepto2.png" alt="Descripción de la imagen" />
+
+            <div className={styles.sombra}></div>
         </div>
     )
 }

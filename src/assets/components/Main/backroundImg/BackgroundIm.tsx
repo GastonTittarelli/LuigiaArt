@@ -14,10 +14,9 @@ const BackgroundIm = () => {
         };
     }, []);
 
-    
+
     return (
         <div className={styles.container}>
-
             <div className={styles.backroundImg}>
                 <div className={styles.textHeader}>
                     <h1>LuigiaArt</h1>
@@ -26,7 +25,6 @@ const BackgroundIm = () => {
                 </div>
             </div>
         </div>
-        
     )
 }
 

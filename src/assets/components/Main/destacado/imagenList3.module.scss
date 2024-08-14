@@ -153,10 +153,7 @@
     }
 }
 
-
-
 @media screen and (max-width: 1400px) {
-    
     .container {
         gap: 3rem;
 
@@ -169,7 +166,6 @@
             }
 
             .imagenesSide {
-
                 .contenedorImg {
                     height: 200px;
                     .imagenes{
@@ -192,13 +188,10 @@
             top: 0;
         }
         .pinturas, .creacion, .restauracion {
-            
-
             &::before, &::after {
                 width: 50px;
             }
         }
-
 
         .pinturas{
             margin-top: 4rem;
@@ -210,6 +203,7 @@
     .container {
         .pinturas, .creacion, .restauracion {
             height: 200px;
+
             // pointer-events: none; 
             // &:hover .imagenesSide {
             //     animation-play-state: running;
@@ -218,6 +212,7 @@
             .imagenesSide{
                 .contenedorImg {
                     height: 150px;
+
                     // pointer-events: auto;
                     .imagenes {
                         height: 150px;
@@ -233,7 +228,6 @@
 }
 
 @media screen and (max-width: 500px) {
-    
     .container {
         .pinturas, .creacion, .restauracion {
             height: 160px;

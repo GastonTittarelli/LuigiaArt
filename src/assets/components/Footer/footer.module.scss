@@ -83,7 +83,6 @@
         }
     }
 
-
     .copyright{
         background-color: #465358;
         height: 100%;
@@ -101,7 +100,6 @@
     }
 }
 
-//Responsive -medium size-
 
 @media screen and (max-width: 1400px) {
     .container{
@@ -122,9 +120,6 @@
     }
 }
 
-
-//Responsive -tablet devices-
-
 @media screen and (max-width: 960px) {
 
     .container{
@@ -140,8 +135,6 @@
                 width: 131px;
                 a{
                     height: 150px;
-                    // img{
-                    // }
                 }
             }
             .redes{
@@ -151,13 +144,14 @@
                 justify-content: center;
                 padding-left: .1rem;
                 gap: 1rem;
-    
+
                 h4{
                     font-size: 1.4rem;
                     padding-right: 0;
                 }
                 a{     
-                    height: 30px;   
+                    height: 30px;  
+                    
                     img{
                         height: 30px;
                     }
@@ -203,7 +197,7 @@
                 flex-wrap: wrap;
                 gap: 0;
                 padding: 1.5rem 0 1.5rem 0;
-    
+
                 h4{
                     text-align: center;
                     font-size: 1.4rem;
@@ -213,6 +207,7 @@
                 a{     
                     height: 30px;
                     margin: .7rem .7rem 0 .7rem;
+
                     img{
                         height: 30px;
                     }
@@ -225,13 +220,11 @@
             }
         }
     }
-
 }
 
 @media screen and (max-width: 500px) {
     .container{
         .contenido{
-            
             .foto{
                 height: 150px;
                 width: 160px;
@@ -252,7 +245,7 @@
             }
             .redes{
                 width: 80%;
-    
+
                 h4{
                     width: 95%;
                     font-size: 1.2rem;
@@ -262,6 +255,7 @@
                 a{  
                     padding-top: .5rem;   
                     height: 28px;
+
                     img{
                         height: 28px;
                     }
@@ -276,11 +270,13 @@
         height: 195px;
         display: flex;
         flex-direction: column;
+
         .contenido{
             .redes{
                 align-items: flex-start;
                 height: 100%;
                 padding: .8rem 0 1rem 0;
+                
                 h4{
                     margin-bottom: 0;
                 }

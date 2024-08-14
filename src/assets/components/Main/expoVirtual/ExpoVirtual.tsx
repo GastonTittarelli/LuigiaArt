@@ -22,7 +22,6 @@ const ExpoVirtual = () => {
                     onLoad={() => setIframeLoaded(true)}
                     style={{ display: iframeLoaded ? 'block' : 'none' }}>
             </iframe>
-
         </div>
     )
 }

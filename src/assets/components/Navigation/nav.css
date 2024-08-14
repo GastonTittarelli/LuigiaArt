@@ -102,7 +102,6 @@ nav ul li:hover {
     pointer-events: none;
     height: 0;
     background-color: rgba(34, 34, 34, 0.96);
-    animation-range: 0 200px;
     animation: nav-scroll2 linear both;
     animation-timeline: scroll(root);
     animation-range: 0 400px;

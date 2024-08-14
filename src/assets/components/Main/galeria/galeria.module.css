@@ -128,7 +128,7 @@
   text-align: center;
 }
 .contenedor .contenedorImgs .itemContainer:hover .imagenes {
-  opacity: 0.3;
+  opacity: 0.2;
 }
 .contenedor .contenedorImgs .itemContainer:hover h3 {
   opacity: 1;

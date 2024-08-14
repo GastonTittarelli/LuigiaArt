@@ -45,7 +45,6 @@
                     width: var(--border-radius);
                     height: var(--border-radius);
                     right: 0;
-                    
                 }
 
                 &.active::before{
@@ -119,7 +118,6 @@
                         scale: (1);
                     }
                 }
-                
             }
 
             h3 {
@@ -140,7 +138,7 @@
 
             &:hover {
                 .imagenes {
-                    opacity: 0.3;
+                    opacity: 0.2;
                 }
                 h3 {
                     opacity: 1;
@@ -157,15 +155,13 @@
     }
 }
 
-@media screen and (max-width: 1400px) {
 
+@media screen and (max-width: 1400px) {
     .contenedor {
         grid-template-columns: 220px 1fr;
 
         .filterButtons {
-
             .navList{
-
                 li{
                     padding: .8rem 2rem;
                 }
@@ -182,12 +178,10 @@
 }
 
 @media screen and (max-width: 960px) {
-
     .contenedor {
         grid-template-columns: 170px 1fr;
 
         .filterButtons {
-
             .navList{
                 font-size: 1.2rem;
                 gap: 3rem;
@@ -203,9 +197,7 @@
         }
 
         .contenedorImgs {
-            
             .itemContainer {
-
                 &:hover {
                     h3 {
                         opacity: 0;
@@ -218,8 +210,6 @@
 
 @media screen and (max-width: 700px) {
     .contenedor{
-        
-
         .contenedorImgs {
             columns: 2;
         }
@@ -228,10 +218,9 @@
 
 @media screen and (max-width: 500px) {
     .contenedor {
-    grid-template-columns: 100px 1fr;
+        grid-template-columns: 100px 1fr;
         gap: 20px;
         .filterButtons {
-
             .navList{
                 font-size: .7rem;
                 gap: 2.5rem;
@@ -261,52 +250,6 @@
     }
 }
 
-// @media screen and (max-width: 410px) {
-//     .contenedor {
-//         grid-template-columns: 1fr;
-//         grid-template-rows: 280px 1fr;
-//         position: relative;
-//         .filterButtons {
-//             padding: 20px 0 20px 0;
-//             min-height: 100%;
-//             border-radius: 0;
-//             box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.3);
-            
-//             .navList{
-//                 gap: 2rem;
-//                 display: flex;
-//                 flex-direction: column;
-//                 align-items: center;
-//                 justify-content: center;
-//                 padding: 0;
-                
-//                 li{
-//                     width: 60%;
-//                     border-radius: 100vw;
-//                     padding-left: 0;
-//                     margin-left: 0;
-//                     &.active p{
-//                         font-size: 1.05rem;
-//                     }
-
-//                     &.active::before, 
-//                     &.active::after {
-//                         box-shadow: 0 0 0 transparent;
-//                 }
-//                     p {
-//                         font-size: 1rem;
-//                         text-align: center;
-//                     }
-//                 }
-//             }
-//             // .flecha{
-                
-//             // }
-//         }
-//     }
-// }
-
-//opción 2
 @media screen and (max-width: 410px) {
     .contenedor {
         .flecha{

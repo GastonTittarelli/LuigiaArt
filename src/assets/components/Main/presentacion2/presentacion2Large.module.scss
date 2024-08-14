@@ -24,9 +24,11 @@
         .foto{
             width: 400px;
         }
+
         button{
             display: none;
         }
+
         h4{
             @include textFont;
             width: 100%;
@@ -100,9 +102,7 @@
 
 
 @media screen and (max-width: 1367px) {
-
     .container{
-        
         .card{
             .foto{
                 width: 320px;
@@ -117,15 +117,8 @@
             }
         }
     }    
-    
-
-
-
-
-//Responsive -tablet devices-
 
 @media screen and (max-width: 960px) {
-
     .container{
         min-height: 80vh;
         width: 90%;
@@ -147,6 +140,7 @@
             .foto{
                 width: 300px;
             }
+
             h4{
                 font-size: 1rem;
                 line-height: 1.8;
@@ -154,7 +148,6 @@
                 text-align: start;
 
                 @keyframes appear{
-            
                     0% {
                         opacity: 0;
                     }

@@ -2,97 +2,94 @@
 
 header{
     width: 100%;
-    
+    height: 100px;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    z-index: 111;
+    animation: nav-scroll linear both ;
+    animation-timeline: scroll(root);
+    animation-range: 0 400px;
+
+    @keyframes nav-scroll{
+        to{
+            height: 60px;
+        }
+    }
+
+    .logoContainer{
+        width: 100%;
         height: 100px;
-        top: 0;
-        left: 0;
-        display: grid;
-        grid-template-columns: 1fr 5fr;
-        z-index: 111;
-        animation: nav-scroll linear both ;
+        background-color: rgba(34, 34, 34, .6);
+        z-index: 3123123123123;
+        display: flex;
+        padding-left: 2rem;
+        align-items: center;
+        animation: size-font linear both ;
         animation-timeline: scroll(root);
         animation-range: 0 400px;
 
-        @keyframes nav-scroll{
+        @keyframes size-font{
             to{
+                background-color: rgb(50, 60, 65);
                 height: 60px;
+                font-size: 2.5rem;
             }
         }
 
-        .logoContainer{
-            width: 100%;
+        h1 {
+            width: auto;
             height: 100px;
-            background-color: rgba(34, 34, 34, .6);
-            z-index: 3123123123123;
+            font-family: $letraSub;
+            color: rgb(253, 164, 243);
+            font-size: 4rem;
             display: flex;
-            padding-left: 2rem;
-            align-items: center;
-            animation: size-font linear both ;
+            margin: 0;
+            transition: color .5s;
+            animation: size-font2 linear both ;
             animation-timeline: scroll(root);
             animation-range: 0 400px;
-
-            @keyframes size-font{
+                
+            @keyframes size-font2{
                 to{
-                    background-color: rgb(50, 60, 65);
                     height: 60px;
                     font-size: 2.5rem;
                 }
             }
 
-            h1 {
-                width: auto;
-                height: 100px;
-                font-family: $letraSub;
-                color: rgb(253, 164, 243);
-                font-size: 4rem;
-                display: flex;
-                margin: 0;
+            .firstLetter {
+                color: rgb(255, 255, 255);
                 transition: color .5s;
-                animation: size-font2 linear both ;
-                animation-timeline: scroll(root);
-                animation-range: 0 400px;
-                
-                @keyframes size-font2{
-                    to{
-                        height: 60px;
-                        font-size: 2.5rem;
-                    }
-                }
-    
-                .firstLetter {
-                    color: rgb(255, 255, 255);
-                    transition: color .5s;
-                }
-            
-                &:hover {
-                    color: rgb(255, 255, 255);
-                }
-            
-                &:hover .firstLetter {
-                    color: rgb(253, 164, 243);
-                }
+            }
+
+            &:hover {
+                color: rgb(255, 255, 255);
+            }
+
+            &:hover .firstLetter {
+                color: rgb(253, 164, 243);
             }
         }
     }
+}
 
-    .fixed {
-        position: -webkit-sticky;
-        position: fixed;
-    }
+.fixed {
+    position: -webkit-sticky;
+    position: fixed;
+}
     
-    .sticky {
-        position: sticky;
-        background-color: rgb(83, 83, 83 );
-    }
+.sticky {
+    position: sticky;
+    background-color: rgb(83, 83, 83 );
+}
 
-
-
-    //Responsive -medium size-
 
 @media screen and (max-width: 1400px) {
     header{
         .logoContainer{
             padding-left: .7rem;
+
             h1 {
                 font-size: 3.5rem;
                 padding: 10px 0 10px 10px;
@@ -110,8 +107,6 @@ header{
     }
 }
 
-//Responsive -tablet devices-
-
 @media screen and (max-width: 960px) {
     header{
         .logoContainer{
@@ -122,6 +117,7 @@ header{
         }
     }
 }
+
 @media screen and (max-width: 700px) {
     header{
         grid-template-rows: 1fr 300px;
@@ -152,7 +148,6 @@ header{
 }
 
 @media screen and (max-width: 500px) {
-
     header{
         height: 80px;
 
@@ -170,7 +165,6 @@ header{
 }
 
 @media screen and (max-width: 410px) {
-
     header{
         height: 70px;
 

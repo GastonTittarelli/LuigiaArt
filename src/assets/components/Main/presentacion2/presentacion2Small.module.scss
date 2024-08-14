@@ -24,9 +24,11 @@
         .foto{
             width: 400px;
         }
+
         button{
             display: none;
         }
+
         h4{
             @include textFont;
             width: 100%;
@@ -36,15 +38,13 @@
             line-height: 2;
             font-weight: 400;
             text-align: justify;
-            
         }
     }
-
 }
+
 
 @media screen and (max-width: 700px) {
     .container{
-        
         .card{
             display: flex;
             position: relative;
@@ -55,10 +55,6 @@
             animation-timeline: view();
 
             @keyframes Size{
-                // 0% {
-                //     transform: scaleX(0.94);
-                // }
-        
                 20% {
                     transform: scaleX(1); 
                 }
@@ -67,11 +63,13 @@
                     transform: scaleX(1); 
                 }
             }
+
             .foto{
                 width: 80%;
                 height: auto;
                 border-radius: 15px 0 0 15px ;
             }
+
             button{
                 display: inline-block;
                 position: absolute;
@@ -80,16 +78,13 @@
                 background-color: rgb(228, 228, 228, 1);
                 border-radius: 30px 0 0 30px;
                 transition: right 0.3s ease-in-out, background-color .3s ease-in;
-                
 
                 .info{
                     padding: 15px;
                     width: 50px;
-
                     animation: grow 2s linear infinite;
 
                     @keyframes grow{
-            
                         0% {
                             scale: 1;
                         }
@@ -132,8 +127,6 @@
         .active button {
             right: 80%;
             background-color: rgb(228, 228, 228, .9);
-
-            
         }
         .active h4{ 
             border-radius: 0 15px 15px 0;
@@ -155,10 +148,8 @@
 }
 
 @media screen and (max-width: 500px) {
-
     .container{
         width: 95%;
-        
 
         .card{
             .foto{
@@ -173,7 +164,6 @@
                 width: 15%;
                 height: 100%;
                 padding: 0 25px 0 25px;
-                
                 padding-top: 10%;
                 padding-bottom: 10%;
                 text-align: start;
@@ -182,12 +172,11 @@
             .visible {
                 width: 80%;
             }
-            
         }
+
         .active button {
             right: 80%;
         }
-        
     }
 }
 
@@ -196,8 +185,8 @@
         width: 87%;
         margin-top: 2rem;
         margin-bottom: 2rem;
+        
         .card{
-            
             h4{
                 font-size: .85rem;
             }

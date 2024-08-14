@@ -3,6 +3,7 @@
 .container{
     width: 100%;
     height: 100%;
+
     .backroundImg{
         width: 100%;
         height: 100vh;
@@ -15,6 +16,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
         // animation: background-imagen2 linear forwards;
         // animation-timeline: view();
         // animation-range: exit;
@@ -34,6 +36,7 @@
             left: 0;
             background-color: rgba(0, 0, 0, 0.4);
             z-index: 1;
+
             // animation: background-imagen linear forwards;
             // animation-timeline: view();
             // -moz-animation:none;
@@ -58,6 +61,7 @@
             text-align: center;
             color: white;
             z-index: 222;
+
             // animation: reverseSize linear forwards;
             // animation-timeline: view();
 
@@ -123,10 +127,8 @@
     }
 }
 
-//Responsive -tablet devices-
 
 @media screen and (max-width: 960px) {
-
     .container{
         .backroundImg{
             height: 70vh;
@@ -202,13 +204,11 @@
 
 @media screen and (max-width: 410px) {
     .container{
-        
         .backroundImg{
             height: 370px;
 
             @keyframes background-imagen2{
-                
-                90%, 100% {background-size: 160%; ;}
+                90%, 100% {background-size: 160%;}
             }
 
             &::before {

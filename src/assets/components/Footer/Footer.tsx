@@ -27,10 +27,6 @@ const Footer = () => {
                 </div>
             </div>
 
-            
-
-            
-
             <div className={styles.copyright}>
                 <p>Todos los derechos reservados. © 2024 Luigiaart.</p>
             </div>
