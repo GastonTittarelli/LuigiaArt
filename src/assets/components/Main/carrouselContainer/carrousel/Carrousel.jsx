@@ -187,7 +187,7 @@ export default function Appli() {
                 )}
             </Swiper>
 
-            <Modal
+            <Modal className='contenedorModal'
                 open={open}
                 onClose={handleClose}
                 aria-labelledby="modal-modal-title"
