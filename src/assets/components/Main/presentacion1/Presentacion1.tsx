@@ -7,9 +7,9 @@ const Presentacion1 = () => {
                 <h2>Soy Marilú Borda</h2>
 
                 <div className={styles.pContainer}>
-                    <p>Mi espacio de arte que tanta felicidad me da. Es un lugar donde puedo ser libre, dejar volar mi imaginación y explorar un mundo lleno de posibilidades. A medida que me adentré en este terreno inexplorado, que siempre admiré desde la distancia, descubrí la valentía para experimentar y plasmar mi visión creativa. La música, otra de mis grandes pasiones, no es solo un acompañamiento; es el latido que marca el ritmo de mi vida, inspirándome y enriqueciéndome en cada paso de mi exploración artística.</p> 
+                    <p>Mi espacio de arte es mi refugio, un rincón donde la felicidad florece, la libertad se despliega y mi imaginación se expande hacia un mundo lleno de posibilidades. Aquí, me atreví a explorar lo desconocido, un territorio que siempre admiré desde lejos. La música, otra de mis grandes pasiones, no es solo un acompañamiento, sino el pulso que guía mi vida, impregnando de color, alma y armonía cada una de mis obras.</p> 
 
-                    <p>Este espacio lleva mi nombre y el de mis ancestros italianos, mujeres extraordinarias que fueron luz en mi camino, abriendo puertas y permitiéndome ser quien soy hoy.</p>
+                    <p>Agradezco a Dios por las bendiciones recibidas, por los dones que me permiten disfrutar de la belleza del arte, y por la compañía de personas maravillosas, familia y amigos, que llenan mi vida de significado. Este espacio lleva mi nombre y el de mis ancestros italianos, mujeres valientes que iluminaron mi camino, abriendo puertas y permitiéndome ser quien soy hoy.</p>
                 </div>
             </div>
 

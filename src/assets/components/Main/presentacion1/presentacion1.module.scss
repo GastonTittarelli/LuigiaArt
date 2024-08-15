@@ -136,7 +136,7 @@
                 height: auto;
 
                 p{
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                     line-height: 1.6;
                     padding-left: 25px;
                 }
@@ -186,12 +186,13 @@
 @media screen and (max-width: 1240px) {
     .container {
         .text {
+            gap: 0;
             h2 {
                 font-size: 3rem;
             }
             .pContainer{
                 p{
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                 }
             }
         }
