@@ -1,4 +1,4 @@
-# 🎨🖼️🖌️🎭 Luigiaart
+# 🎨🖌️🎭 Luigiaart
 
 Bienvenido al repositorio de **Luigiaart**, una innovadora página web dedicada a mostrar y destacar las obras una artista. Este proyecto busca proporcionar una experiencia fluida, clara y elegante para que los visitantes puedan disfrutar plenamente del arte.
 
