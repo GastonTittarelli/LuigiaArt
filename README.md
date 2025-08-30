@@ -2,6 +2,21 @@
 
 Bienvenido al repositorio de **Luigiaart**, una innovadora página web dedicada a mostrar y destacar las obras una artista. Este proyecto busca proporcionar una experiencia fluida, clara y elegante para que los visitantes puedan disfrutar plenamente del arte.
 
+## 📸 Screenshots
+- **Inicio**
+<img width="1903" height="913" alt="image" src="https://github.com/user-attachments/assets/df86afb8-1070-4c5a-9179-a50e12dbaaa0" />
+
+- **Detalle de obra**
+<img width="1903" height="913" alt="image" src="https://github.com/user-attachments/assets/3ad1ca4e-a1b9-4f21-a932-107080ce51ef" />
+
+- **Galería**
+<img width="1903" height="913" alt="image" src="https://github.com/user-attachments/assets/db42ce7e-2305-47b2-9911-6b06daf3cf46" />
+
+- **Museo Virtual**
+<img width="1903" height="913" alt="image" src="https://github.com/user-attachments/assets/dca90dfe-d255-47c9-9bfb-7f49d109bfde" />
+
+- **No encontrado**
+<img width="1903" height="913" alt="image" src="https://github.com/user-attachments/assets/c9ea7301-a89b-4fda-81c8-0db08e3a5111" />
 
 ## Tecnologías Utilizadas
 
