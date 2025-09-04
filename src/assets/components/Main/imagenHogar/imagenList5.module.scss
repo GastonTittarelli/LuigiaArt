@@ -20,10 +20,13 @@
 
     .contenedorImgs{
         width: 60vw;
-        min-height: 90vh;
+        min-height: 200vh;
         columns: 3;
         padding: 15px 30px;
         column-gap: 30px;
+        
+        opacity: 0; // empiezan invisibles
+        transition: opacity 0.8s ease;
 
         .imagenes{
             border-radius: 5px;
@@ -31,6 +34,7 @@
             height: auto;
             margin-bottom: 32px;
             z-index: 1;
+
             animation: aparecer linear both;
             animation-timeline: view(); 
             animation-range: entry 20% cover 40%;
@@ -46,6 +50,9 @@
                 }
             }
         }
+    }
+    .contenedorImgs.loaded {
+    opacity: 1; // aparece lentamente
     }
 }
 

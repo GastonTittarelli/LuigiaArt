@@ -23,7 +23,11 @@ export const ItemsByCategory1 = () => {
     const [itemsPintura, setItemsPintura] = useState<Item[]>([]);
     const [itemsRestauracion, setItemsRestauracion] = useState<Item[]>([]);
     const [itemsCreacion, setItemsCreacion] = useState<Item[]>([]);
-    const [imagesLoaded, setImagesLoaded] = useState({ pintura: false, restauracion: false, creacion: false });
+    // const [imagesLoaded, setImagesLoaded] = useState({ pintura: false, restauracion: false, creacion: false });
+
+    // llevamos el conteo de imágenes cargadas
+    const [loadedCounts, setLoadedCounts] = useState({ pintura: 0, restauracion: 0, creacion: 0 });
+
 
     useEffect(() => {
         const fetchItemsByCategory = async () => {
@@ -38,22 +42,29 @@ export const ItemsByCategory1 = () => {
         fetchItemsByCategory();
     }, []);
 
-    const handleImageLoad = (category: keyof typeof imagesLoaded) => {
-        setImagesLoaded(prevState => ({
+    const handleImageLoad = (category: keyof typeof loadedCounts) => {
+        setLoadedCounts(prevState => ({
             ...prevState,
-            [category]: true,
+            [category]: prevState[category] + 1
         }));
     };
 
-    const renderImages = (items: Item[], category: keyof typeof imagesLoaded) => (
-        <>
-            <section className={`${styles.imagenesSide} ${imagesLoaded[category] ? styles.loaded : ''}`}>
-                {items.map((item) => (
+    const allLoaded = (items: Item[], category: keyof typeof loadedCounts) => {
+        return items.length > 0 && loadedCounts[category] >= items.length;
+    };
+
+    
+    const renderImages = (items: Item[], category: keyof typeof loadedCounts) => {
+        const isLoaded = allLoaded(items, category);
+
+        return (
+            <>
+                <section className={`${styles.imagenesSide} ${isLoaded ? styles.loaded : ''}`}>
+                    {items.map((item) => (
                     <div className={styles.contenedorImg} key={item.id}>
                         <Link to={`${item.id}`}>
                             <img
                                 className={styles.imagenes}
-                                loading="lazy"
                                 src={item.subCategoria2}
                                 alt={item.titulo}
                                 onLoad={() => handleImageLoad(category)}
@@ -63,7 +74,7 @@ export const ItemsByCategory1 = () => {
                     </div>
                 ))}
             </section>
-            <section className={`${styles.imagenesSide} ${imagesLoaded[category] ? styles.loaded : ''}`}>
+            <section className={`${styles.imagenesSide} ${isLoaded ? styles.loaded : ''}`}>
                 {items.map((item) => (
                     <div className={styles.contenedorImg} key={item.id}>
                         <Link to={`${item.id}`}>
@@ -81,7 +92,8 @@ export const ItemsByCategory1 = () => {
             </section>
         </>
     );
-
+    };
+    
     return (
         <div className={styles.container}>
             <h2>Principales Destacados</h2>
