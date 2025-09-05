@@ -80,7 +80,7 @@ export const ItemsByCategory1 = () => {
                         <Link to={`${item.id}`}>
                             <img
                                 className={styles.imagenes}
-                                loading="lazy"
+                               // loading="lazy"
                                 src={item.subCategoria2}
                                 alt={item.titulo}
                                 onLoad={() => handleImageLoad(category)}
